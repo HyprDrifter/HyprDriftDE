@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsession.a CMakeFiles/session.dir/SessionManager.cpp.o
-/usr/bin/ranlib libsession.a
