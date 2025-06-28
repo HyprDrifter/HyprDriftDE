@@ -130,8 +130,61 @@ drift-daemon/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/build
 .PHONY : drift-daemon/fast
 
+<<<<<<< Updated upstream
 #=============================================================================
 # Target rules for targets named Experimental
+=======
+src/AppLauncher.o: src/AppLauncher.cpp.o
+.PHONY : src/AppLauncher.o
+
+# target to build an object file
+src/AppLauncher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o
+.PHONY : src/AppLauncher.cpp.o
+
+src/AppLauncher.i: src/AppLauncher.cpp.i
+.PHONY : src/AppLauncher.i
+
+# target to preprocess a source file
+src/AppLauncher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.i
+.PHONY : src/AppLauncher.cpp.i
+
+src/AppLauncher.s: src/AppLauncher.cpp.s
+.PHONY : src/AppLauncher.s
+
+# target to generate assembly for a file
+src/AppLauncher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.s
+.PHONY : src/AppLauncher.cpp.s
+
+src/DBusManager.o: src/DBusManager.cpp.o
+.PHONY : src/DBusManager.o
+
+# target to build an object file
+src/DBusManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o
+.PHONY : src/DBusManager.cpp.o
+
+src/DBusManager.i: src/DBusManager.cpp.i
+.PHONY : src/DBusManager.i
+
+# target to preprocess a source file
+src/DBusManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.i
+.PHONY : src/DBusManager.cpp.i
+
+src/DBusManager.s: src/DBusManager.cpp.s
+.PHONY : src/DBusManager.s
+
+# target to generate assembly for a file
+src/DBusManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.s
+.PHONY : src/DBusManager.cpp.s
+
+src/DriftCore.o: src/DriftCore.cpp.o
+.PHONY : src/DriftCore.o
+>>>>>>> Stashed changes
 
 # Build rule for target.
 Experimental: cmake_check_build_system
@@ -676,6 +729,102 @@ wallpaper/fast:
 	$(MAKE) $(MAKESILENT) -f src/wallpaper/CMakeFiles/wallpaper.dir/build.make src/wallpaper/CMakeFiles/wallpaper.dir/build
 .PHONY : wallpaper/fast
 
+src/ProcessManager.o: src/ProcessManager.cpp.o
+.PHONY : src/ProcessManager.o
+
+# target to build an object file
+src/ProcessManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o
+.PHONY : src/ProcessManager.cpp.o
+
+src/ProcessManager.i: src/ProcessManager.cpp.i
+.PHONY : src/ProcessManager.i
+
+# target to preprocess a source file
+src/ProcessManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.i
+.PHONY : src/ProcessManager.cpp.i
+
+src/ProcessManager.s: src/ProcessManager.cpp.s
+.PHONY : src/ProcessManager.s
+
+# target to generate assembly for a file
+src/ProcessManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.s
+.PHONY : src/ProcessManager.cpp.s
+
+src/SessionManager.o: src/SessionManager.cpp.o
+.PHONY : src/SessionManager.o
+
+# target to build an object file
+src/SessionManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o
+.PHONY : src/SessionManager.cpp.o
+
+src/SessionManager.i: src/SessionManager.cpp.i
+.PHONY : src/SessionManager.i
+
+# target to preprocess a source file
+src/SessionManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.i
+.PHONY : src/SessionManager.cpp.i
+
+src/SessionManager.s: src/SessionManager.cpp.s
+.PHONY : src/SessionManager.s
+
+# target to generate assembly for a file
+src/SessionManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.s
+.PHONY : src/SessionManager.cpp.s
+
+src/SettingsManager.o: src/SettingsManager.cpp.o
+.PHONY : src/SettingsManager.o
+
+# target to build an object file
+src/SettingsManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o
+.PHONY : src/SettingsManager.cpp.o
+
+src/SettingsManager.i: src/SettingsManager.cpp.i
+.PHONY : src/SettingsManager.i
+
+# target to preprocess a source file
+src/SettingsManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.i
+.PHONY : src/SettingsManager.cpp.i
+
+src/SettingsManager.s: src/SettingsManager.cpp.s
+.PHONY : src/SettingsManager.s
+
+# target to generate assembly for a file
+src/SettingsManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.s
+.PHONY : src/SettingsManager.cpp.s
+
+src/ThemeManager.o: src/ThemeManager.cpp.o
+.PHONY : src/ThemeManager.o
+
+# target to build an object file
+src/ThemeManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o
+.PHONY : src/ThemeManager.cpp.o
+
+src/ThemeManager.i: src/ThemeManager.cpp.i
+.PHONY : src/ThemeManager.i
+
+# target to preprocess a source file
+src/ThemeManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.i
+.PHONY : src/ThemeManager.cpp.i
+
+src/ThemeManager.s: src/ThemeManager.cpp.s
+.PHONY : src/ThemeManager.s
+
+# target to generate assembly for a file
+src/ThemeManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.s
+.PHONY : src/ThemeManager.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -740,6 +889,7 @@ help:
 	@echo "... core"
 	@echo "... dbus"
 	@echo "... drift-daemon"
+<<<<<<< Updated upstream
 	@echo "... logging"
 	@echo "... process"
 	@echo "... session"
@@ -751,6 +901,32 @@ help:
 	@echo "... yaml-cpp-parse"
 	@echo "... yaml-cpp-read"
 	@echo "... yaml-cpp-sandbox"
+=======
+	@echo "... src/AppLauncher.o"
+	@echo "... src/AppLauncher.i"
+	@echo "... src/AppLauncher.s"
+	@echo "... src/DBusManager.o"
+	@echo "... src/DBusManager.i"
+	@echo "... src/DBusManager.s"
+	@echo "... src/DriftCore.o"
+	@echo "... src/DriftCore.i"
+	@echo "... src/DriftCore.s"
+	@echo "... src/Logger.o"
+	@echo "... src/Logger.i"
+	@echo "... src/Logger.s"
+	@echo "... src/ProcessManager.o"
+	@echo "... src/ProcessManager.i"
+	@echo "... src/ProcessManager.s"
+	@echo "... src/SessionManager.o"
+	@echo "... src/SessionManager.i"
+	@echo "... src/SessionManager.s"
+	@echo "... src/SettingsManager.o"
+	@echo "... src/SettingsManager.i"
+	@echo "... src/SettingsManager.s"
+	@echo "... src/ThemeManager.o"
+	@echo "... src/ThemeManager.i"
+	@echo "... src/ThemeManager.s"
+>>>>>>> Stashed changes
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

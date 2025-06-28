@@ -302,6 +302,7 @@ CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o: \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.h \
+<<<<<<< Updated upstream
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.h \
  /usr/include/qt6/QtCore/qcoreapplication.h \
  /usr/include/qt6/QtCore/qglobal.h /usr/include/assert.h \
@@ -414,3 +415,6 @@ CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o: \
  /usr/include/qt6/QtCore/qnativeinterface.h \
  /usr/include/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/qt6/QtCore/qcoreapplication.h
+=======
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.h
+>>>>>>> Stashed changes

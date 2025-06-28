@@ -86,14 +86,167 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/main.cpp -o CMakeFiles/drift-daemon.dir/src/main.cpp.s
 
+<<<<<<< Updated upstream
 # Object files for target drift-daemon
 drift__daemon_OBJECTS = \
 "CMakeFiles/drift-daemon.dir/src/main.cpp.o"
+=======
+CMakeFiles/drift-daemon.dir/src/utilities.cpp.o: CMakeFiles/drift-daemon.dir/flags.make
+CMakeFiles/drift-daemon.dir/src/utilities.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utilities.cpp
+CMakeFiles/drift-daemon.dir/src/utilities.cpp.o: CMakeFiles/drift-daemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/drift-daemon.dir/src/utilities.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drift-daemon.dir/src/utilities.cpp.o -MF CMakeFiles/drift-daemon.dir/src/utilities.cpp.o.d -o CMakeFiles/drift-daemon.dir/src/utilities.cpp.o -c /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utilities.cpp
+
+CMakeFiles/drift-daemon.dir/src/utilities.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drift-daemon.dir/src/utilities.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utilities.cpp > CMakeFiles/drift-daemon.dir/src/utilities.cpp.i
+
+CMakeFiles/drift-daemon.dir/src/utilities.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/utilities.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utilities.cpp -o CMakeFiles/drift-daemon.dir/src/utilities.cpp.s
+
+CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o: CMakeFiles/drift-daemon.dir/flags.make
+CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DriftCore.cpp
+CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o: CMakeFiles/drift-daemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o -MF CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o.d -o CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o -c /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DriftCore.cpp
+
+CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DriftCore.cpp > CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.i
+
+CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DriftCore.cpp -o CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.s
+
+CMakeFiles/drift-daemon.dir/src/Logger.cpp.o: CMakeFiles/drift-daemon.dir/flags.make
+CMakeFiles/drift-daemon.dir/src/Logger.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/Logger.cpp
+CMakeFiles/drift-daemon.dir/src/Logger.cpp.o: CMakeFiles/drift-daemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/drift-daemon.dir/src/Logger.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drift-daemon.dir/src/Logger.cpp.o -MF CMakeFiles/drift-daemon.dir/src/Logger.cpp.o.d -o CMakeFiles/drift-daemon.dir/src/Logger.cpp.o -c /home/suzie/Projects/HyprDriftDE/drift-daemon/src/Logger.cpp
+
+CMakeFiles/drift-daemon.dir/src/Logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drift-daemon.dir/src/Logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suzie/Projects/HyprDriftDE/drift-daemon/src/Logger.cpp > CMakeFiles/drift-daemon.dir/src/Logger.cpp.i
+
+CMakeFiles/drift-daemon.dir/src/Logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/Logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/Logger.cpp -o CMakeFiles/drift-daemon.dir/src/Logger.cpp.s
+
+CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o: CMakeFiles/drift-daemon.dir/flags.make
+CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DBusManager.cpp
+CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o: CMakeFiles/drift-daemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o -MF CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o.d -o CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o -c /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DBusManager.cpp
+
+CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DBusManager.cpp > CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.i
+
+CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DBusManager.cpp -o CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.s
+
+CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o: CMakeFiles/drift-daemon.dir/flags.make
+CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.cpp
+CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o: CMakeFiles/drift-daemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o -MF CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o.d -o CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o -c /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.cpp
+
+CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.cpp > CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.i
+
+CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.cpp -o CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.s
+
+CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o: CMakeFiles/drift-daemon.dir/flags.make
+CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.cpp
+CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o: CMakeFiles/drift-daemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o -MF CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o.d -o CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o -c /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.cpp
+
+CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.cpp > CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.i
+
+CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.cpp -o CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.s
+
+CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o: CMakeFiles/drift-daemon.dir/flags.make
+CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.cpp
+CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o: CMakeFiles/drift-daemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o -MF CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o.d -o CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o -c /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.cpp
+
+CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.cpp > CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.i
+
+CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.cpp -o CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.s
+
+CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o: CMakeFiles/drift-daemon.dir/flags.make
+CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.cpp
+CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o: CMakeFiles/drift-daemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o -MF CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o.d -o CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o -c /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.cpp
+
+CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.cpp > CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.i
+
+CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.cpp -o CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.s
+
+CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o: CMakeFiles/drift-daemon.dir/flags.make
+CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.cpp
+CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o: CMakeFiles/drift-daemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o -MF CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o.d -o CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o -c /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.cpp
+
+CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.cpp > CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.i
+
+CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.cpp -o CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.s
+
+# Object files for target drift-daemon
+drift__daemon_OBJECTS = \
+"CMakeFiles/drift-daemon.dir/src/main.cpp.o" \
+"CMakeFiles/drift-daemon.dir/src/utilities.cpp.o" \
+"CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o" \
+"CMakeFiles/drift-daemon.dir/src/Logger.cpp.o" \
+"CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o" \
+"CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o" \
+"CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o" \
+"CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o" \
+"CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o" \
+"CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o"
+>>>>>>> Stashed changes
 
 # External object files for target drift-daemon
 drift__daemon_EXTERNAL_OBJECTS =
 
 drift-daemon: CMakeFiles/drift-daemon.dir/src/main.cpp.o
+<<<<<<< Updated upstream
+=======
+drift-daemon: CMakeFiles/drift-daemon.dir/src/utilities.cpp.o
+drift-daemon: CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o
+drift-daemon: CMakeFiles/drift-daemon.dir/src/Logger.cpp.o
+drift-daemon: CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o
+drift-daemon: CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o
+drift-daemon: CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o
+drift-daemon: CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o
+drift-daemon: CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o
+drift-daemon: CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o
+>>>>>>> Stashed changes
 drift-daemon: CMakeFiles/drift-daemon.dir/build.make
 drift-daemon: CMakeFiles/drift-daemon.dir/compiler_depend.ts
 drift-daemon: src/core/libcore.a
@@ -109,7 +262,11 @@ drift-daemon: /usr/lib/libQt6Core.so.6.9.1
 drift-daemon: _deps/yaml-cpp-build/libyaml-cpp.a
 drift-daemon: src/utils/libutils.a
 drift-daemon: CMakeFiles/drift-daemon.dir/link.txt
+<<<<<<< Updated upstream
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable drift-daemon"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable drift-daemon"
+>>>>>>> Stashed changes
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/drift-daemon.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

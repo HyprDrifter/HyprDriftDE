@@ -109,6 +109,7 @@ CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o: \
  /usr/include/c++/15.1.1/cstddef \
  /usr/include/c++/15.1.1/bits/uses_allocator.h \
  /usr/include/c++/15.1.1/bits/uses_allocator_args.h \
+<<<<<<< Updated upstream
  /usr/include/c++/15.1.1/tuple /usr/include/c++/15.1.1/list \
  /usr/include/c++/15.1.1/bits/stl_list.h \
  /usr/include/c++/15.1.1/bits/allocated_ptr.h \
@@ -307,5 +308,8 @@ CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o: \
  /usr/include/c++/15.1.1/bits/quoted_string.h \
  /usr/include/c++/15.1.1/codecvt /usr/include/c++/15.1.1/bits/fs_dir.h \
  /usr/include/c++/15.1.1/bits/fs_ops.h /usr/include/pwd.h \
+=======
+ /usr/include/c++/15.1.1/tuple \
+>>>>>>> Stashed changes
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utilities.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.h

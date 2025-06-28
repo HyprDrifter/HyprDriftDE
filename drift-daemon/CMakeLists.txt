@@ -32,6 +32,18 @@ add_subdirectory(src/wallpaper)
 # Main executable
 add_executable(drift-daemon
     src/main.cpp
+<<<<<<< Updated upstream
+=======
+    src/utilities.cpp
+    src/DriftCore.cpp
+    src/Logger.cpp
+    src/DBusManager.cpp
+    src/ProcessManager.cpp
+    src/SessionManager.cpp
+    src/SettingsManager.cpp
+    src/ThemeManager.cpp
+    src/AppLauncher.cpp
+>>>>>>> Stashed changes
 )
 
 # Link modules

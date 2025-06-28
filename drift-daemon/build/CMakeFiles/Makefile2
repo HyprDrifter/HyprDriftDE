@@ -403,12 +403,20 @@ CMakeFiles/drift-daemon.dir/all: src/apps/CMakeFiles/apps.dir/all
 CMakeFiles/drift-daemon.dir/all: src/wallpaper/CMakeFiles/wallpaper.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/build
+<<<<<<< Updated upstream
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=7,8 "Built target drift-daemon"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target drift-daemon"
+>>>>>>> Stashed changes
 .PHONY : CMakeFiles/drift-daemon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/drift-daemon.dir/rule: cmake_check_build_system
+<<<<<<< Updated upstream
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 55
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 11
+>>>>>>> Stashed changes
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/drift-daemon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : CMakeFiles/drift-daemon.dir/rule
@@ -420,7 +428,11 @@ drift-daemon: CMakeFiles/drift-daemon.dir/rule
 # codegen rule for target.
 CMakeFiles/drift-daemon.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/codegen
+<<<<<<< Updated upstream
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=7,8 "Finished codegen for target drift-daemon"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target drift-daemon"
+>>>>>>> Stashed changes
 .PHONY : CMakeFiles/drift-daemon.dir/codegen
 
 # clean rule for target.

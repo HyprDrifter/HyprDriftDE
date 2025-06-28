@@ -8,6 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+<<<<<<< Updated upstream
+=======
+  "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.cpp" "CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o" "gcc" "CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o.d"
+  "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/DBusManager.cpp" "CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o" "gcc" "CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o.d"
+  "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/DriftCore.cpp" "CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o" "gcc" "CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o.d"
+  "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/Logger.cpp" "CMakeFiles/drift-daemon.dir/src/Logger.cpp.o" "gcc" "CMakeFiles/drift-daemon.dir/src/Logger.cpp.o.d"
+  "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.cpp" "CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o" "gcc" "CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o.d"
+  "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.cpp" "CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o" "gcc" "CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o.d"
+  "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.cpp" "CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o" "gcc" "CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o.d"
+  "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.cpp" "CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o" "gcc" "CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o.d"
+>>>>>>> Stashed changes
   "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/main.cpp" "CMakeFiles/drift-daemon.dir/src/main.cpp.o" "gcc" "CMakeFiles/drift-daemon.dir/src/main.cpp.o.d"
   "" "drift-daemon" "gcc" "CMakeFiles/drift-daemon.dir/link.d"
   )

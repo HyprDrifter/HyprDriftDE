@@ -209,6 +209,7 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.o: \
  /usr/include/c++/15.1.1/bits/out_ptr.h \
  /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
  /usr/include/c++/15.1.1/pstl/execution_defs.h \
+<<<<<<< Updated upstream
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/logging/Logger.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.h \
@@ -305,6 +306,16 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.o: \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/process/ProcessManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/theme/ThemeManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/wallpaper/WallpaperManager.h \
+=======
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utilities.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/Logger.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DBusManager.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.h \
+>>>>>>> Stashed changes
  /usr/include/qt6/QtCore/QCoreApplication \
  /usr/include/qt6/QtCore/qcoreapplication.h \
  /usr/include/qt6/QtCore/qglobal.h /usr/include/assert.h \
