@@ -215,6 +215,8 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.o: \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.h \
  /usr/include/qt6/QtCore/QCoreApplication \
  /usr/include/qt6/QtCore/qcoreapplication.h \
  /usr/include/qt6/QtCore/qglobal.h /usr/include/c++/15.1.1/utility \

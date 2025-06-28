@@ -9,6 +9,9 @@
 #include "SettingsManager.h"
 #include "SessionManager.h"
 #include "AppLauncher.h"
+#include "SessionManager.h"
+#include "ProcessManager.h"
+#include "ThemeManager.h"
 
 class DriftCore
 {
@@ -21,7 +24,12 @@ public:
 private:
     
     bool coreRunning;
+    std::unique_ptr<SettingsManager> settingsManager;
     std::unique_ptr<Logger> logger;
+    std::unique_ptr<SessionManager> sessionManager;
+    std::unique_ptr<DBusManager> dBusManager;
+    std::unique_ptr<ProcessManager> processManager;
+    std::unique_ptr<ThemeManager> themeManager;
 
     void core();
     

@@ -213,4 +213,6 @@ CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o: \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DBusManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.h \
- /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.h
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.h
