@@ -1,0 +1,2 @@
+/usr/bin/ar qc libwallpaper.a CMakeFiles/wallpaper.dir/WallpaperManager.cpp.o
+/usr/bin/ranlib libwallpaper.a
