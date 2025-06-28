@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/suzie/Projects/HyprDriftDE/drift-daemon/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

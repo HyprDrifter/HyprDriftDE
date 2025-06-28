@@ -1,0 +1,3 @@
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles/drift-daemon.dir
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles/edit_cache.dir
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles/rebuild_cache.dir
