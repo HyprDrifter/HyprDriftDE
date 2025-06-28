@@ -3,16 +3,19 @@ drift-daemon: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
   CMakeFiles/drift-daemon.dir/src/main.cpp.o \
-  CMakeFiles/drift-daemon.dir/src/utilities.cpp.o \
-  CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o \
-  CMakeFiles/drift-daemon.dir/src/Logger.cpp.o \
-  CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o \
-  CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o \
-  CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o \
-  CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o \
-  CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o \
-  CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o \
+  src/core/libcore.a \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libutil.a \
+  src/dbus/libdbus.a \
+  src/settings/libsettings.a \
+  src/logging/liblogging.a \
+  src/theme/libtheme.a \
+  src/process/libprocess.a \
+  src/session/libsession.a \
+  src/apps/libapps.a \
+  src/wallpaper/libwallpaper.a \
   /usr/lib/libQt6Core.so.6.9.1 \
+  _deps/yaml-cpp-build/libyaml-cpp.a \
+  src/utils/libutils.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
@@ -66,25 +69,31 @@ drift-daemon: \
 
 CMakeFiles/drift-daemon.dir/src/main.cpp.o:
 
-CMakeFiles/drift-daemon.dir/src/utilities.cpp.o:
+src/core/libcore.a:
 
-CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libutil.a:
 
-CMakeFiles/drift-daemon.dir/src/Logger.cpp.o:
+src/dbus/libdbus.a:
 
-CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o:
+src/settings/libsettings.a:
 
-CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o:
+src/logging/liblogging.a:
 
-CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o:
+src/theme/libtheme.a:
 
-CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o:
+src/process/libprocess.a:
 
-CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o:
+src/session/libsession.a:
 
-CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o:
+src/apps/libapps.a:
+
+src/wallpaper/libwallpaper.a:
 
 /usr/lib/libQt6Core.so.6.9.1:
+
+_deps/yaml-cpp-build/libyaml-cpp.a:
+
+src/utils/libutils.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so:
 

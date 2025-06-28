@@ -108,11 +108,11 @@ Scope {
 
     // 💻 Widgets
     property bool nerdFontAvailable : true
-    property int cpuRefreshRate : 500
+    property int cpuRefreshRate : 100
     property string cpuIcon : nerdFontAvailable ? "" : "CPU"
-    property int ramRefreshRate : 500
+    property int ramRefreshRate : 100
     property string ramIcon : nerdFontAvailable ? "" : "RAM"
-    property int gpuRefreshRate : 500
+    property int gpuRefreshRate : 100
     property string gpuIcon : nerdFontAvailable ? "󰍹" : "GPU"
 
     // 🚀 Launcher
