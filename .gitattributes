@@ -35,6 +35,12 @@
 
 # Exclude theme definitions from language stats
 themes/**        linguist-vendored
+drift-daemon/build/.qt/**   linguist-vendored
+drift-daemon/build/CMakeFiles/**    linguist-vendored
+drift-daemon/build/cmake_install.cmake    linguist-vendored
+drift-daemon/build/CMakeCache.txt    linguist-vendored
+drift-daemon/build/drift-daemon    linguist-vendored
+drift-daemon/build/Makefile    linguist-vendored
 
 # Exclude Make and CMake build scripts from stats
 Makefile         linguist-vendored
