@@ -20,11 +20,7 @@ fi
 echo "[+] Creating required directories"
 install -d /usr/bin
 install -d /usr/share/wayland-sessions
-install -d /etc/hyprdrift/quickdrift/
-install -d /etc/hyprdrift/driftdaemon/
-install -d /etc/hyprdrift/config/
-install -d /etc/hyprdrift/config/quickdrift/
-install -d /etc/hyprdrift/config/driftdaemon/
+install -d /etc/xdg/hyprdrift/quickdrift-shell/
 
 echo "-------------------------------"
 echo "[+] Installing dependencies"
@@ -47,11 +43,6 @@ make -C drift-daemon/build
 echo "-------------------------------"
 echo "[+] Installing backend daemon"
 install -Dm755 drift-daemon/build/drift-daemon /usr/bin/drift-daemon
-
-echo "-------------------------------"
-echo "[+] Installing configs"
-cp -rf config/drift-config.yaml /etc/hyprdrift/config/quickdrift/drift-config.yaml
-
 echo "-------------------------------"
 echo "[+] Installing quickdrift.service"
 install -Dm644 system/services/quickdrift.service /etc/xdg/systemd/user/quickdrift.service
@@ -59,7 +50,7 @@ install -Dm644 system/services/quickdrift.service /etc/xdg/systemd/user/quickdri
 
 echo "-------------------------------"
 echo "[+] Installing quickdrift-shell QML config"
-cp -rf quickdrift-shell/* /etc/hyprdrift/quickdrift/
+cp -rf quickdrift-shell/* /etc/xdg/hyprdrift/quickdrift-shell/
 
 echo "-------------------------------"
 echo "[+] Installing Quickshell dev loop"
