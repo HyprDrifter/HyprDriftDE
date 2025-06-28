@@ -1,2 +1,0 @@
-/usr/bin/ar qc libdbus.a CMakeFiles/dbus.dir/DBusManager.cpp.o
-/usr/bin/ranlib libdbus.a

@@ -3,18 +3,6 @@ drift-daemon: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
   CMakeFiles/drift-daemon.dir/src/main.cpp.o \
-<<<<<<< Updated upstream
-  src/core/libcore.a \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libutil.a \
-  src/dbus/libdbus.a \
-  src/settings/libsettings.a \
-  src/logging/liblogging.a \
-  src/theme/libtheme.a \
-  src/process/libprocess.a \
-  src/session/libsession.a \
-  src/apps/libapps.a \
-  src/wallpaper/libwallpaper.a \
-=======
   CMakeFiles/drift-daemon.dir/src/utilities.cpp.o \
   CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o \
   CMakeFiles/drift-daemon.dir/src/Logger.cpp.o \
@@ -24,10 +12,7 @@ drift-daemon: \
   CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o \
   CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o \
   CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o \
->>>>>>> Stashed changes
   /usr/lib/libQt6Core.so.6.9.1 \
-  _deps/yaml-cpp-build/libyaml-cpp.a \
-  src/utils/libutils.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
@@ -81,25 +66,11 @@ drift-daemon: \
 
 CMakeFiles/drift-daemon.dir/src/main.cpp.o:
 
-src/core/libcore.a:
+CMakeFiles/drift-daemon.dir/src/utilities.cpp.o:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libutil.a:
+CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o:
 
-src/dbus/libdbus.a:
-
-src/settings/libsettings.a:
-
-src/logging/liblogging.a:
-
-src/theme/libtheme.a:
-
-src/process/libprocess.a:
-
-src/session/libsession.a:
-
-src/apps/libapps.a:
-
-src/wallpaper/libwallpaper.a:
+CMakeFiles/drift-daemon.dir/src/Logger.cpp.o:
 
 CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o:
 
@@ -114,10 +85,6 @@ CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o:
 CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o:
 
 /usr/lib/libQt6Core.so.6.9.1:
-
-_deps/yaml-cpp-build/libyaml-cpp.a:
-
-src/utils/libutils.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so:
 
