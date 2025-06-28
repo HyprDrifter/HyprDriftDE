@@ -85,12 +85,12 @@ clean: CMakeFiles/drift-daemon.dir/clean
 CMakeFiles/drift-daemon.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target drift-daemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target drift-daemon"
 .PHONY : CMakeFiles/drift-daemon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/drift-daemon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/drift-daemon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : CMakeFiles/drift-daemon.dir/rule
@@ -102,7 +102,7 @@ drift-daemon: CMakeFiles/drift-daemon.dir/rule
 # codegen rule for target.
 CMakeFiles/drift-daemon.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target drift-daemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target drift-daemon"
 .PHONY : CMakeFiles/drift-daemon.dir/codegen
 
 # clean rule for target.

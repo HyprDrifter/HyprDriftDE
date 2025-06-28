@@ -6,6 +6,12 @@ drift-daemon: \
   CMakeFiles/drift-daemon.dir/src/utilities.cpp.o \
   CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o \
   CMakeFiles/drift-daemon.dir/src/Logger.cpp.o \
+  CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o \
+  CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o \
+  CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o \
+  CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o \
+  CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o \
+  CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o \
   /usr/lib/libQt6Core.so.6.9.1 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
@@ -65,6 +71,18 @@ CMakeFiles/drift-daemon.dir/src/utilities.cpp.o:
 CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o:
 
 CMakeFiles/drift-daemon.dir/src/Logger.cpp.o:
+
+CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o:
+
+CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o:
+
+CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o:
+
+CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o:
+
+CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o:
+
+CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o:
 
 /usr/lib/libQt6Core.so.6.9.1:
 

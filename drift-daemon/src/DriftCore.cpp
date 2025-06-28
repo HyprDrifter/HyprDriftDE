@@ -24,12 +24,18 @@ void DriftCore::start()
 {
     writeLine("Drift Core Is launching....");
     coreRunning = true;
+    writeLine("-----------------------------");
     writeLine("Launching Settings Manager...");
+    settingsManager->start();
     writeLine("Launching Logger...");
     logger->start();
     writeLine("Launching DBus Manager...");
+    dBusManager->start();
     writeLine("Launching Process Manager...");
+    processManager->start();
     writeLine("Launching Theme Manager...");
+    themeManager->start();
+    writeLine("-----------------------------");
     writeLine("Drift Core is online");
     writeLine("----------------------------------");
     core();

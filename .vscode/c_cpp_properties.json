@@ -5,13 +5,14 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/usr/include/qt6/QtCore",
+                "/usr/include/qt",
                 "/usr/include/qt6"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/g++",
-            "cStandard": "c23",
-            "cppStandard": "c++23",
-            "intelliSenseMode": "linux-gcc-x64"
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64"
         }
     ],
     "version": 4

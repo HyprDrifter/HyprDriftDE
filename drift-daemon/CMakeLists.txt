@@ -10,6 +10,12 @@ add_executable(drift-daemon
     src/utilities.cpp
     src/DriftCore.cpp
     src/Logger.cpp
+    src/DBusManager.cpp
+    src/ProcessManager.cpp
+    src/SessionManager.cpp
+    src/SettingsManager.cpp
+    src/ThemeManager.cpp
+    src/AppLauncher.cpp
 )
 
 find_package(Qt6 REQUIRED COMPONENTS Core)
