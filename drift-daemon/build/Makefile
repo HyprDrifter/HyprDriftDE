@@ -113,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -129,197 +130,551 @@ drift-daemon/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/build
 .PHONY : drift-daemon/fast
 
-src/AppLauncher.o: src/AppLauncher.cpp.o
-.PHONY : src/AppLauncher.o
+#=============================================================================
+# Target rules for targets named Experimental
 
-# target to build an object file
-src/AppLauncher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.o
-.PHONY : src/AppLauncher.cpp.o
+# Build rule for target.
+Experimental: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Experimental
+.PHONY : Experimental
 
-src/AppLauncher.i: src/AppLauncher.cpp.i
-.PHONY : src/AppLauncher.i
+# fast build rule for target.
+Experimental/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/Experimental.dir/build.make _deps/yaml-cpp-build/CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
 
-# target to preprocess a source file
-src/AppLauncher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.i
-.PHONY : src/AppLauncher.cpp.i
+#=============================================================================
+# Target rules for targets named Nightly
 
-src/AppLauncher.s: src/AppLauncher.cpp.s
-.PHONY : src/AppLauncher.s
+# Build rule for target.
+Nightly: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Nightly
+.PHONY : Nightly
 
-# target to generate assembly for a file
-src/AppLauncher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/AppLauncher.cpp.s
-.PHONY : src/AppLauncher.cpp.s
+# fast build rule for target.
+Nightly/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/Nightly.dir/build.make _deps/yaml-cpp-build/CMakeFiles/Nightly.dir/build
+.PHONY : Nightly/fast
 
-src/DBusManager.o: src/DBusManager.cpp.o
-.PHONY : src/DBusManager.o
+#=============================================================================
+# Target rules for targets named Continuous
 
-# target to build an object file
-src/DBusManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.o
-.PHONY : src/DBusManager.cpp.o
+# Build rule for target.
+Continuous: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Continuous
+.PHONY : Continuous
 
-src/DBusManager.i: src/DBusManager.cpp.i
-.PHONY : src/DBusManager.i
+# fast build rule for target.
+Continuous/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/Continuous.dir/build.make _deps/yaml-cpp-build/CMakeFiles/Continuous.dir/build
+.PHONY : Continuous/fast
 
-# target to preprocess a source file
-src/DBusManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.i
-.PHONY : src/DBusManager.cpp.i
+#=============================================================================
+# Target rules for targets named NightlyMemoryCheck
 
-src/DBusManager.s: src/DBusManager.cpp.s
-.PHONY : src/DBusManager.s
+# Build rule for target.
+NightlyMemoryCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemoryCheck
+.PHONY : NightlyMemoryCheck
 
-# target to generate assembly for a file
-src/DBusManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/DBusManager.cpp.s
-.PHONY : src/DBusManager.cpp.s
+# fast build rule for target.
+NightlyMemoryCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyMemoryCheck.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyMemoryCheck.dir/build
+.PHONY : NightlyMemoryCheck/fast
 
-src/DriftCore.o: src/DriftCore.cpp.o
-.PHONY : src/DriftCore.o
+#=============================================================================
+# Target rules for targets named NightlyStart
 
-# target to build an object file
-src/DriftCore.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o
-.PHONY : src/DriftCore.cpp.o
+# Build rule for target.
+NightlyStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyStart
+.PHONY : NightlyStart
 
-src/DriftCore.i: src/DriftCore.cpp.i
-.PHONY : src/DriftCore.i
+# fast build rule for target.
+NightlyStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyStart.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyStart.dir/build
+.PHONY : NightlyStart/fast
 
-# target to preprocess a source file
-src/DriftCore.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.i
-.PHONY : src/DriftCore.cpp.i
+#=============================================================================
+# Target rules for targets named NightlyUpdate
 
-src/DriftCore.s: src/DriftCore.cpp.s
-.PHONY : src/DriftCore.s
+# Build rule for target.
+NightlyUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyUpdate
+.PHONY : NightlyUpdate
 
-# target to generate assembly for a file
-src/DriftCore.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.s
-.PHONY : src/DriftCore.cpp.s
+# fast build rule for target.
+NightlyUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyUpdate.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyUpdate.dir/build
+.PHONY : NightlyUpdate/fast
 
-src/Logger.o: src/Logger.cpp.o
-.PHONY : src/Logger.o
+#=============================================================================
+# Target rules for targets named NightlyConfigure
 
-# target to build an object file
-src/Logger.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/Logger.cpp.o
-.PHONY : src/Logger.cpp.o
+# Build rule for target.
+NightlyConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyConfigure
+.PHONY : NightlyConfigure
 
-src/Logger.i: src/Logger.cpp.i
-.PHONY : src/Logger.i
+# fast build rule for target.
+NightlyConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyConfigure.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
 
-# target to preprocess a source file
-src/Logger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/Logger.cpp.i
-.PHONY : src/Logger.cpp.i
+#=============================================================================
+# Target rules for targets named NightlyBuild
 
-src/Logger.s: src/Logger.cpp.s
-.PHONY : src/Logger.s
+# Build rule for target.
+NightlyBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyBuild
+.PHONY : NightlyBuild
 
-# target to generate assembly for a file
-src/Logger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/Logger.cpp.s
-.PHONY : src/Logger.cpp.s
+# fast build rule for target.
+NightlyBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyBuild.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
 
-src/ProcessManager.o: src/ProcessManager.cpp.o
-.PHONY : src/ProcessManager.o
+#=============================================================================
+# Target rules for targets named NightlyTest
 
-# target to build an object file
-src/ProcessManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.o
-.PHONY : src/ProcessManager.cpp.o
+# Build rule for target.
+NightlyTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyTest
+.PHONY : NightlyTest
 
-src/ProcessManager.i: src/ProcessManager.cpp.i
-.PHONY : src/ProcessManager.i
+# fast build rule for target.
+NightlyTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyTest.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyTest.dir/build
+.PHONY : NightlyTest/fast
 
-# target to preprocess a source file
-src/ProcessManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.i
-.PHONY : src/ProcessManager.cpp.i
+#=============================================================================
+# Target rules for targets named NightlyCoverage
 
-src/ProcessManager.s: src/ProcessManager.cpp.s
-.PHONY : src/ProcessManager.s
+# Build rule for target.
+NightlyCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyCoverage
+.PHONY : NightlyCoverage
 
-# target to generate assembly for a file
-src/ProcessManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ProcessManager.cpp.s
-.PHONY : src/ProcessManager.cpp.s
+# fast build rule for target.
+NightlyCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyCoverage.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyCoverage.dir/build
+.PHONY : NightlyCoverage/fast
 
-src/SessionManager.o: src/SessionManager.cpp.o
-.PHONY : src/SessionManager.o
+#=============================================================================
+# Target rules for targets named NightlyMemCheck
 
-# target to build an object file
-src/SessionManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.o
-.PHONY : src/SessionManager.cpp.o
+# Build rule for target.
+NightlyMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlyMemCheck
+.PHONY : NightlyMemCheck
 
-src/SessionManager.i: src/SessionManager.cpp.i
-.PHONY : src/SessionManager.i
+# fast build rule for target.
+NightlyMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlyMemCheck.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlyMemCheck.dir/build
+.PHONY : NightlyMemCheck/fast
 
-# target to preprocess a source file
-src/SessionManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.i
-.PHONY : src/SessionManager.cpp.i
+#=============================================================================
+# Target rules for targets named NightlySubmit
 
-src/SessionManager.s: src/SessionManager.cpp.s
-.PHONY : src/SessionManager.s
+# Build rule for target.
+NightlySubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NightlySubmit
+.PHONY : NightlySubmit
 
-# target to generate assembly for a file
-src/SessionManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SessionManager.cpp.s
-.PHONY : src/SessionManager.cpp.s
+# fast build rule for target.
+NightlySubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/NightlySubmit.dir/build.make _deps/yaml-cpp-build/CMakeFiles/NightlySubmit.dir/build
+.PHONY : NightlySubmit/fast
 
-src/SettingsManager.o: src/SettingsManager.cpp.o
-.PHONY : src/SettingsManager.o
+#=============================================================================
+# Target rules for targets named ExperimentalStart
 
-# target to build an object file
-src/SettingsManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.o
-.PHONY : src/SettingsManager.cpp.o
+# Build rule for target.
+ExperimentalStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalStart
+.PHONY : ExperimentalStart
 
-src/SettingsManager.i: src/SettingsManager.cpp.i
-.PHONY : src/SettingsManager.i
+# fast build rule for target.
+ExperimentalStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalStart.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
 
-# target to preprocess a source file
-src/SettingsManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.i
-.PHONY : src/SettingsManager.cpp.i
+#=============================================================================
+# Target rules for targets named ExperimentalUpdate
 
-src/SettingsManager.s: src/SettingsManager.cpp.s
-.PHONY : src/SettingsManager.s
+# Build rule for target.
+ExperimentalUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalUpdate
+.PHONY : ExperimentalUpdate
 
-# target to generate assembly for a file
-src/SettingsManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/SettingsManager.cpp.s
-.PHONY : src/SettingsManager.cpp.s
+# fast build rule for target.
+ExperimentalUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalUpdate.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalUpdate.dir/build
+.PHONY : ExperimentalUpdate/fast
 
-src/ThemeManager.o: src/ThemeManager.cpp.o
-.PHONY : src/ThemeManager.o
+#=============================================================================
+# Target rules for targets named ExperimentalConfigure
 
-# target to build an object file
-src/ThemeManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.o
-.PHONY : src/ThemeManager.cpp.o
+# Build rule for target.
+ExperimentalConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalConfigure
+.PHONY : ExperimentalConfigure
 
-src/ThemeManager.i: src/ThemeManager.cpp.i
-.PHONY : src/ThemeManager.i
+# fast build rule for target.
+ExperimentalConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalConfigure.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalConfigure.dir/build
+.PHONY : ExperimentalConfigure/fast
 
-# target to preprocess a source file
-src/ThemeManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.i
-.PHONY : src/ThemeManager.cpp.i
+#=============================================================================
+# Target rules for targets named ExperimentalBuild
 
-src/ThemeManager.s: src/ThemeManager.cpp.s
-.PHONY : src/ThemeManager.s
+# Build rule for target.
+ExperimentalBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalBuild
+.PHONY : ExperimentalBuild
 
-# target to generate assembly for a file
-src/ThemeManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/ThemeManager.cpp.s
-.PHONY : src/ThemeManager.cpp.s
+# fast build rule for target.
+ExperimentalBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalBuild.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalBuild.dir/build
+.PHONY : ExperimentalBuild/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalTest
+
+# Build rule for target.
+ExperimentalTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalTest
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalTest.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalCoverage
+
+# Build rule for target.
+ExperimentalCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalCoverage
+.PHONY : ExperimentalCoverage
+
+# fast build rule for target.
+ExperimentalCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalCoverage.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalCoverage.dir/build
+.PHONY : ExperimentalCoverage/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalMemCheck
+
+# Build rule for target.
+ExperimentalMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalMemCheck
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalMemCheck.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ExperimentalSubmit
+
+# Build rule for target.
+ExperimentalSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExperimentalSubmit
+.PHONY : ExperimentalSubmit
+
+# fast build rule for target.
+ExperimentalSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ExperimentalSubmit.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ExperimentalSubmit.dir/build
+.PHONY : ExperimentalSubmit/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousStart
+
+# Build rule for target.
+ContinuousStart: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousStart
+.PHONY : ContinuousStart
+
+# fast build rule for target.
+ContinuousStart/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousStart.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousStart.dir/build
+.PHONY : ContinuousStart/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousUpdate
+
+# Build rule for target.
+ContinuousUpdate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousUpdate
+.PHONY : ContinuousUpdate
+
+# fast build rule for target.
+ContinuousUpdate/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousUpdate.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousUpdate.dir/build
+.PHONY : ContinuousUpdate/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousConfigure
+
+# Build rule for target.
+ContinuousConfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousConfigure
+.PHONY : ContinuousConfigure
+
+# fast build rule for target.
+ContinuousConfigure/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousConfigure.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousConfigure.dir/build
+.PHONY : ContinuousConfigure/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousBuild
+
+# Build rule for target.
+ContinuousBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousBuild
+.PHONY : ContinuousBuild
+
+# fast build rule for target.
+ContinuousBuild/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousBuild.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousBuild.dir/build
+.PHONY : ContinuousBuild/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousTest
+
+# Build rule for target.
+ContinuousTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousTest
+.PHONY : ContinuousTest
+
+# fast build rule for target.
+ContinuousTest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousTest.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousTest.dir/build
+.PHONY : ContinuousTest/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousCoverage
+
+# Build rule for target.
+ContinuousCoverage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousCoverage
+.PHONY : ContinuousCoverage
+
+# fast build rule for target.
+ContinuousCoverage/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousCoverage.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousCoverage.dir/build
+.PHONY : ContinuousCoverage/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousMemCheck
+
+# Build rule for target.
+ContinuousMemCheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousMemCheck
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousMemCheck.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+#=============================================================================
+# Target rules for targets named ContinuousSubmit
+
+# Build rule for target.
+ContinuousSubmit: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContinuousSubmit
+.PHONY : ContinuousSubmit
+
+# fast build rule for target.
+ContinuousSubmit/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/yaml-cpp-build/CMakeFiles/ContinuousSubmit.dir/build
+.PHONY : ContinuousSubmit/fast
+
+#=============================================================================
+# Target rules for targets named yaml-cpp
+
+# Build rule for target.
+yaml-cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp
+.PHONY : yaml-cpp
+
+# fast build rule for target.
+yaml-cpp/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build
+.PHONY : yaml-cpp/fast
+
+#=============================================================================
+# Target rules for targets named yaml-cpp-sandbox
+
+# Build rule for target.
+yaml-cpp-sandbox: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp-sandbox
+.PHONY : yaml-cpp-sandbox
+
+# fast build rule for target.
+yaml-cpp-sandbox/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build
+.PHONY : yaml-cpp-sandbox/fast
+
+#=============================================================================
+# Target rules for targets named yaml-cpp-parse
+
+# Build rule for target.
+yaml-cpp-parse: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp-parse
+.PHONY : yaml-cpp-parse
+
+# fast build rule for target.
+yaml-cpp-parse/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build
+.PHONY : yaml-cpp-parse/fast
+
+#=============================================================================
+# Target rules for targets named yaml-cpp-read
+
+# Build rule for target.
+yaml-cpp-read: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 yaml-cpp-read
+.PHONY : yaml-cpp-read
+
+# fast build rule for target.
+yaml-cpp-read/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build
+.PHONY : yaml-cpp-read/fast
+
+#=============================================================================
+# Target rules for targets named core
+
+# Build rule for target.
+core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core
+.PHONY : core
+
+# fast build rule for target.
+core/fast:
+	$(MAKE) $(MAKESILENT) -f src/core/CMakeFiles/core.dir/build.make src/core/CMakeFiles/core.dir/build
+.PHONY : core/fast
+
+#=============================================================================
+# Target rules for targets named utils
+
+# Build rule for target.
+utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 utils
+.PHONY : utils
+
+# fast build rule for target.
+utils/fast:
+	$(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/build
+.PHONY : utils/fast
+
+#=============================================================================
+# Target rules for targets named dbus
+
+# Build rule for target.
+dbus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dbus
+.PHONY : dbus
+
+# fast build rule for target.
+dbus/fast:
+	$(MAKE) $(MAKESILENT) -f src/dbus/CMakeFiles/dbus.dir/build.make src/dbus/CMakeFiles/dbus.dir/build
+.PHONY : dbus/fast
+
+#=============================================================================
+# Target rules for targets named settings
+
+# Build rule for target.
+settings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 settings
+.PHONY : settings
+
+# fast build rule for target.
+settings/fast:
+	$(MAKE) $(MAKESILENT) -f src/settings/CMakeFiles/settings.dir/build.make src/settings/CMakeFiles/settings.dir/build
+.PHONY : settings/fast
+
+#=============================================================================
+# Target rules for targets named logging
+
+# Build rule for target.
+logging: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 logging
+.PHONY : logging
+
+# fast build rule for target.
+logging/fast:
+	$(MAKE) $(MAKESILENT) -f src/logging/CMakeFiles/logging.dir/build.make src/logging/CMakeFiles/logging.dir/build
+.PHONY : logging/fast
+
+#=============================================================================
+# Target rules for targets named theme
+
+# Build rule for target.
+theme: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 theme
+.PHONY : theme
+
+# fast build rule for target.
+theme/fast:
+	$(MAKE) $(MAKESILENT) -f src/theme/CMakeFiles/theme.dir/build.make src/theme/CMakeFiles/theme.dir/build
+.PHONY : theme/fast
+
+#=============================================================================
+# Target rules for targets named process
+
+# Build rule for target.
+process: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 process
+.PHONY : process
+
+# fast build rule for target.
+process/fast:
+	$(MAKE) $(MAKESILENT) -f src/process/CMakeFiles/process.dir/build.make src/process/CMakeFiles/process.dir/build
+.PHONY : process/fast
+
+#=============================================================================
+# Target rules for targets named session
+
+# Build rule for target.
+session: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 session
+.PHONY : session
+
+# fast build rule for target.
+session/fast:
+	$(MAKE) $(MAKESILENT) -f src/session/CMakeFiles/session.dir/build.make src/session/CMakeFiles/session.dir/build
+.PHONY : session/fast
+
+#=============================================================================
+# Target rules for targets named apps
+
+# Build rule for target.
+apps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 apps
+.PHONY : apps
+
+# fast build rule for target.
+apps/fast:
+	$(MAKE) $(MAKESILENT) -f src/apps/CMakeFiles/apps.dir/build.make src/apps/CMakeFiles/apps.dir/build
+.PHONY : apps/fast
+
+#=============================================================================
+# Target rules for targets named wallpaper
+
+# Build rule for target.
+wallpaper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wallpaper
+.PHONY : wallpaper
+
+# fast build rule for target.
+wallpaper/fast:
+	$(MAKE) $(MAKESILENT) -f src/wallpaper/CMakeFiles/wallpaper.dir/build.make src/wallpaper/CMakeFiles/wallpaper.dir/build
+.PHONY : wallpaper/fast
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -345,30 +700,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/utilities.o: src/utilities.cpp.o
-.PHONY : src/utilities.o
-
-# target to build an object file
-src/utilities.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/utilities.cpp.o
-.PHONY : src/utilities.cpp.o
-
-src/utilities.i: src/utilities.cpp.i
-.PHONY : src/utilities.i
-
-# target to preprocess a source file
-src/utilities.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/utilities.cpp.i
-.PHONY : src/utilities.cpp.i
-
-src/utilities.s: src/utilities.cpp.s
-.PHONY : src/utilities.s
-
-# target to generate assembly for a file
-src/utilities.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/drift-daemon.dir/build.make CMakeFiles/drift-daemon.dir/src/utilities.cpp.s
-.PHONY : src/utilities.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -377,37 +708,52 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Continuous"
+	@echo "... ContinuousBuild"
+	@echo "... ContinuousConfigure"
+	@echo "... ContinuousCoverage"
+	@echo "... ContinuousMemCheck"
+	@echo "... ContinuousStart"
+	@echo "... ContinuousSubmit"
+	@echo "... ContinuousTest"
+	@echo "... ContinuousUpdate"
+	@echo "... Experimental"
+	@echo "... ExperimentalBuild"
+	@echo "... ExperimentalConfigure"
+	@echo "... ExperimentalCoverage"
+	@echo "... ExperimentalMemCheck"
+	@echo "... ExperimentalStart"
+	@echo "... ExperimentalSubmit"
+	@echo "... ExperimentalTest"
+	@echo "... ExperimentalUpdate"
+	@echo "... Nightly"
+	@echo "... NightlyBuild"
+	@echo "... NightlyConfigure"
+	@echo "... NightlyCoverage"
+	@echo "... NightlyMemCheck"
+	@echo "... NightlyMemoryCheck"
+	@echo "... NightlyStart"
+	@echo "... NightlySubmit"
+	@echo "... NightlyTest"
+	@echo "... NightlyUpdate"
+	@echo "... apps"
+	@echo "... core"
+	@echo "... dbus"
 	@echo "... drift-daemon"
-	@echo "... src/AppLauncher.o"
-	@echo "... src/AppLauncher.i"
-	@echo "... src/AppLauncher.s"
-	@echo "... src/DBusManager.o"
-	@echo "... src/DBusManager.i"
-	@echo "... src/DBusManager.s"
-	@echo "... src/DriftCore.o"
-	@echo "... src/DriftCore.i"
-	@echo "... src/DriftCore.s"
-	@echo "... src/Logger.o"
-	@echo "... src/Logger.i"
-	@echo "... src/Logger.s"
-	@echo "... src/ProcessManager.o"
-	@echo "... src/ProcessManager.i"
-	@echo "... src/ProcessManager.s"
-	@echo "... src/SessionManager.o"
-	@echo "... src/SessionManager.i"
-	@echo "... src/SessionManager.s"
-	@echo "... src/SettingsManager.o"
-	@echo "... src/SettingsManager.i"
-	@echo "... src/SettingsManager.s"
-	@echo "... src/ThemeManager.o"
-	@echo "... src/ThemeManager.i"
-	@echo "... src/ThemeManager.s"
+	@echo "... logging"
+	@echo "... process"
+	@echo "... session"
+	@echo "... settings"
+	@echo "... theme"
+	@echo "... utils"
+	@echo "... wallpaper"
+	@echo "... yaml-cpp"
+	@echo "... yaml-cpp-parse"
+	@echo "... yaml-cpp-read"
+	@echo "... yaml-cpp-sandbox"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/utilities.o"
-	@echo "... src/utilities.i"
-	@echo "... src/utilities.s"
 .PHONY : help
 
 
@@ -419,6 +765,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

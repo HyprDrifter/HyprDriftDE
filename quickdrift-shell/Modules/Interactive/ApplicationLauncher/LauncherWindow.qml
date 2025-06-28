@@ -87,7 +87,6 @@ PanelWindow {
         //triggeredOnStart: true
         onTriggered: {
             appFile.reload();
-            appFile.writeAdapter();
             refreshAppList.running = true;
         }
     }

@@ -1,0 +1,29 @@
+add_library(core
+    DriftCore.cpp
+    DriftCore.h
+)
+target_include_directories(core 
+    PUBLIC 
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${PROJECT_SOURCE_DIR}/src/logging
+    ${PROJECT_SOURCE_DIR}/src/settings
+    ${PROJECT_SOURCE_DIR}/src/dbus
+    ${PROJECT_SOURCE_DIR}/src/theme
+    ${PROJECT_SOURCE_DIR}/src/session
+    ${PROJECT_SOURCE_DIR}/src/process
+    ${PROJECT_SOURCE_DIR}/src/apps
+    ${PROJECT_SOURCE_DIR}/src/utils
+    ${PROJECT_SOURCE_DIR}/src/wallpaper
+)
+target_link_libraries(core 
+    PUBLIC 
+        utils
+        dbus
+        logging
+        process
+        session
+        settings
+        theme
+        wallpaper
+        Qt6::Core
+)

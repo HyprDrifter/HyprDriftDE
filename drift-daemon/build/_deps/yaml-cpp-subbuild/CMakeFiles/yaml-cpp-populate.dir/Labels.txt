@@ -1,0 +1,14 @@
+# Target labels
+ yaml-cpp-populate
+# Source files and their labels
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/CMakeFiles/yaml-cpp-populate
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/CMakeFiles/yaml-cpp-populate.rule
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/CMakeFiles/yaml-cpp-populate-complete.rule
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/yaml-cpp-populate-prefix/src/yaml-cpp-populate-stamp/yaml-cpp-populate-build.rule
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/yaml-cpp-populate-prefix/src/yaml-cpp-populate-stamp/yaml-cpp-populate-configure.rule
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/yaml-cpp-populate-prefix/src/yaml-cpp-populate-stamp/yaml-cpp-populate-download.rule
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/yaml-cpp-populate-prefix/src/yaml-cpp-populate-stamp/yaml-cpp-populate-install.rule
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/yaml-cpp-populate-prefix/src/yaml-cpp-populate-stamp/yaml-cpp-populate-mkdir.rule
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/yaml-cpp-populate-prefix/src/yaml-cpp-populate-stamp/yaml-cpp-populate-patch.rule
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/yaml-cpp-populate-prefix/src/yaml-cpp-populate-stamp/yaml-cpp-populate-test.rule
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/yaml-cpp-populate-prefix/src/yaml-cpp-populate-stamp/yaml-cpp-populate-update.rule
