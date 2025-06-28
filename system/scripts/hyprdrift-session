@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+export DESKTOP_SESSION=HyprDrift
+export HYPRLAND_INSTANCE_SIGNATURE=$(uuidgen)
+systemctl --user import-environment DESKTOP_SESSION
+
+# Optionally help with Wayland compatibility
+export QT_QPA_PLATFORM=wayland
+export GDK_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+export CLUTTER_BACKEND=wayland
+
+# Start background services
+/usr/bin/drift-daemon &
+systemctl --user start quickdrift.service
+
+# Start Hyprland in foreground
+exec Hyprland
+

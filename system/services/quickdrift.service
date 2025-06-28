@@ -1,0 +1,16 @@
+[Unit]
+Description=HyprDrift Quickshell Shell
+PartOf=graphical-session.target
+ConditionEnvironment=DESKTOP_SESSION=HyprDrift
+
+[Service]
+Type=simple
+Environment=QT_QPA_PLATFORM=wayland
+Environment=XDG_SESSION_TYPE=wayland
+# Wait for the Wayland socket
+ExecStartPre=/bin/bash -c 'for i in {1..50}; do [ -S "$XDG_RUNTIME_DIR/hypr/$HYPRLAND_INSTANCE_SIGNATURE/.socket.sock" ] && exit 0 || sleep 0.1; done; exit 1'
+ExecStart=/bin/bash -c '/usr/bin/qs -p /etc/xdg/hyprdrift/quickdrift-shell/shell.qml >> ~/.cache/hyprdrift/quickdrift/$(date +%%Y-%%m-%%d_%%H-%%M-%%S).log 2>&1'
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

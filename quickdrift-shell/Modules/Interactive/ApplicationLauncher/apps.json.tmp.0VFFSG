@@ -1,0 +1,1103 @@
+{
+  "apps": [
+    { "name": "Firefox", "exec": "/usr/lib/firefox/firefox" }
+,
+    { "name": "KMail view", "exec": "kmail --view" }
+,
+    { "name": "Printers", "exec": "systemsettings kcm_printer_manager" }
+,
+    { "name": "Tecla", "exec": "tecla" }
+,
+    { "name": "Legacy X11 App Support", "exec": "systemsettings kcm_kwinxwayland" }
+,
+    { "name": "Kate", "exec": "kate -b" }
+,
+    { "name": "Electron 27", "exec": "electron27" }
+,
+    { "name": "RetroArch", "exec": "retroarch" }
+,
+    { "name": "Accessibility", "exec": "kaccess" }
+,
+    { "name": "AudioTube", "exec": "audiotube" }
+,
+    { "name": "Plexamp", "exec": "env APPIMAGELAUNCHER_DISABLE" }
+,
+    { "name": "Avahi SSH Server Browser", "exec": "/usr/bin/bssh" }
+,
+    { "name": "Bookmarks", "exec": "kcmshell6 kcm_bookmarks" }
+,
+    { "name": "Raspberry Pi Imager", "exec": "rpi-imager" }
+,
+    { "name": "Keyboard layout viewer", "exec": "kbd-layout-viewer5" }
+,
+    { "name": "WezTerm", "exec": "wezterm start --cwd ." }
+,
+    { "name": "Google Groupware", "exec": "akonadi_google_resource" }
+,
+    { "name": "Print Preview", "exec": "evince-previewer" }
+,
+    { "name": "Waypaper", "exec": "waypaper" }
+,
+    { "name": "KDE Partition Manager", "exec": "partitionmanager" }
+,
+    { "name": "Virtual Keyboard", "exec": "systemsettings kcm_virtualkeyboard" }
+,
+    { "name": "Open System Settings", "exec": "plasma-open-settings" }
+,
+    { "name": "Software Update", "exec": "systemsettings kcm_updates" }
+,
+    { "name": "Ark", "exec": "ark" }
+,
+    { "name": "Kanagram", "exec": "kanagram" }
+,
+    { "name": "KColorSchemeEditor", "exec": "kcolorschemeeditor" }
+,
+    { "name": "Marble", "exec": "marble" }
+,
+    { "name": "Volume Control", "exec": "pavucontrol" }
+,
+    { "name": "Webull Desktop", "exec": "env LD_LIBRARY_PATH" }
+,
+    { "name": "Kapman", "exec": "kapman" }
+,
+    { "name": "Accessibility", "exec": "systemsettings kcm_access" }
+,
+    { "name": "LSkat", "exec": "lskat" }
+,
+    { "name": "Desktop Session", "exec": "systemsettings kcm_smserver" }
+,
+    { "name": "Trash", "exec": "kcmshell6 kcm_trash" }
+,
+    { "name": "PIM Data Exporter", "exec": "pimdataexporter" }
+,
+    { "name": "Thunderbolt", "exec": "systemsettings kcm_bolt" }
+,
+    { "name": "Sieve Editor", "exec": "sieveeditor" }
+,
+    { "name": "Knights", "exec": "knights -qwindowtitle" }
+,
+    { "name": "Crashed Processes Viewer", "exec": "drkonqi-coredump-gui" }
+,
+    { "name": "KGoldrunner", "exec": "kgoldrunner" }
+,
+    { "name": "Online Accounts", "exec": "systemsettings kcm_kaccounts" }
+,
+    { "name": "Rofi", "exec": "rofi -show" }
+,
+    { "name": "Bovo", "exec": "bovo -qwindowtitle" }
+,
+    { "name": "Telly Skout", "exec": "telly-skout" }
+,
+    { "name": "LibreOffice Draw", "exec": "libreoffice --draw" }
+,
+    { "name": "Xwayland", "exec": "/usr/bin/Xwayland -decorate -displayfd 1" }
+,
+    { "name": "KLettres", "exec": "klettres -qwindowtitle -qwindowicon klettres" }
+,
+    { "name": "Steam", "exec": "/usr/bin/steam" }
+,
+    { "name": "KMouseTool", "exec": "kmousetool -qwindowtitle" }
+,
+    { "name": "GnuPG Log Viewer", "exec": "kwatchgnupg" }
+,
+    { "name": "User Feedback", "exec": "systemsettings kcm_feedback" }
+,
+    { "name": "KTelnetService", "exec": "ktelnetservice5" }
+,
+    { "name": "Application Style", "exec": "systemsettings kcm_style" }
+,
+    { "name": "Open-Xchange Groupware Server", "exec": "akonadi_openxchange_resource" }
+,
+    { "name": "KmPlot", "exec": "kmplot" }
+,
+    { "name": "Qt V4L2 test Utility", "exec": "qv4l2" }
+,
+    { "name": "KSudoku", "exec": "ksudoku -qwindowicon ksudoku -qwindowtitle" }
+,
+    { "name": "Wi-Fi & Networking", "exec": "systemsettings kcm_networkmanagement" }
+,
+    { "name": "XTerm", "exec": "xterm" }
+,
+    { "name": "Curve Viewer", "exec": "displaycal-curve-viewer" }
+,
+    { "name": "KCalc", "exec": "kcalc" }
+,
+    { "name": "Code - OSS", "exec": "/usr/bin/code-oss" }
+,
+    { "name": "KGet", "exec": "kget -qwindowtitle" }
+,
+    { "name": "KDebugSettings", "exec": "kdebugsettings" }
+,
+    { "name": "KDE Connect Settings", "exec": "kdeconnect-settings" }
+,
+    { "name": "Kanji Browser", "exec": "kitenkanjibrowser" }
+,
+    { "name": "Rygel Preferences", "exec": "rygel-preferences" }
+,
+    { "name": "Marble", "exec": "marble" }
+,
+    { "name": "GNU Image Manipulation Program", "exec": "gimp-3.0" }
+,
+    { "name": "Clock", "exec": "kclock" }
+,
+    { "name": "PolicyKit Authentication Agent", "exec": "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" }
+,
+    { "name": "Zenity", "exec": "zenity" }
+,
+    { "name": "KDE Connect", "exec": "/usr/bin/kdeconnectd" }
+,
+    { "name": "Konqueror", "exec": "konqueror" }
+,
+    { "name": "KColorChooser", "exec": "kcolorchooser" }
+,
+    { "name": "xgps", "exec": "xgps" }
+,
+    { "name": "LibreOffice Base", "exec": "libreoffice --base" }
+,
+    { "name": "Unity Hub", "exec": "/opt/unityhub/unityhub" }
+,
+    { "name": "Recorder", "exec": "krecorder" }
+,
+    { "name": "Font Management", "exec": "systemsettings kcm_fontinst" }
+,
+    { "name": "KDE Marble", "exec": "marble" }
+,
+    { "name": "GParted", "exec": "/usr/bin/gparted" }
+,
+    { "name": "Swappy", "exec": "swappy -f" }
+,
+    { "name": "KIO", "exec": "kiod6" }
+,
+    { "name": "KTorrent", "exec": "ktorrent" }
+,
+    { "name": "Bluetooth Manager", "exec": "blueman-manager" }
+,
+    { "name": "Bitwarden", "exec": "bitwarden-desktop" }
+,
+    { "name": "System Settings", "exec": "systemsettings" }
+,
+    { "name": "Default Applications", "exec": "systemsettings kcm_componentchooser" }
+,
+    { "name": "About this System", "exec": "systemsettings kcm_about-distro" }
+,
+    { "name": "KDE Wallet Service", "exec": "ksecretd" }
+,
+    { "name": "PlasmaTube", "exec": "plasmatube" }
+,
+    { "name": "Kwave Sound Editor", "exec": "kwave" }
+,
+    { "name": "KNotes", "exec": "knotes" }
+,
+    { "name": "Nemo", "exec": "nemo" }
+,
+    { "name": "Menu Editor", "exec": "/usr/bin/menulibre" }
+,
+    { "name": "Minecraft Launcher", "exec": "minecraft-launcher.sh" }
+,
+    { "name": "Qt Linguist (Qt 6)", "exec": "linguist6" }
+,
+    { "name": "UXTerm", "exec": "uxterm" }
+,
+    { "name": "Discover", "exec": "/usr/lib/DiscoverNotifier --check-delay 20" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "KAlgebra Mobile", "exec": "kalgebramobile" }
+,
+    { "name": "OpenJDK Java 11 Runtime", "exec": "/usr/lib/jvm/java-11-openjdk/bin/java -jar" }
+,
+    { "name": "Disk Usage Analyzer", "exec": "baobab" }
+,
+    { "name": "Account authentication", "exec": "/usr/bin/signon-ui" }
+,
+    { "name": "Kiten", "exec": "kiten -qwindowtitle -qwindowicon kiten" }
+,
+    { "name": "Kleopatra", "exec": "kleopatra" }
+,
+    { "name": "KDE Itinerary", "exec": "itinerary" }
+,
+    { "name": "Proxy", "exec": "systemsettings kcm_proxy" }
+,
+    { "name": "MATE Color Selection", "exec": "mate-color-select" }
+,
+    { "name": "Keysmith", "exec": "keysmith" }
+,
+    { "name": "OpenJDK Java 17 Runtime", "exec": "/usr/lib/jvm/java-17-openjdk/bin/java -jar" }
+,
+    { "name": "Konqueror", "exec": "kfmclient --mimetype text/html openURL" }
+,
+    { "name": "Azote", "exec": "azote" }
+,
+    { "name": "Date & Time", "exec": "systemsettings kcm_clock" }
+,
+    { "name": "Contact Theme Editor", "exec": "contactthemeeditor" }
+,
+    { "name": "Discover", "exec": "plasma-discover" }
+,
+    { "name": "Kollision", "exec": "kollision" }
+,
+    { "name": "KOrganizer", "exec": "korganizer" }
+,
+    { "name": "Splash Screen", "exec": "systemsettings kcm_splashscreen" }
+,
+    { "name": "Klipper", "exec": "/usr/bin/false" }
+,
+    { "name": "Electron 35", "exec": "electron35" }
+,
+    { "name": "Testchart Editor", "exec": "displaycal-testchart-editor" }
+,
+    { "name": "Spell Check", "exec": "systemsettings kcmspellchecking" }
+,
+    { "name": "Plasma Theme Explorer", "exec": "plasmathemeexplorer" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "MaterialX Viewer", "exec": "MaterialXView --material" }
+,
+    { "name": "KPatience", "exec": "kpat -qwindowtitle" }
+,
+    { "name": "Calculator", "exec": "kalk" }
+,
+    { "name": "Region & Language", "exec": "systemsettings kcm_regionandlang" }
+,
+    { "name": "Electron 33", "exec": "electron33" }
+,
+    { "name": "KHangMan", "exec": "khangman -qwindowtitle \"\"" }
+,
+    { "name": "Wi-Fi", "exec": "systemsettings kcm_mobile_wifi" }
+,
+    { "name": "Software Token (small)", "exec": "stoken-gui --small" }
+,
+    { "name": "Kontact", "exec": "kontact" }
+,
+    { "name": "Quick Settings", "exec": "systemsettings kcm_landingpage" }
+,
+    { "name": "Bookmark Editor", "exec": "keditbookmarks" }
+,
+    { "name": "Connection Preferences", "exec": "systemsettings kcm_netpref" }
+,
+    { "name": "OpenJDK Java 24 Console", "exec": "/usr/lib/jvm/java-24-openjdk/bin/jconsole" }
+,
+    { "name": "OpenStreetMap", "exec": "kde-geo-uri-handler --coordinate-template \"https://www.openstreetmap.org/#map" }
+,
+    { "name": "Protontricks", "exec": "protontricks --no-term --gui" }
+,
+    { "name": "Gwenview Importer", "exec": "gwenview_importer" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "Discover", "exec": "plasma-discover" }
+,
+    { "name": "Marble", "exec": "marble" }
+,
+    { "name": "Add Bluetooth Device", "exec": "bluedevil-wizard" }
+,
+    { "name": "NeoChat", "exec": "neochat" }
+,
+    { "name": "Plasma Renderer", "exec": "kcmshell6 kcm_qtquicksettings" }
+,
+    { "name": "Wacom Tablet finder", "exec": "kde_wacom_tabletfinder" }
+,
+    { "name": "Welcome Center", "exec": "plasma-welcome" }
+,
+    { "name": "Parental Controls", "exec": "malcontent-control" }
+,
+    { "name": "Flameshot", "exec": "/usr/bin/flameshot" }
+,
+    { "name": "Inkscape", "exec": "inkscape" }
+,
+    { "name": "KMail", "exec": "kmail -qwindowtitle" }
+,
+    { "name": "Energy", "exec": "kcmshell6 kcm_energyinfo" }
+,
+    { "name": "Game Controller", "exec": "systemsettings kcm_gamecontroller" }
+,
+    { "name": "Oracle VirtualBox", "exec": "VirtualBox" }
+,
+    { "name": "Manage Printing", "exec": "xdg-open http://localhost:631/" }
+,
+    { "name": "Events and Tasks Reminders", "exec": "/usr/lib/evolution-data-server/evolution-alarm-notify" }
+,
+    { "name": "Protontricks Launcher", "exec": "protontricks-launch --no-term" }
+,
+    { "name": "Bluetooth Adapters", "exec": "blueman-adapters" }
+,
+    { "name": "Help", "exec": "yelp" }
+,
+    { "name": "Discover", "exec": "plasma-discover" }
+,
+    { "name": "Filelight", "exec": "filelight" }
+,
+    { "name": "File Associations", "exec": "systemsettings kcm_filetypes" }
+,
+    { "name": "FreeCAD", "exec": "FreeCAD - --single-instance" }
+,
+    { "name": "Virtual Desktops", "exec": "systemsettings kcm_kwin_virtualdesktops" }
+,
+    { "name": "Flatpak Permissions", "exec": "systemsettings kcm_flatpak" }
+,
+    { "name": "3D LUT Maker", "exec": "displaycal-3dlut-maker" }
+,
+    { "name": "KDE Connect", "exec": "systemsettings kcm_kdeconnect" }
+,
+    { "name": "Spectacle", "exec": "/usr/bin/spectacle" }
+,
+    { "name": "Graphic Tablet", "exec": "systemsettings kcm_wacomtablet" }
+,
+    { "name": "OpenJDK Java 17 Console", "exec": "/usr/lib/jvm/java-17-openjdk/bin/jconsole" }
+,
+    { "name": "OpenWebStart", "exec": "/usr/bin/javaws" }
+,
+    { "name": "WinSCP", "exec": "winscp" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "Cellular Network", "exec": "systemsettings kcm_cellular_network" }
+,
+    { "name": "K3b", "exec": "k3b" }
+,
+    { "name": "Bomber", "exec": "bomber -qwindowtitle" }
+,
+    { "name": "btop++", "exec": "btop" }
+,
+    { "name": "LibreOffice Writer", "exec": "libreoffice --writer" }
+,
+    { "name": "Bookmarks", "exec": "kcmshell6 kcm_bookmarks" }
+,
+    { "name": "KDE Connect SMS", "exec": "kdeconnect-sms" }
+,
+    { "name": "Thunar Preferences", "exec": "thunar-settings" }
+,
+    { "name": "Portal", "exec": "/usr/lib/xdg-desktop-portal-kde" }
+,
+    { "name": "KTrip", "exec": "ktrip" }
+,
+    { "name": "OpenJDK Java 21 Runtime", "exec": "/usr/lib/jvm/java-21-openjdk/bin/java -jar" }
+,
+    { "name": "KRunner Settings", "exec": "kcmshell6 kcm_krunnersettings" }
+,
+    { "name": "SameGame", "exec": "klickety --KSameMode -qwindowtitle" }
+,
+    { "name": "OpenWebStart Settings", "exec": "/opt/OpenWebStart/itw-settings" }
+,
+    { "name": "Torguard VPN Client", "exec": "/usr/bin/torguard" }
+,
+    { "name": "MonoDevelop", "exec": "monodevelop" }
+,
+    { "name": "Swayimg", "exec": "swayimg" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "Pinta", "exec": "pinta" }
+,
+    { "name": "Fcitx 5 Configuration", "exec": "fcitx5-config-qt" }
+,
+    { "name": "System Monitor", "exec": "plasma-systemmonitor" }
+,
+    { "name": "User folders update", "exec": "xdg-user-dirs-gtk-update" }
+,
+    { "name": "DAV Groupware", "exec": "akonadi_davgroupware_resource" }
+,
+    { "name": "Rygel", "exec": "rygel" }
+,
+    { "name": "KGpg", "exec": "kgpg" }
+,
+    { "name": "Text Editor", "exec": "gnome-text-editor" }
+,
+    { "name": "Piper", "exec": "piper" }
+,
+    { "name": "KNetWalk", "exec": "knetwalk -qwindowtitle" }
+,
+    { "name": "Angelfish", "exec": "angelfish" }
+,
+    { "name": "Cervisia", "exec": "cervisia -qwindowtitle" }
+,
+    { "name": "Skanlite", "exec": "skanlite" }
+,
+    { "name": "KImageMapEditor", "exec": "kimagemapeditor -qwindowtitle" }
+,
+    { "name": "Winetricks", "exec": "winetricks --gui" }
+,
+    { "name": "Animations", "exec": "systemsettings kcm_animations" }
+,
+    { "name": "Photos", "exec": "koko" }
+,
+    { "name": "vCard Directory", "exec": "akonadi_vcarddir_resource" }
+,
+    { "name": "GTK Settings", "exec": "nwg-look" }
+,
+    { "name": "SongRec", "exec": "songrec gui" }
+,
+    { "name": "Blender", "exec": "blender" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "Kdenlive", "exec": "kdenlive" }
+,
+    { "name": "KAddressBook View", "exec": "kaddressbook --view" }
+,
+    { "name": "nvtop", "exec": "nvtop" }
+,
+    { "name": "KSnakeDuel", "exec": "ksnakeduel" }
+,
+    { "name": "Digital Camera", "exec": "systemsettings kcm_kamera" }
+,
+    { "name": "KDiamond", "exec": "kdiamond -qwindowtitle" }
+,
+    { "name": "pacseek", "exec": "pacseek" }
+,
+    { "name": "About Xfce", "exec": "xfce4-about" }
+,
+    { "name": "Hardware Locality lstopo", "exec": "lstopo" }
+,
+    { "name": "Plasma Desktop Workspace", "exec": "/usr/bin/plasmashell" }
+,
+    { "name": "SSH Credentials", "exec": "ksshaskpass" }
+,
+    { "name": "Thunderbird", "exec": "thunderbird" }
+,
+    { "name": "Where am I?", "exec": "/usr/lib/geoclue-2.0/demos/where-am-i" }
+,
+    { "name": "Qt6 Settings", "exec": "qt6ct" }
+,
+    { "name": "Marble", "exec": "marble" }
+,
+    { "name": "Background Services", "exec": "kcmshell6 kcm_kded" }
+,
+    { "name": "Tokodon", "exec": "tokodon" }
+,
+    { "name": "KMines", "exec": "kmines -qwindowtitle" }
+,
+    { "name": "KsirK Skin Editor", "exec": "ksirkskineditor -qwindowtitle -qwindowicon preferences-desktop-locale" }
+,
+    { "name": "File Type Editor", "exec": "keditfiletype" }
+,
+    { "name": "kitty", "exec": "kitty" }
+,
+    { "name": "LibreOffice Impress", "exec": "libreoffice --impress" }
+,
+    { "name": "Users", "exec": "systemsettings kcm_users" }
+,
+    { "name": "OpenJDK Java 24 Runtime", "exec": "/usr/lib/jvm/java-24-openjdk/bin/java -jar" }
+,
+    { "name": "KBruch", "exec": "kbruch -qwindowtitle -qwindowicon kbruch" }
+,
+    { "name": "ISO Image Writer", "exec": "isoimagewriter" }
+,
+    { "name": "Electron 34", "exec": "electron34" }
+,
+    { "name": "File Search", "exec": "systemsettings kcm_baloofile" }
+,
+    { "name": "Ardour", "exec": "ardour8" }
+,
+    { "name": "uuctl", "exec": "uuctl" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "Notifications", "exec": "systemsettings kcm_notifications" }
+,
+    { "name": "Radical Selector", "exec": "kitenradselect" }
+,
+    { "name": "Spotify (Launcher)", "exec": "spotify-launcher" }
+,
+    { "name": "About MATE", "exec": "mate-about" }
+,
+    { "name": "Videos", "exec": "totem" }
+,
+    { "name": "Vim", "exec": "vim" }
+,
+    { "name": "KOrganizer View", "exec": "korganizer --view" }
+,
+    { "name": "KBounce", "exec": "kbounce -qwindowtitle" }
+,
+    { "name": "Rofi Theme Selector", "exec": "rofi-theme-selector" }
+,
+    { "name": "Fcitx 5 Qt6 Gui Wrapper", "exec": "/usr/lib/fcitx5-qt6-gui-wrapper" }
+,
+    { "name": "Bluetooth File Transfer", "exec": "bluedevil-sendfile -k" }
+,
+    { "name": "Master PDF Editor 5", "exec": "/opt/master-pdf-editor-5/masterpdfeditor5" }
+,
+    { "name": "Mouse", "exec": "systemsettings kcm_mouse" }
+,
+    { "name": "Add/Remove Software", "exec": "pamac-manager" }
+,
+    { "name": "Qt Widgets Designer", "exec": "designer6" }
+,
+    { "name": "Recent Files", "exec": "systemsettings kcm_recentFiles" }
+,
+    { "name": "Minuet", "exec": "minuet" }
+,
+    { "name": "Camera", "exec": "snapshot" }
+,
+    { "name": "VRML to X3D", "exec": "displaycal-vrml-to-x3d-converter %" }
+,
+    { "name": "Kasts", "exec": "kasts" }
+,
+    { "name": "KDevelop", "exec": "kdevelop -p" }
+,
+    { "name": "KDE OSM Indoor Map", "exec": "kosmindoormap" }
+,
+    { "name": "TeamSpeak", "exec": "teamspeak" }
+,
+    { "name": "KDevelop (Fetch Subversion Project)", "exec": "kdevelop --ps --fetch" }
+,
+    { "name": "Microsoft Exchange Server (EWS)", "exec": "akonadi_ews_resource" }
+,
+    { "name": "Fcitx 5 Migration Wizard", "exec": "fcitx5-migrator" }
+,
+    { "name": "Alacritty", "exec": "alacritty" }
+,
+    { "name": "Storage Devices", "exec": "systemsettings kcm_kdf" }
+,
+    { "name": "Rocs", "exec": "rocs -qwindowtitle" }
+,
+    { "name": "Merkuro Calendar", "exec": "merkuro-calendar" }
+,
+    { "name": "Bulk Rename", "exec": "thunar --bulk-rename" }
+,
+    { "name": "imv", "exec": "imv" }
+,
+    { "name": "LibreOffice XSLT based filters", "exec": "libreoffice" }
+,
+    { "name": "KBlocks", "exec": "kblocks -qwindowtitle" }
+,
+    { "name": "Vivaldi", "exec": "/usr/bin/vivaldi-stable" }
+,
+    { "name": "KRuler", "exec": "kruler" }
+,
+    { "name": "Qt D-Bus Viewer", "exec": "qdbusviewer6" }
+,
+    { "name": "CMake", "exec": "cmake-gui" }
+,
+    { "name": "VLC media player", "exec": "/usr/bin/vlc --started-from-file" }
+,
+    { "name": "Merkuro Mail", "exec": "merkuro-mail" }
+,
+    { "name": "Keyboard Layout", "exec": "gkbd-keyboard-display" }
+,
+    { "name": "Kiriki", "exec": "kiriki -qwindowtitle" }
+,
+    { "name": "Web", "exec": "epiphany" }
+,
+    { "name": "Contact Print Theme Editor", "exec": "contactprintthemeeditor" }
+,
+    { "name": "Sound", "exec": "systemsettings kcm_pulseaudio" }
+,
+    { "name": "Software Installer", "exec": "pamac-installer" }
+,
+    { "name": "kitty URL Launcher", "exec": "kitty +open" }
+,
+    { "name": "KFind", "exec": "kfind" }
+,
+    { "name": "KolourPaint", "exec": "kolourpaint" }
+,
+    { "name": "Print Queue", "exec": "kde-print-queue" }
+,
+    { "name": "KDevelop (Fetch git Project)", "exec": "kdevelop --ps --fetch" }
+,
+    { "name": "Configure Printer", "exec": "configure-printer" }
+,
+    { "name": "Dolphin", "exec": "dolphin" }
+,
+    { "name": "Thunar File Manager", "exec": "thunar" }
+,
+    { "name": "LSHW", "exec": "/usr/sbin/gtk-lshw" }
+,
+    { "name": "OpenJDK Java 11 Shell", "exec": "/usr/lib/jvm/java-11-openjdk/bin/jshell" }
+,
+    { "name": "KWin Kill Helper", "exec": "/usr/lib/kwin_killer_helper" }
+,
+    { "name": "Device Actions", "exec": "systemsettings kcm_solid_actions" }
+,
+    { "name": "balenaEtcher", "exec": "balena-etcher" }
+,
+    { "name": "atbswp", "exec": "atbswp" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "KAtomic", "exec": "katomic -qwindowtitle" }
+,
+    { "name": "KDE Connect Indicator", "exec": "kdeconnect-indicator" }
+,
+    { "name": "Energy", "exec": "systemsettings kcm_mobile_power" }
+,
+    { "name": "KMail Refresh Settings", "exec": "kmail-refresh-settings -qwindowtitle" }
+,
+    { "name": "Plasma Browser Integration Host", "exec": "/usr/bin/plasma-browser-integration-host" }
+,
+    { "name": "General Behavior", "exec": "systemsettings kcm_workspace" }
+,
+    { "name": "Scripting Client", "exec": "displaycal-scripting-client" }
+,
+    { "name": "KDE Connect", "exec": "kdeconnect-handler" }
+,
+    { "name": "Snapd User Session Agent", "exec": "/bin/false" }
+,
+    { "name": "Palapeli", "exec": "palapeli" }
+,
+    { "name": "Qt Assistant", "exec": "assistant6" }
+,
+    { "name": "System Sounds", "exec": "systemsettings kcm_soundtheme" }
+,
+    { "name": "Merkuro Contacts", "exec": "merkuro-contact" }
+,
+    { "name": "Night Light", "exec": "systemsettings kcm_nightlight" }
+,
+    { "name": "Breeze Window Decoration", "exec": "kcmshell6 kcm_breezedecoration" }
+,
+    { "name": "Bluetooth", "exec": "systemsettings kcm_bluetooth" }
+,
+    { "name": "Avahi Zeroconf Browser", "exec": "/usr/bin/avahi-discover" }
+,
+    { "name": "Qt Creator", "exec": "qtcreator" }
+,
+    { "name": "Code - OSS - URL Handler", "exec": "/usr/bin/code-oss --open-url" }
+,
+    { "name": "Fonts", "exec": "systemsettings kcm_fonts" }
+,
+    { "name": "Autorun Prompt", "exec": "nemo-autorun-software" }
+,
+    { "name": "Looking Glass Client", "exec": "/usr/bin/looking-glass-client" }
+,
+    { "name": "VPN Importer", "exec": "systemsettings kcm_networkmanagement --args VPN" }
+,
+    { "name": "Volume Icon", "exec": "volumeicon" }
+,
+    { "name": "fish", "exec": "fish" }
+,
+    { "name": "Marble", "exec": "marble --geo-uri" }
+,
+    { "name": "Journald Browser", "exec": "kjournaldbrowser" }
+,
+    { "name": "FLUID", "exec": "fluid" }
+,
+    { "name": "OpenJDK Java 11 Console", "exec": "/usr/lib/jvm/java-11-openjdk/bin/jconsole" }
+,
+    { "name": "Shisen-Sho", "exec": "kshisen -qwindowtitle" }
+,
+    { "name": "SMART Status", "exec": "kcmshell6 kcm_disks" }
+,
+    { "name": "Satty", "exec": "satty -f" }
+,
+    { "name": "Fcitx 5 Configuration", "exec": "/usr/bin/fcitx5-configtool" }
+,
+    { "name": "Steam (Native)", "exec": "/usr/bin/steam-native" }
+,
+    { "name": "Cantor", "exec": "cantor -qwindowicon cantor -qwindowtitle" }
+,
+    { "name": "KRFBs Virtual Monitor", "exec": "/usr/bin/krfb-virtualmonitor" }
+,
+    { "name": "KTuberling", "exec": "ktuberling -qwindowtitle" }
+,
+    { "name": "Chromium", "exec": "/usr/bin/chromium" }
+,
+    { "name": "KwikDisk", "exec": "kwikdisk -qwindowtitle" }
+,
+    { "name": "Drawing Tablet", "exec": "systemsettings kcm_tablet" }
+,
+    { "name": "Icon Explorer", "exec": "iconexplorer" }
+,
+    { "name": "KMouth", "exec": "kmouth" }
+,
+    { "name": "PuTTY", "exec": "putty" }
+,
+    { "name": "Kalzium", "exec": "kalzium -qwindowtitle -molecule" }
+,
+    { "name": "Plasmoidviewer", "exec": "plasmoidviewer" }
+,
+    { "name": "Discover", "exec": "plasma-discover" }
+,
+    { "name": "Hotspot", "exec": "systemsettings kcm_mobile_hotspot" }
+,
+    { "name": "PDF Mix Tool", "exec": "pdfmixtool" }
+,
+    { "name": "Konsole", "exec": "konsole" }
+,
+    { "name": "Window Rules", "exec": "systemsettings kcm_kwinrules" }
+,
+    { "name": "Color Management", "exec": "systemsettings kcm_colord" }
+,
+    { "name": "Screen Locking", "exec": "systemsettings kcm_screenlocker" }
+,
+    { "name": "JuK", "exec": "juk" }
+,
+    { "name": "Konqueror", "exec": "konqueror" }
+,
+    { "name": "Dragon Player", "exec": "dragon" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "KUIViewer", "exec": "kuiviewer -qwindowtitle" }
+,
+    { "name": "KTelnetService", "exec": "ktelnetservice6" }
+,
+    { "name": "KSystemLog", "exec": "ksystemlog -qwindowtitle" }
+,
+    { "name": "Foot Client", "exec": "footclient" }
+,
+    { "name": "Kalzium", "exec": "kalzium -qwindowtitle" }
+,
+    { "name": "KonsoleKalendar", "exec": "kdialog --sorry \"konsolekalendar is a command-line only program.  Please read the handbook at help:/konsolekalendar for more info.\"" }
+,
+    { "name": "Firewall", "exec": "systemsettings kcm_firewall" }
+,
+    { "name": "Plasma Session Save", "exec": "/usr/lib/plasma-fallback-session-save" }
+,
+    { "name": "Advanced Network Configuration", "exec": "nm-connection-editor" }
+,
+    { "name": "GPicView", "exec": "gpicview" }
+,
+    { "name": "Qt Linguist", "exec": "linguist6" }
+,
+    { "name": "RuneLite", "exec": "runelite" }
+,
+    { "name": "Touchpad", "exec": "systemsettings kcm_touchpad" }
+,
+    { "name": "Resources", "exec": "resources" }
+,
+    { "name": "Audio CDs", "exec": "systemsettings kcm_audiocd" }
+,
+    { "name": "Xwayland Video Bridge", "exec": "xwaylandvideobridge" }
+,
+    { "name": "LibreOffice", "exec": "libreoffice" }
+,
+    { "name": "OpenJDK Java 17 Shell", "exec": "/usr/lib/jvm/java-17-openjdk/bin/jshell" }
+,
+    { "name": "Kolf", "exec": "kolf" }
+,
+    { "name": "KDiskFree", "exec": "kdf -qwindowtitle" }
+,
+    { "name": "Power Management", "exec": "systemsettings kcm_powerdevilprofilesconfig" }
+,
+    { "name": "Activities", "exec": "systemsettings kcm_activities" }
+,
+    { "name": "KRDC", "exec": "krdc -qwindowtitle" }
+,
+    { "name": "Foot", "exec": "foot" }
+,
+    { "name": "mpv Media Player", "exec": "mpv --player-operation-mode" }
+,
+    { "name": "Skladnik", "exec": "skladnik -qwindowtitle" }
+,
+    { "name": "KRdp", "exec": "/usr/bin/krdpserver" }
+,
+    { "name": "Locations", "exec": "systemsettings kcm_desktoppaths" }
+,
+    { "name": "KMail Import Wizard", "exec": "akonadiimportwizard" }
+,
+    { "name": "Picmi", "exec": "picmi" }
+,
+    { "name": "Plasma Windowed", "exec": "/usr/bin/plasmawindowed" }
+,
+    { "name": "Display Configuration", "exec": "systemsettings kcm_kscreen" }
+,
+    { "name": "OpenSCAD", "exec": "openscad" }
+,
+    { "name": "wheelmap.org", "exec": "kde-geo-uri-handler --coordinate-template \"https://wheelmap.org/?lat" }
+,
+    { "name": "Help Center", "exec": "khelpcenter" }
+,
+    { "name": "Dosbox", "exec": "dosbox" }
+,
+    { "name": "Profile Loader", "exec": "displaycal-apply-profiles --force" }
+,
+    { "name": "Godot Engine", "exec": "godot" }
+,
+    { "name": "Gamma", "exec": "systemsettings kcm_kgamma" }
+,
+    { "name": "KSquares", "exec": "ksquares -qwindowicon ksquares -qwindowtitle" }
+,
+    { "name": "Discord", "exec": "/usr/bin/discord" }
+,
+    { "name": "KNewStuff Dialog", "exec": "knewstuff-dialog" }
+,
+    { "name": "KDevelop (Fetch Bazaar Project)", "exec": "kdevelop --ps --fetch" }
+,
+    { "name": "OpenJDK Java 21 Console", "exec": "/usr/lib/jvm/java-21-openjdk/bin/jconsole" }
+,
+    { "name": "Weather", "exec": "kweather" }
+,
+    { "name": "XDvi", "exec": "xdvi" }
+,
+    { "name": "NVIDIA X Server Settings", "exec": "/usr/bin/nvidia-settings" }
+,
+    { "name": "Kompare", "exec": "kompare" }
+,
+    { "name": "Parley", "exec": "parley" }
+,
+    { "name": "KOrganizer", "exec": "korganizer --import" }
+,
+    { "name": "Fcitx 5", "exec": "/usr/bin/fcitx5" }
+,
+    { "name": "Konqueror", "exec": "kfmclient --mimetype application/x-webarchive openURL" }
+,
+    { "name": "ICC Profile Info", "exec": "displaycal-profile-info" }
+,
+    { "name": "USD view", "exec": "usdview" }
+,
+    { "name": "eric7 Web Browser", "exec": "/usr/bin/eric7_browser" }
+,
+    { "name": "Breeze Widget Style", "exec": "kcmshell6 breezestyleconfig" }
+,
+    { "name": "Avahi VNC Server Browser", "exec": "/usr/bin/bvnc" }
+,
+    { "name": "Push Notifications", "exec": "systemsettings kcm_push_notifications" }
+,
+    { "name": "Krfb", "exec": "krfb -qwindowtitle" }
+,
+    { "name": "Konversation", "exec": "konversation -qwindowtitle" }
+,
+    { "name": "CurseForge", "exec": "/usr/bin/curseforge" }
+,
+    { "name": "Obsidian", "exec": "/usr/bin/obsidian" }
+,
+    { "name": "Kamoso", "exec": "kamoso -qwindowtitle" }
+,
+    { "name": "MaterialX Graph Editor", "exec": "MaterialXGraphEditor --material" }
+,
+    { "name": "Window Decorations", "exec": "systemsettings kcm_kwindecoration" }
+,
+    { "name": "Account Wizard", "exec": "accountwizard --package" }
+,
+    { "name": "KTeaTime", "exec": "kteatime" }
+,
+    { "name": "Handler for snap:// URIs", "exec": "/bin/snap handle-link" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "KDbg", "exec": "kdbg -qwindowtitle \"\"" }
+,
+    { "name": "OrcaSlicer", "exec": "/opt/orca-slicer/bin/orca-slicer" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "Input Method", "exec": "systemsettings kcm_fcitx5" }
+,
+    { "name": "NetworkManager Applet", "exec": "nm-applet" }
+,
+    { "name": "GitHub Desktop", "exec": "/usr/bin/github-desktop" }
+,
+    { "name": "KReversi", "exec": "kreversi -qwindowtitle" }
+,
+    { "name": "KTimer", "exec": "ktimer" }
+,
+    { "name": "Remote Desktop Manager", "exec": "remotedesktopmanager" }
+,
+    { "name": "Feh", "exec": "feh --start-at" }
+,
+    { "name": "ARandR", "exec": "arandr" }
+,
+    { "name": "Cheese", "exec": "cheese" }
+,
+    { "name": "Access Prompt", "exec": "/usr/lib/gcr-prompter" }
+,
+    { "name": "Emails", "exec": "akonadi_imap_resource" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "LibreOffice Calc", "exec": "libreoffice --calc" }
+,
+    { "name": "Touchscreen", "exec": "systemsettings kcm_touchscreen" }
+,
+    { "name": "Personal Contacts", "exec": "akonadi_contacts_resource" }
+,
+    { "name": "KAddressbook import file", "exec": "kaddressbook --import" }
+,
+    { "name": "Geoclue Demo agent", "exec": "/usr/lib/geoclue-2.0/demos/agent" }
+,
+    { "name": "Konqueror", "exec": "kfmclient openURL" }
+,
+    { "name": "Qt Designer (Qt 6)", "exec": "designer6" }
+,
+    { "name": "KJumpingCube", "exec": "kjumpingcube -qwindowtitle" }
+,
+    { "name": "Yakuake", "exec": "yakuake" }
+,
+    { "name": "Konqueror", "exec": "kfmclient --mimetype inode/directory openURL" }
+,
+    { "name": "Shortcuts", "exec": "systemsettings kcm_keys" }
+,
+    { "name": "Klickety", "exec": "klickety -qwindowtitle" }
+,
+    { "name": "Artikulate", "exec": "artikulate -qwindowtitle \"\"" }
+,
+    { "name": "KSpaceDuel", "exec": "kspaceduel -qwindowtitle" }
+,
+    { "name": "Kirigami Gallery", "exec": "kirigami2gallery" }
+,
+    { "name": "Konquest", "exec": "konquest -qwindowtitle" }
+,
+    { "name": "Virtual Machine Manager", "exec": "virt-manager" }
+,
+    { "name": "KBlackBox", "exec": "kblackbox -qwindowtitle" }
+,
+    { "name": "KBreakOut", "exec": "kbreakout -qwindowtitle" }
+,
+    { "name": "Kontrast", "exec": "kontrast" }
+,
+    { "name": "eric7 IDE", "exec": "/usr/bin/eric7_ide" }
+,
+    { "name": "Marble", "exec": "marble" }
+,
+    { "name": "DB Browser for SQLite", "exec": "sqlitebrowser" }
+,
+    { "name": "KAppTemplate", "exec": "kapptemplate" }
+,
+    { "name": "Pinentry", "exec": "/usr/bin/pinentry-qt5" }
+,
+    { "name": "Mission Center", "exec": "missioncenter" }
+,
+    { "name": "Blinken", "exec": "blinken" }
+,
+    { "name": "Lutris", "exec": "lutris" }
+,
+    { "name": "Image Viewer", "exec": "loupe" }
+,
+    { "name": "Boot Splash Screen", "exec": "systemsettings kcm_plymouth" }
+,
+    { "name": "Task Scheduler", "exec": "systemsettings kcm_cron" }
+,
+    { "name": "Kajongg", "exec": "kajongg" }
+,
+    { "name": "Task Switcher", "exec": "systemsettings kcm_kwintabbox" }
+,
+    { "name": "eric7 MicroPython Devices", "exec": "/usr/bin/eric7_mpy" }
+,
+    { "name": "Electron 36", "exec": "electron36" }
+,
+    { "name": "Emoji Selector", "exec": "plasma-emojier" }
+,
+    { "name": "Akregator", "exec": "akregator" }
+,
+    { "name": "Qt QDBusViewer (Qt 6)", "exec": "qdbusviewer6" }
+,
+    { "name": "OpenJDK Java 24 Shell", "exec": "/usr/lib/jvm/java-24-openjdk/bin/jshell" }
+,
+    { "name": "Portal", "exec": "/usr/lib/xdg-desktop-portal-gtk" }
+,
+    { "name": "Keyboard", "exec": "systemsettings kcm_keyboard" }
+,
+    { "name": "Zanshin", "exec": "zanshin" }
+,
+    { "name": "OpenJDK Java 21 Shell", "exec": "/usr/lib/jvm/java-21-openjdk/bin/jshell" }
+,
+    { "name": "Merkuro", "exec": "merkuro-calendar" }
+,
+    { "name": "Okular", "exec": "okular" }
+,
+    { "name": "KFourInLine", "exec": "kfourinline" }
+,
+    { "name": "KsirK", "exec": "ksirk -qwindowtitle -qwindowicon ksirk" }
+,
+    { "name": "PolicyKit Authentication Agent", "exec": "/usr/lib/polkit-kde-authentication-agent-1" }
+,
+    { "name": "Alligator", "exec": "alligator" }
+,
+    { "name": "OBS Studio", "exec": "obs" }
+,
+    { "name": "CDDB Retrieval", "exec": "systemsettings kcm_cddb" }
+,
+    { "name": "SciTE Text Editor", "exec": "SciTE" }
+,
+    { "name": "Kolor Lines", "exec": "klines -qwindowtitle" }
+,
+    { "name": "Kubrick", "exec": "kubrick" }
+,
+    { "name": "Wallpaper", "exec": "systemsettings kcm_wallpaper" }
+,
+    { "name": "KBackup", "exec": "kbackup" }
+,
+    { "name": "Synthetic ICC", "exec": "displaycal-synthprofile" }
+,
+    { "name": "ICC Profile Installer", "exec": "colord-kde-icc-importer" }
+,
+    { "name": "KWin Scripts", "exec": "systemsettings kcm_kwin_scripts" }
+,
+    { "name": "xgpsspeed", "exec": "xgpsspeed" }
+,
+    { "name": "Remote Desktop", "exec": "systemsettings kcm_krdpserver" }
+,
+    { "name": "MBoxImporter", "exec": "mboximporter" }
+,
+    { "name": "Kleopatra", "exec": "kleopatra --import-certificate --" }
+,
+    { "name": "Colors", "exec": "systemsettings kcm_colors" }
+,
+    { "name": "KMail Header Theme Editor", "exec": "headerthemeeditor" }
+,
+    { "name": "Elisa", "exec": "elisa" }
+,
+    { "name": "Mumble", "exec": "mumble" }
+,
+    { "name": "Plasma Engine Explorer", "exec": "plasmaengineexplorer" }
+,
+    { "name": "KCharSelect", "exec": "kcharselect --qwindowtitle" }
+,
+    { "name": "Fcitx 5 Wayland Launcher (Experimental)", "exec": "/usr/lib/fcitx5-wayland-launcher --reopen" }
+,
+    { "name": "Lokalize", "exec": "lokalize" }
+,
+    { "name": "DisplayCAL", "exec": "displaycal" }
+,
+    { "name": "Umbrello", "exec": "umbrello5" }
+,
+    { "name": "KNewStuff Dialog", "exec": "knewstuff-dialog6" }
+,
+    { "name": "KWalletManager", "exec": "kwalletmanager5" }
+,
+    { "name": "Info Center", "exec": "kinfocenter" }
+,
+    { "name": "KDialog", "exec": "kdialog" }
+,
+    { "name": "Global Theme", "exec": "systemsettings kcm_lookandfeel" }
+,
+    { "name": "Software Token", "exec": "stoken-gui" }
+,
+    { "name": "KGeography", "exec": "kgeography" }
+,
+    { "name": "KMag", "exec": "kmag" }
+,
+    { "name": "Calculator", "exec": "gnome-calculator" }
+,
+    { "name": "Dropterm", "exec": "kitty --class dropterm" }
+,
+    { "name": "Foot Server", "exec": "foot --server" }
+,
+    { "name": "Htop", "exec": "htop" }
+,
+    { "name": "KTouch", "exec": "ktouch" }
+,
+    { "name": "Icons", "exec": "systemsettings kcm_icons" }
+,
+    { "name": "KNetAttach", "exec": "knetattach" }
+,
+    { "name": "CKAN", "exec": "/usr/bin/ckan" }
+,
+    { "name": "Window Behavior", "exec": "systemsettings kcm_kwinoptions" }
+,
+    { "name": "Naval Battle", "exec": "knavalbattle -qwindowtitle" }
+,
+    { "name": "KAddressBook", "exec": "kaddressbook" }
+,
+    { "name": "Notepad++", "exec": "notepad++" }
+,
+    { "name": "Dr Konqi", "exec": "/usr/lib/drkonqi" }
+,
+    { "name": "KWrite", "exec": "kwrite" }
+,
+    { "name": "Neovim", "exec": "nvim" }
+,
+    { "name": "Kolab Groupware", "exec": "akonadi_kolab_resource" }
+,
+    { "name": "WordQuiz", "exec": "kwordquiz -qwindowtitle" }
+,
+    { "name": "Kigo", "exec": "kigo -qwindowicon kigo -qwindowtitle" }
+,
+    { "name": "Akonadi Console", "exec": "akonadiconsole" }
+,
+    { "name": "Web Search Keywords", "exec": "kcmshell6 kcm_webshortcuts" }
+,
+    { "name": "Step", "exec": "step -qwindowtitle -qwindowicon step" }
+,
+    { "name": "KAlgebra", "exec": "kalgebra" }
