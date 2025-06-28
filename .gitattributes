@@ -2,41 +2,40 @@
 * text=auto eol=lf
 
 # Explicitly mark common binary file types
-# *.png  binary
-# *.jpg  binary
-# *.jpeg binary
-# *.gif  binary
-# *.svg  text
-# *.woff binary
-# *.woff2 binary
-# *.ttf  binary
-# *.otf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.svg  text
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary
 
 # Source code: treat all as text (ensures clean diffing + consistent CRLF cleanup)
-# *.c     text
-# *.cpp   text
-# *.h     text
-# *.hpp   text
-# *.rs    text
-# *.sh    text
-# *.bash  text
-# *.zsh   text
-# *.py    text
-# *.js    text
-# *.ts    text
-# *.qml   text
-# *.json  text
-# *.toml  text
-# *.yaml  text
-# *.yml   text
-# *.conf  text
-# *.ini   text
-# *.md    text
-# *.txt   text
+*.c     text
+*.cpp   text
+*.h     text
+*.hpp   text
+*.rs    text
+*.sh    text
+*.bash  text
+*.zsh   text
+*.py    text
+*.js    text
+*.ts    text
+*.qml   text
+*.json  text
+*.toml  text
+*.yaml  text
+*.yml   text
+*.conf  text
+*.ini   text
+*.md    text
+*.txt   text
 
 # Prevent linguist from counting vendored QML or config as source
-#config/** linguist-vendored
 themes/** linguist-vendored
 
 # Shell scripts should have consistent diff style
-# *.sh diff=sh
+*.sh diff=sh
