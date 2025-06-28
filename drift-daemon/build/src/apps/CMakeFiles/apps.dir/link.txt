@@ -1,0 +1,2 @@
+/usr/bin/ar qc libapps.a CMakeFiles/apps.dir/AppLauncher.cpp.o
+/usr/bin/ranlib libapps.a

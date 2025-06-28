@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=HyprDrift
+Comment=Hyprland + Drift + Quickdrift Shell
+Exec=/usr/bin/hyprdrift-session
+Type=Application
+X-Session-Type=wayland
