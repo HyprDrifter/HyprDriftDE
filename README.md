@@ -85,3 +85,14 @@ Clone the repo and run the installer script from inside the root directory:
 git clone https://github.com/yourname/hyprdriftde.git
 cd hyprdriftde
 sudo ./install.sh
+
+---
+
+## 🙏 Acknowledgements
+
+Special thanks to the developers of:
+
+- [**Hyprland**](https://github.com/hyprwm/Hyprland) – for building a beautifully fast and extensible Wayland compositor.
+- [**Quickshell**](https://github.com/quickshell-mirror/quickshell) – for providing a powerful and elegant QML-based desktop shell framework.
+
+Hypr Drift DE wouldn’t exist without the incredible work and inspiration provided by these projects. Thank you for pushing the Linux desktop forward.
