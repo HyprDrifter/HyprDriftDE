@@ -212,7 +212,205 @@ CMakeFiles/drift-daemon.dir/src/DriftCore.cpp.o: \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/Logger.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/DBusManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SettingsManager.h \
+ /usr/include/c++/15.1.1/vector /usr/include/c++/15.1.1/bits/stl_vector.h \
+ /usr/include/c++/15.1.1/bits/stl_bvector.h \
+ /usr/include/c++/15.1.1/bits/vector.tcc \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/yaml.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/parser.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/dll.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/emitter.h \
+ /usr/include/c++/15.1.1/cmath /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/15.1.1/bits/specfun.h \
+ /usr/include/c++/15.1.1/tr1/gamma.tcc \
+ /usr/include/c++/15.1.1/tr1/special_function_util.h \
+ /usr/include/c++/15.1.1/tr1/bessel_function.tcc \
+ /usr/include/c++/15.1.1/tr1/beta_function.tcc \
+ /usr/include/c++/15.1.1/tr1/ell_integral.tcc \
+ /usr/include/c++/15.1.1/tr1/exp_integral.tcc \
+ /usr/include/c++/15.1.1/tr1/hypergeometric.tcc \
+ /usr/include/c++/15.1.1/tr1/legendre_function.tcc \
+ /usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/15.1.1/tr1/poly_hermite.tcc \
+ /usr/include/c++/15.1.1/tr1/poly_laguerre.tcc \
+ /usr/include/c++/15.1.1/tr1/riemann_zeta.tcc \
+ /usr/include/c++/15.1.1/cstring /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/15.1.1/sstream \
+ /usr/include/c++/15.1.1/bits/sstream.tcc \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/binary.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/emitterdef.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/emittermanip.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/null.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/ostream_wrapper.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/fptostring.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/emitterstyle.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/stlemitter.h \
+ /usr/include/c++/15.1.1/list /usr/include/c++/15.1.1/bits/stl_list.h \
+ /usr/include/c++/15.1.1/bits/list.tcc /usr/include/c++/15.1.1/set \
+ /usr/include/c++/15.1.1/bits/stl_tree.h \
+ /usr/include/c++/15.1.1/bits/node_handle.h \
+ /usr/include/c++/15.1.1/bits/stl_set.h \
+ /usr/include/c++/15.1.1/bits/stl_multiset.h \
+ /usr/include/c++/15.1.1/bits/erase_if.h /usr/include/c++/15.1.1/map \
+ /usr/include/c++/15.1.1/bits/stl_map.h \
+ /usr/include/c++/15.1.1/bits/stl_multimap.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/exceptions.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/mark.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/noexcept.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/traits.h \
+ /usr/include/c++/15.1.1/utility \
+ /usr/include/c++/15.1.1/bits/stl_relops.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/node.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/detail/iterator_fwd.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/ptr.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/type.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/impl.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/detail/memory.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/detail/node.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/detail/node_ref.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/detail/node_data.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/detail/node_iterator.h \
+ /usr/include/c++/15.1.1/iterator \
+ /usr/include/c++/15.1.1/bits/stream_iterator.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/iterator.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/detail/iterator.h \
+ /usr/include/c++/15.1.1/atomic \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/convert.h \
+ /usr/include/c++/15.1.1/unordered_map \
+ /usr/include/c++/15.1.1/bits/unordered_map.h \
+ /usr/include/c++/15.1.1/bits/hashtable.h \
+ /usr/include/c++/15.1.1/bits/hashtable_policy.h \
+ /usr/include/c++/15.1.1/valarray /usr/include/c++/15.1.1/algorithm \
+ /usr/include/c++/15.1.1/bits/ranges_algo.h \
+ /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15.1.1/bits/valarray_array.h \
+ /usr/include/c++/15.1.1/bits/valarray_array.tcc \
+ /usr/include/c++/15.1.1/bits/valarray_before.h \
+ /usr/include/c++/15.1.1/bits/slice_array.h \
+ /usr/include/c++/15.1.1/bits/valarray_after.h \
+ /usr/include/c++/15.1.1/bits/gslice.h \
+ /usr/include/c++/15.1.1/bits/gslice_array.h \
+ /usr/include/c++/15.1.1/bits/mask_array.h \
+ /usr/include/c++/15.1.1/bits/indirect_array.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/detail/impl.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/parse.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/node/emit.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/SessionManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/AppLauncher.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ProcessManager.h \
- /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.h
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/ThemeManager.h \
+ /usr/include/qt6/QtCore/qcoreapplication.h \
+ /usr/include/qt6/QtCore/qglobal.h /usr/include/assert.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdbool.h \
+ /usr/include/qt6/QtCore/qtcoreglobal.h \
+ /usr/include/qt6/QtCore/qtversionchecks.h \
+ /usr/include/qt6/QtCore/qtconfiginclude.h \
+ /usr/include/c++/15.1.1/version /usr/include/qt6/QtCore/qconfig.h \
+ /usr/include/qt6/QtCore/qtcore-config.h \
+ /usr/include/qt6/QtCore/qtconfigmacros.h \
+ /usr/include/qt6/QtCore/qtdeprecationdefinitions.h \
+ /usr/include/qt6/QtCore/qcompilerdetection.h \
+ /usr/include/qt6/QtCore/qprocessordetection.h \
+ /usr/include/qt6/QtCore/qsystemdetection.h \
+ /usr/include/qt6/QtCore/qtcoreexports.h \
+ /usr/include/qt6/QtCore/qtdeprecationmarkers.h \
+ /usr/include/qt6/QtCore/qtclasshelpermacros.h \
+ /usr/include/qt6/QtCore/qtpreprocessorsupport.h \
+ /usr/include/qt6/QtCore/qassert.h /usr/include/qt6/QtCore/qtnoop.h \
+ /usr/include/qt6/QtCore/qtypes.h /usr/include/c++/15.1.1/stdfloat \
+ /usr/include/qt6/QtCore/qtversion.h /usr/include/qt6/QtCore/qtypeinfo.h \
+ /usr/include/qt6/QtCore/qcontainerfwd.h \
+ /usr/include/qt6/QtCore/qsysinfo.h /usr/include/qt6/QtCore/qlogging.h \
+ /usr/include/qt6/QtCore/qflags.h /usr/include/qt6/QtCore/qcompare_impl.h \
+ /usr/include/qt6/QtCore/qatomic.h /usr/include/qt6/QtCore/qbasicatomic.h \
+ /usr/include/qt6/QtCore/qatomic_cxx11.h \
+ /usr/include/qt6/QtCore/qgenericatomic.h \
+ /usr/include/qt6/QtCore/qyieldcpu.h \
+ /usr/include/qt6/QtCore/qconstructormacros.h \
+ /usr/include/qt6/QtCore/qdarwinhelpers.h \
+ /usr/include/qt6/QtCore/qexceptionhandling.h \
+ /usr/include/qt6/QtCore/qforeach.h \
+ /usr/include/qt6/QtCore/qttypetraits.h /usr/include/c++/15.1.1/variant \
+ /usr/include/c++/15.1.1/bits/parse_numbers.h \
+ /usr/include/qt6/QtCore/qfunctionpointer.h \
+ /usr/include/qt6/QtCore/qglobalstatic.h \
+ /usr/include/qt6/QtCore/qmalloc.h /usr/include/qt6/QtCore/qminmax.h \
+ /usr/include/qt6/QtCore/qnumeric.h /usr/include/qt6/QtCore/qoverload.h \
+ /usr/include/qt6/QtCore/qswap.h \
+ /usr/include/qt6/QtCore/qtenvironmentvariables.h \
+ /usr/include/qt6/QtCore/qtresource.h \
+ /usr/include/qt6/QtCore/qttranslation.h \
+ /usr/include/qt6/QtCore/qversiontagging.h \
+ /usr/include/qt6/QtCore/qstring.h /usr/include/qt6/QtCore/qchar.h \
+ /usr/include/qt6/QtCore/qcompare.h \
+ /usr/include/qt6/QtCore/qstdlibdetection.h \
+ /usr/include/qt6/QtCore/qcomparehelpers.h \
+ /usr/include/qt6/QtCore/q20type_traits.h \
+ /usr/include/c++/15.1.1/functional \
+ /usr/include/c++/15.1.1/bits/std_function.h \
+ /usr/include/c++/15.1.1/bits/move_only_function.h \
+ /usr/include/c++/15.1.1/bits/mofunc_impl.h \
+ /usr/include/qt6/QtCore/qstringview.h \
+ /usr/include/qt6/QtCore/qbytearray.h /usr/include/qt6/QtCore/qrefcount.h \
+ /usr/include/qt6/QtCore/qnamespace.h \
+ /usr/include/qt6/QtCore/qtmetamacros.h \
+ /usr/include/qt6/QtCore/qarraydata.h /usr/include/qt6/QtCore/qpair.h \
+ /usr/include/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/qt6/QtCore/qarraydataops.h \
+ /usr/include/qt6/QtCore/qcontainertools_impl.h \
+ /usr/include/qt6/QtCore/qxptype_traits.h \
+ /usr/include/qt6/QtCore/q20functional.h \
+ /usr/include/qt6/QtCore/q20memory.h /usr/include/qt6/QtCore/q17memory.h \
+ /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
+ /usr/include/qt6/QtCore/qbytearrayview.h \
+ /usr/include/qt6/QtCore/qstringfwd.h /usr/include/c++/15.1.1/stdlib.h \
+ /usr/include/qt6/QtCore/qstringliteral.h \
+ /usr/include/qt6/QtCore/qstringalgorithms.h \
+ /usr/include/qt6/QtCore/qlatin1stringview.h \
+ /usr/include/qt6/QtCore/qanystringview.h \
+ /usr/include/qt6/QtCore/qutf8stringview.h \
+ /usr/include/qt6/QtCore/qstringtokenizer.h \
+ /usr/include/qt6/QtCore/qstringbuilder.h \
+ /usr/include/qt6/QtCore/qstringconverter.h \
+ /usr/include/qt6/QtCore/qstringconverter_base.h \
+ /usr/include/qt6/QtCore/qcoreevent.h \
+ /usr/include/qt6/QtCore/qbasictimer.h \
+ /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/qt6/QtCore/qobject.h /usr/include/qt6/QtCore/qobjectdefs.h \
+ /usr/include/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/qt6/QtCore/qfunctionaltools_impl.h \
+ /usr/include/qt6/QtCore/qlist.h /usr/include/qt6/QtCore/qhashfunctions.h \
+ /usr/include/c++/15.1.1/numeric \
+ /usr/include/c++/15.1.1/bits/stl_numeric.h \
+ /usr/include/c++/15.1.1/pstl/glue_numeric_defs.h \
+ /usr/include/qt6/QtCore/qiterator.h \
+ /usr/include/qt6/QtCore/qbytearraylist.h \
+ /usr/include/qt6/QtCore/qstringlist.h \
+ /usr/include/qt6/QtCore/qalgorithms.h \
+ /usr/include/qt6/QtCore/qstringmatcher.h \
+ /usr/include/qt6/QtCore/qscopedpointer.h \
+ /usr/include/qt6/QtCore/qmetatype.h \
+ /usr/include/qt6/QtCore/qdatastream.h \
+ /usr/include/qt6/QtCore/qiodevicebase.h \
+ /usr/include/qt6/QtCore/qfloat16.h /usr/include/qt6/QtCore/qmath.h \
+ /usr/include/qt6/QtCore/qtformat_impl.h \
+ /usr/include/qt6/QtCore/qiterable.h \
+ /usr/include/qt6/QtCore/qmetacontainer.h \
+ /usr/include/qt6/QtCore/qcontainerinfo.h \
+ /usr/include/qt6/QtCore/qtaggedpointer.h \
+ /usr/include/qt6/QtCore/qscopeguard.h \
+ /usr/include/qt6/QtCore/qobject_impl.h \
+ /usr/include/qt6/QtCore/qbindingstorage.h /usr/include/c++/15.1.1/chrono \
+ /usr/include/c++/15.1.1/bits/chrono.h /usr/include/c++/15.1.1/ratio \
+ /usr/include/c++/15.1.1/bits/chrono_io.h /usr/include/c++/15.1.1/iomanip \
+ /usr/include/c++/15.1.1/bits/quoted_string.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/qt6/QtCore/qnativeinterface.h \
+ /usr/include/qt6/QtCore/qcoreapplication_platform.h \
+ /usr/include/qt6/QtCore/qcoreapplication.h
