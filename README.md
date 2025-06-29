@@ -1,3 +1,5 @@
+![Hypr Drift DE](banner-logo.png)
+
 # Hypr Drift DE
 
 **Hypr Drift Desktop Environment** is a responsive, animated, and modular desktop experience built on top of [Hyprland](https://github.com/hyprwm/Hyprland). It aims to deliver smooth, fluid visuals and a traditional desktop feel while staying lightweight and extensible.
