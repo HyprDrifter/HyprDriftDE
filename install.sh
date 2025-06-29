@@ -57,5 +57,5 @@ echo "[+] Installing Quickshell dev loop"
 install -Dm755 system/scripts/quickshell-loop.sh /usr/bin/quickshell-loop
 
 echo "-------------------------------"
-echo "[+] Installation complete."
+echo "[+] Installation complete!"
 exit 0
