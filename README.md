@@ -85,7 +85,7 @@ Clone the repo and run the installer script from inside the root directory:
 git clone https://github.com/yourname/hyprdriftde.git
 cd hyprdriftde
 sudo ./install.sh
-
+```
 ---
 
 ## 🙏 Acknowledgements
