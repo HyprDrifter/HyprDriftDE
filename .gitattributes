@@ -11,7 +11,7 @@
 *.ttf  binary
 *.otf  binary
 
-# Source code: treat all as text (ensures clean diffing + consistent CRLF cleanup)
+# Source code: treat all as text and mark language for GitHub Linguist
 *.c     text linguist-language=C
 *.cpp   text linguist-language=C++
 *.h     text linguist-language=C++
@@ -21,8 +21,8 @@
 *.js    text linguist-language=JavaScript
 *.ts    text linguist-language=TypeScript
 *.sh    text diff=sh linguist-language=Shell
-*.bash  text
-*.zsh   text
+*.bash  text linguist-language=Shell
+*.zsh   text linguist-language=Shell
 *.py    text linguist-language=Python
 *.json  text
 *.toml  text
@@ -33,17 +33,11 @@
 *.md    text
 *.txt   text
 
-# Exclude theme definitions from language stats
-themes/**        linguist-vendored
-drift-daemon/build/.qt/**   linguist-vendored
-drift-daemon/build/CMakeFiles/**    linguist-vendored
-drift-daemon/build/cmake_install.cmake    linguist-vendored
-drift-daemon/build/CMakeCache.txt    linguist-vendored
-drift-daemon/build/drift-daemon    linguist-vendored
-drift-daemon/build/Makefile    linguist-vendored
-
-# Exclude Make and CMake build scripts from stats
-Makefile         linguist-vendored
-*.mk             linguist-vendored
-CMakeLists.txt   linguist-vendored
-*.cmake          linguist-vendored
+# Vendored or build-related files that should be excluded from stats
+themes/**                             linguist-vendored
+drift-daemon/build/**                 linguist-vendored
+drift-daemon/Makefile                 linguist-vendored
+Makefile                              linguist-vendored
+*.mk                                  linguist-vendored
+CMakeLists.txt                        linguist-vendored
+*.cmake                               linguist-vendored
