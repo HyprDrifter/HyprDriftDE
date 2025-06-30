@@ -38,7 +38,7 @@ Hypr Drift DE enhances Hyprland with the creature comforts of a full desktop env
 
 ## 🎥 Demo
 
-<p align="center">
+<p>
   <img src="Demo.gif" alt="Hypr Drift DE in action" width="66%"/>
 </p>
 
