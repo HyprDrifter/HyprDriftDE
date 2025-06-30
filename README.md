@@ -1,4 +1,6 @@
-![Hypr Drift DE](banner-logo.png)
+<p align="center">
+  <img src="banner-logo.png" alt="Hypr Drift DE Logo"/>
+</p>
 
 # Hypr Drift DE
 
@@ -31,6 +33,14 @@ Hypr Drift DE enhances Hyprland with the creature comforts of a full desktop env
 - D-Bus integration and IPC-based orchestration
 - Shared YAML-based theming
 - QML-based shell interface with modular components
+
+---
+
+## 🎥 Demo
+
+<p>
+  <img src="Demo.gif" alt="Hypr Drift DE in action" width="100%"/>
+</p>
 
 ---
 
