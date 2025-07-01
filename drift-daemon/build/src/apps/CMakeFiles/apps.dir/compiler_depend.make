@@ -3,6 +3,8 @@
 
 src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps/AppLauncher.cpp \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps/AppLauncher.h \
+  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h \
+  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -179,13 +181,11 @@ src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE
 
 /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
 
-/usr/include/c++/15.1.1/bits/basic_string.h:
+/usr/include/c++/15.1.1/type_traits:
 
-/usr/include/bits/types/sigset_t.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/c++/15.1.1/bits/allocator.h:
-
-/usr/include/c++/15.1.1/bits/stl_pair.h:
+/usr/include/c++/15.1.1/tuple:
 
 /usr/include/c++/15.1.1/backward/binders.h:
 
@@ -200,6 +200,10 @@ src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE
 /usr/include/bits/types/time_t.h:
 
 /usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/15.1.1/bits/allocator.h:
+
+/usr/include/c++/15.1.1/bits/stl_pair.h:
 
 /usr/include/bits/types/struct_FILE.h:
 
@@ -229,23 +233,9 @@ src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE
 
 /usr/include/c++/15.1.1/cstdio:
 
-/usr/include/bits/floatn.h:
+/usr/include/c++/15.1.1/bits/exception_defines.h:
 
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/c++/15.1.1/ext/alloc_traits.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/c++/15.1.1/tuple:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/features.h:
-
-/usr/include/bits/endianness.h:
+/usr/include/bits/types.h:
 
 /usr/include/sys/cdefs.h:
 
@@ -279,6 +269,26 @@ src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE
 
 /usr/include/asm-generic/errno-base.h:
 
+/home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h:
+
+/usr/include/c++/15.1.1/bits/refwrap.h:
+
+/usr/include/c++/15.1.1/bits/stl_construct.h:
+
+/usr/include/c++/15.1.1/bits/version.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/locale.h:
+
+/home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps/AppLauncher.h:
+
 /usr/include/c++/15.1.1/bits/ptr_traits.h:
 
 /usr/include/bits/waitstatus.h:
@@ -294,6 +304,20 @@ src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE
 /usr/include/bits/thread-shared-types.h:
 
 /usr/include/bits/wchar.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/c++/15.1.1/ext/alloc_traits.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/c++/15.1.1/bits/basic_string.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h:
 
 /usr/include/bits/libc-header-start.h:
 
@@ -323,23 +347,13 @@ src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE
 
 /usr/include/c++/15.1.1/bits/ostream_insert.h:
 
-/usr/include/locale.h:
-
-/home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps/AppLauncher.h:
-
-/usr/include/bits/types/FILE.h:
-
 /usr/include/bits/byteswap.h:
-
-/usr/include/c++/15.1.1/bits/exception_defines.h:
-
-/usr/include/bits/types.h:
 
 /usr/include/c++/15.1.1/bits/max_size_type.h:
 
-/usr/include/c++/15.1.1/bits/postypes.h:
-
 /usr/include/c++/15.1.1/bits/functexcept.h:
+
+/usr/include/c++/15.1.1/bits/postypes.h:
 
 /usr/include/c++/15.1.1/bits/basic_string.tcc:
 
@@ -382,12 +396,6 @@ src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE
 /usr/include/c++/15.1.1/bits/stl_algobase.h:
 
 /usr/include/c++/15.1.1/bits/ranges_algobase.h:
-
-/usr/include/c++/15.1.1/bits/refwrap.h:
-
-/usr/include/c++/15.1.1/bits/stl_construct.h:
-
-/usr/include/c++/15.1.1/bits/version.h:
 
 /usr/include/c++/15.1.1/bits/std_abs.h:
 
@@ -450,5 +458,3 @@ src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o: /home/suzie/Projects/HyprDriftDE
 /usr/include/c++/15.1.1/ext/string_conversions.h:
 
 /usr/include/c++/15.1.1/ext/type_traits.h:
-
-/usr/include/c++/15.1.1/type_traits:

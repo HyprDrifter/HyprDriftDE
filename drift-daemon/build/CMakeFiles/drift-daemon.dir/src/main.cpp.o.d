@@ -209,8 +209,11 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.o: \
  /usr/include/c++/15.1.1/bits/out_ptr.h \
  /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
  /usr/include/c++/15.1.1/pstl/execution_defs.h \
+ /usr/include/c++/15.1.1/list /usr/include/c++/15.1.1/bits/stl_list.h \
+ /usr/include/c++/15.1.1/bits/list.tcc \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/logging/Logger.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/settings/SettingsManager.h \
  /usr/include/c++/15.1.1/vector /usr/include/c++/15.1.1/bits/stl_vector.h \
@@ -250,9 +253,7 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.o: \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/fptostring.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/emitterstyle.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/stlemitter.h \
- /usr/include/c++/15.1.1/list /usr/include/c++/15.1.1/bits/stl_list.h \
- /usr/include/c++/15.1.1/bits/list.tcc /usr/include/c++/15.1.1/set \
- /usr/include/c++/15.1.1/bits/stl_tree.h \
+ /usr/include/c++/15.1.1/set /usr/include/c++/15.1.1/bits/stl_tree.h \
  /usr/include/c++/15.1.1/bits/node_handle.h \
  /usr/include/c++/15.1.1/bits/stl_set.h \
  /usr/include/c++/15.1.1/bits/stl_multiset.h \

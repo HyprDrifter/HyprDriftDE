@@ -4,6 +4,8 @@
 src/apps/CMakeFiles/apps.dir/AppLauncher.cpp.o
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps/AppLauncher.cpp
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps/AppLauncher.h
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h

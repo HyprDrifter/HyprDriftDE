@@ -40,6 +40,9 @@
 /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/core/CMakeFiles/core.dir
 /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/core/CMakeFiles/edit_cache.dir
 /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/core/CMakeFiles/rebuild_cache.dir
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/driftModule/CMakeFiles/driftModule.dir
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/driftModule/CMakeFiles/edit_cache.dir
+/home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/driftModule/CMakeFiles/rebuild_cache.dir
 /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/utils/CMakeFiles/utils.dir
 /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/utils/CMakeFiles/edit_cache.dir
 /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/utils/CMakeFiles/rebuild_cache.dir

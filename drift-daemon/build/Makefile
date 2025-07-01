@@ -560,6 +560,19 @@ core/fast:
 .PHONY : core/fast
 
 #=============================================================================
+# Target rules for targets named driftModule
+
+# Build rule for target.
+driftModule: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 driftModule
+.PHONY : driftModule
+
+# fast build rule for target.
+driftModule/fast:
+	$(MAKE) $(MAKESILENT) -f src/driftModule/CMakeFiles/driftModule.dir/build.make src/driftModule/CMakeFiles/driftModule.dir/build
+.PHONY : driftModule/fast
+
+#=============================================================================
 # Target rules for targets named utils
 
 # Build rule for target.
@@ -740,6 +753,7 @@ help:
 	@echo "... core"
 	@echo "... dbus"
 	@echo "... drift-daemon"
+	@echo "... driftModule"
 	@echo "... logging"
 	@echo "... process"
 	@echo "... session"

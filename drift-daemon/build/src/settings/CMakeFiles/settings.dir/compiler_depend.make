@@ -34,6 +34,7 @@ src/settings/CMakeFiles/settings.dir/SettingsManager.cpp.o: /home/suzie/Projects
   _deps/yaml-cpp-src/include/yaml-cpp/stlemitter.h \
   _deps/yaml-cpp-src/include/yaml-cpp/traits.h \
   _deps/yaml-cpp-src/include/yaml-cpp/yaml.h \
+  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/settings/SettingsManager.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h \
   /usr/include/alloca.h \
@@ -427,8 +428,6 @@ src/settings/CMakeFiles/settings.dir/SettingsManager.cpp.o: /home/suzie/Projects
 
 /usr/include/pwd.h:
 
-/usr/include/pthread.h:
-
 /usr/include/math.h:
 
 /usr/include/linux/types.h:
@@ -593,6 +592,8 @@ src/settings/CMakeFiles/settings.dir/SettingsManager.cpp.o: /home/suzie/Projects
 
 /usr/include/c++/15.1.1/bits/uses_allocator_args.h:
 
+/usr/include/c++/15.1.1/bits/uses_allocator.h:
+
 /usr/include/bits/types/wint_t.h:
 
 /usr/include/bits/types/struct_timespec.h:
@@ -753,6 +754,18 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/ptr.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/node/detail/memory.h:
 
+/usr/include/bits/floatn.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/15.1.1/bits/locale_classes.h:
+
+_deps/yaml-cpp-src/include/yaml-cpp/parser.h:
+
+/usr/include/c++/15.1.1/istream:
+
+/usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h:
+
 _deps/yaml-cpp-src/include/yaml-cpp/dll.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/node/detail/node.h:
@@ -766,18 +779,6 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/detail/iterator.h:
 _deps/yaml-cpp-src/include/yaml-cpp/node/emit.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/node/detail/impl.h:
-
-_deps/yaml-cpp-src/include/yaml-cpp/parser.h:
-
-/usr/include/c++/15.1.1/istream:
-
-/usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/15.1.1/bits/locale_classes.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/node/impl.h:
 
@@ -847,9 +848,9 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/parse.h:
 
 /usr/include/c++/15.1.1/bits/exception_defines.h:
 
-_deps/yaml-cpp-src/include/yaml-cpp/node/detail/node_data.h:
-
 _deps/yaml-cpp-src/include/yaml-cpp/node/detail/node_ref.h:
+
+_deps/yaml-cpp-src/include/yaml-cpp/node/detail/node_data.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/yaml.h:
 
@@ -883,8 +884,6 @@ _deps/yaml-cpp-src/include/yaml-cpp/stlemitter.h:
 
 /usr/include/c++/15.1.1/bits/concept_check.h:
 
-/usr/include/bits/waitflags.h:
-
 /usr/include/bits/types/struct_sched_param.h:
 
 /usr/include/c++/15.1.1/bits/enable_special_members.h:
@@ -900,6 +899,16 @@ _deps/yaml-cpp-src/include/yaml-cpp/traits.h:
 /usr/include/c++/15.1.1/iostream:
 
 /usr/include/c++/15.1.1/bits/predefined_ops.h:
+
+/usr/include/pthread.h:
+
+/home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/time_members.h:
+
+/usr/include/c++/15.1.1/bits/ostream_insert.h:
+
+/usr/include/c++/15.1.1/bits/stl_relops.h:
 
 /usr/include/c++/15.1.1/utility:
 
@@ -992,6 +1001,8 @@ _deps/yaml-cpp-src/include/yaml-cpp/mark.h:
 /usr/include/c++/15.1.1/bits/monostate.h:
 
 /usr/include/bits/floatn-common.h:
+
+/usr/include/bits/waitflags.h:
 
 /usr/include/bits/wctype-wchar.h:
 
@@ -1175,12 +1186,6 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/detail/iterator_fwd.h:
 
 /usr/include/c++/15.1.1/bits/stl_pair.h:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/time_members.h:
-
-/usr/include/c++/15.1.1/bits/ostream_insert.h:
-
-/usr/include/c++/15.1.1/bits/stl_relops.h:
-
 /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/15.1.1/bits/stl_tempbuf.h:
@@ -1200,5 +1205,3 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/detail/iterator_fwd.h:
 /usr/include/c++/15.1.1/bits/unicode.h:
 
 /usr/include/c++/15.1.1/bits/uniform_int_dist.h:
-
-/usr/include/c++/15.1.1/bits/uses_allocator.h:

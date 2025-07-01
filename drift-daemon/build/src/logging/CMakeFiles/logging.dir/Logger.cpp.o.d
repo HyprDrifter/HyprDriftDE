@@ -176,4 +176,5 @@ src/logging/CMakeFiles/logging.dir/Logger.cpp.o: \
  /usr/include/c++/15.1.1/bits/ostream.tcc /usr/include/c++/15.1.1/istream \
  /usr/include/c++/15.1.1/bits/istream.tcc \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/logging/Logger.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h

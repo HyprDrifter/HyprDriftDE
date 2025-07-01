@@ -3,6 +3,7 @@
 
 src/session/CMakeFiles/session.dir/SessionManager.cpp.o
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/session/SessionManager.cpp
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/session/SessionManager.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h

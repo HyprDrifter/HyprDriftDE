@@ -8,6 +8,8 @@ set(__QT_DEPLOY_TARGET_yaml-cpp_FILE /home/suzie/Projects/HyprDriftDE/drift-daem
 set(__QT_DEPLOY_TARGET_yaml-cpp_TYPE STATIC_LIBRARY)
 set(__QT_DEPLOY_TARGET_core_FILE /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/core/libcore.a)
 set(__QT_DEPLOY_TARGET_core_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_driftModule_FILE /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/driftModule/libdriftModule.a)
+set(__QT_DEPLOY_TARGET_driftModule_TYPE STATIC_LIBRARY)
 set(__QT_DEPLOY_TARGET_utils_FILE /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/utils/libutils.a)
 set(__QT_DEPLOY_TARGET_utils_TYPE STATIC_LIBRARY)
 set(__QT_DEPLOY_TARGET_dbus_FILE /home/suzie/Projects/HyprDriftDE/drift-daemon/build/src/dbus/libdbus.a)

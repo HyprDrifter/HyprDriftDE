@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdriftModule.a CMakeFiles/driftModule.dir/DriftModule.cpp.o
+/usr/bin/ranlib libdriftModule.a

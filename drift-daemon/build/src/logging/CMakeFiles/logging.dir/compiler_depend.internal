@@ -3,6 +3,7 @@
 
 src/logging/CMakeFiles/logging.dir/Logger.cpp.o
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/logging/Logger.cpp
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/logging/Logger.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h
  /usr/include/alloca.h

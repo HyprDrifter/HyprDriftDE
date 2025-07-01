@@ -2,8 +2,9 @@
 #include <string>
 #include <iostream>
 
+#include "DriftModule.h"
 
-class Logger
+class Logger : public DriftModule
 {
 private:
     bool running = false;
@@ -12,4 +13,5 @@ public:
     ~Logger();
 
     void start();
+    void stop();
 };

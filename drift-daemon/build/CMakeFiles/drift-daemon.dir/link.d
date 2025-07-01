@@ -4,6 +4,7 @@ drift-daemon: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
   CMakeFiles/drift-daemon.dir/src/main.cpp.o \
   src/core/libcore.a \
+  src/driftModule/libdriftModule.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libutil.a \
   src/dbus/libdbus.a \
   src/settings/libsettings.a \
@@ -15,6 +16,7 @@ drift-daemon: \
   src/wallpaper/libwallpaper.a \
   /usr/lib/libQt6Core.so.6.9.1 \
   _deps/yaml-cpp-build/libyaml-cpp.a \
+  src/driftModule/libdriftModule.a \
   src/utils/libutils.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
@@ -71,6 +73,8 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.o:
 
 src/core/libcore.a:
 
+src/driftModule/libdriftModule.a:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libutil.a:
 
 src/dbus/libdbus.a:
@@ -92,6 +96,8 @@ src/wallpaper/libwallpaper.a:
 /usr/lib/libQt6Core.so.6.9.1:
 
 _deps/yaml-cpp-build/libyaml-cpp.a:
+
+src/driftModule/libdriftModule.a:
 
 src/utils/libutils.a:
 

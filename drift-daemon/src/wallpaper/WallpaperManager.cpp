@@ -6,6 +6,7 @@
 
 #include "utilities.h"
 #include "WallpaperManager.h"
+#include "DriftModule.h"
 
 WallpaperManager::WallpaperManager(/* args */)
 {
@@ -16,6 +17,11 @@ WallpaperManager::~WallpaperManager()
 }
 
 void WallpaperManager::start()
+{
+    writeLine("Wallpaper Manager Started");
+}
+
+void WallpaperManager::stop()
 {
     writeLine("Wallpaper Manager Started");
 }

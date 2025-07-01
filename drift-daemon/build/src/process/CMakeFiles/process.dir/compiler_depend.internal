@@ -3,6 +3,7 @@
 
 src/process/CMakeFiles/process.dir/ProcessManager.cpp.o
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/process/ProcessManager.cpp
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/process/ProcessManager.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h
  /usr/include/alloca.h

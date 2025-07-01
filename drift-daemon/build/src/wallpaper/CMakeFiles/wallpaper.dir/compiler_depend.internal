@@ -3,6 +3,7 @@
 
 src/wallpaper/CMakeFiles/wallpaper.dir/WallpaperManager.cpp.o
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/wallpaper/WallpaperManager.cpp
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/wallpaper/WallpaperManager.h
  /usr/include/alloca.h

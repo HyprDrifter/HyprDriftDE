@@ -308,4 +308,5 @@ src/settings/CMakeFiles/settings.dir/SettingsManager.cpp.o: \
  /usr/include/c++/15.1.1/codecvt /usr/include/c++/15.1.1/bits/fs_dir.h \
  /usr/include/c++/15.1.1/bits/fs_ops.h /usr/include/pwd.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h \
- /home/suzie/Projects/HyprDriftDE/drift-daemon/src/settings/SettingsManager.h
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/settings/SettingsManager.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h

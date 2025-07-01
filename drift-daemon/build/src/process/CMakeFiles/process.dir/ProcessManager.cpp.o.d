@@ -111,4 +111,5 @@ src/process/CMakeFiles/process.dir/ProcessManager.cpp.o: \
  /usr/include/c++/15.1.1/bits/uses_allocator_args.h \
  /usr/include/c++/15.1.1/tuple \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h \
- /home/suzie/Projects/HyprDriftDE/drift-daemon/src/process/ProcessManager.h
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/process/ProcessManager.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h

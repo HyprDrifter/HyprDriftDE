@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps
+CXX_INCLUDES = -I/home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps -I/home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils -I/home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule
 
 CXX_FLAGS = -std=gnu++23
 

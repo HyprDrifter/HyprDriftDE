@@ -10,9 +10,11 @@
 
 #include "utilities.h"
 #include "SettingsManager.h"
+#include "DriftModule.h"
 
 SettingsManager::SettingsManager()
 {
+    moduleName = "Settings Manager";
     user = getuid();
     writeLine(user);
     struct passwd *pw = getpwuid(getuid());

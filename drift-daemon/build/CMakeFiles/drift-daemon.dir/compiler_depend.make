@@ -37,6 +37,7 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.o: /home/suzie/Projects/HyprDriftDE/dri
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps/AppLauncher.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/core/DriftCore.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.h \
+  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/logging/Logger.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/process/ProcessManager.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/session/SessionManager.h \
@@ -567,6 +568,7 @@ drift-daemon: /usr/lib/Scrt1.o \
   src/apps/libapps.a \
   src/core/libcore.a \
   src/dbus/libdbus.a \
+  src/driftModule/libdriftModule.a \
   src/logging/liblogging.a \
   src/process/libprocess.a \
   src/session/libsession.a \
@@ -587,6 +589,8 @@ src/session/libsession.a:
 src/process/libprocess.a:
 
 src/logging/liblogging.a:
+
+src/driftModule/libdriftModule.a:
 
 src/dbus/libdbus.a:
 
@@ -615,8 +619,6 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.o:
 /usr/include/qt6/QtCore/qyieldcpu.h:
 
 /usr/include/c++/15.1.1/bits/stl_tempbuf.h:
-
-/usr/include/c++/15.1.1/bits/ostream_insert.h:
 
 /usr/lib/libgomp.so.1:
 
@@ -682,19 +684,11 @@ CMakeFiles/drift-daemon.dir/src/main.cpp.o:
 
 /usr/include/c++/15.1.1/bits/locale_facets_nonio.tcc:
 
-/usr/include/c++/15.1.1/bits/streambuf.tcc:
-
-/usr/include/c++/15.1.1/bits/move_only_function.h:
-
 /usr/include/c++/15.1.1/bits/locale_facets.h:
 
 /usr/include/c++/15.1.1/bits/functexcept.h:
 
 /usr/include/bits/local_lim.h:
-
-/usr/include/c++/15.1.1/bits/stl_relops.h:
-
-/usr/include/qt6/QtCore/qtcoreexports.h:
 
 /usr/include/c++/15.1.1/bits/ios_base.h:
 
@@ -788,13 +782,11 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/detail/iterator_fwd.h:
 
 /usr/include/bits/types/wint_t.h:
 
-_deps/yaml-cpp-src/include/yaml-cpp/node/node.h:
+/usr/include/bits/types/struct_timeval.h:
 
-/usr/include/bits/types/clockid_t.h:
+/usr/include/c++/15.1.1/bits/parse_numbers.h:
 
-/usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h:
-
-/usr/include/bits/types/struct_FILE.h:
+/usr/include/c++/15.1.1/bits/locale_classes.h:
 
 /usr/include/c++/15.1.1/bits/alloc_traits.h:
 
@@ -856,15 +848,21 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/emit.h:
 
 /usr/include/bits/types/timer_t.h:
 
+/usr/include/qt6/QtCore/qtcoreexports.h:
+
+/usr/include/c++/15.1.1/bits/stl_relops.h:
+
+/usr/include/c++/15.1.1/bits/ostream_insert.h:
+
+/home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h:
+
+/usr/include/pthread.h:
+
 /usr/include/c++/15.1.1/bits/std_function.h:
 
 /usr/include/bits/timesize.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/exceptions.h:
-
-/usr/include/qt6/QtCore/qiterator.h:
-
-/usr/include/qt6/QtCore/qminmax.h:
 
 /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.h:
 
@@ -994,6 +992,14 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/impl.h:
 
 /usr/include/bits/libm-simd-decl-stubs.h:
 
+_deps/yaml-cpp-src/include/yaml-cpp/node/node.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h:
+
+/usr/include/bits/types/clockid_t.h:
+
 _deps/yaml-cpp-src/include/yaml-cpp/emitterdef.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/node/parse.h:
@@ -1015,12 +1021,6 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/parse.h:
 /usr/include/c++/15.1.1/bits/align.h:
 
 /usr/include/c++/15.1.1/istream:
-
-/usr/include/c++/15.1.1/bits/parse_numbers.h:
-
-/usr/include/c++/15.1.1/bits/locale_classes.h:
-
-/usr/include/bits/types/struct_timeval.h:
 
 /usr/include/bits/floatn.h:
 
@@ -1081,6 +1081,14 @@ _deps/yaml-cpp-src/include/yaml-cpp/null.h:
 /usr/include/c++/15.1.1/ext/string_conversions.h:
 
 /usr/include/c++/15.1.1/bits/stl_bvector.h:
+
+/usr/include/c++/15.1.1/bits/move_only_function.h:
+
+/usr/include/c++/15.1.1/bits/streambuf.tcc:
+
+/usr/include/qt6/QtCore/qminmax.h:
+
+/usr/include/qt6/QtCore/qiterator.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/mark.h:
 
@@ -1495,8 +1503,6 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/detail/node_ref.h:
 /usr/include/linux/types.h:
 
 /usr/include/math.h:
-
-/usr/include/pthread.h:
 
 /usr/include/qt6/QtCore/QCoreApplication:
 

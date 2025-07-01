@@ -3,6 +3,7 @@
 
 src/dbus/CMakeFiles/dbus.dir/DBusManager.cpp.o: /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.cpp \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.h \
+  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -186,9 +187,9 @@ src/dbus/CMakeFiles/dbus.dir/DBusManager.cpp.o: /home/suzie/Projects/HyprDriftDE
 
 /usr/include/c++/15.1.1/type_traits:
 
-/usr/include/c++/15.1.1/bits/allocator.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/c++/15.1.1/bits/stl_pair.h:
+/usr/include/c++/15.1.1/tuple:
 
 /usr/include/c++/15.1.1/backward/binders.h:
 
@@ -205,6 +206,10 @@ src/dbus/CMakeFiles/dbus.dir/DBusManager.cpp.o: /home/suzie/Projects/HyprDriftDE
 /usr/include/bits/types/time_t.h:
 
 /usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/15.1.1/bits/allocator.h:
+
+/usr/include/c++/15.1.1/bits/stl_pair.h:
 
 /usr/include/bits/types/struct_FILE.h:
 
@@ -238,17 +243,9 @@ src/dbus/CMakeFiles/dbus.dir/DBusManager.cpp.o: /home/suzie/Projects/HyprDriftDE
 
 /usr/include/bits/types/FILE.h:
 
-/usr/include/bits/types/mbstate_t.h:
+/usr/include/c++/15.1.1/bits/exception_defines.h:
 
-/usr/include/c++/15.1.1/ext/alloc_traits.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/c++/15.1.1/tuple:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/c++/15.1.1/bits/basic_string.h:
+/usr/include/bits/types.h:
 
 /usr/include/sys/cdefs.h:
 
@@ -282,10 +279,6 @@ src/dbus/CMakeFiles/dbus.dir/DBusManager.cpp.o: /home/suzie/Projects/HyprDriftDE
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/features.h:
-
-/usr/include/bits/endianness.h:
-
 /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h:
 
 /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.cpp:
@@ -295,6 +288,10 @@ src/dbus/CMakeFiles/dbus.dir/DBusManager.cpp.o: /home/suzie/Projects/HyprDriftDE
 /usr/include/c++/15.1.1/bits/stl_construct.h:
 
 /usr/include/c++/15.1.1/bits/version.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/endianness.h:
 
 /usr/include/bits/locale.h:
 
@@ -306,9 +303,19 @@ src/dbus/CMakeFiles/dbus.dir/DBusManager.cpp.o: /home/suzie/Projects/HyprDriftDE
 
 /usr/include/bits/long-double.h:
 
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/c++/15.1.1/ext/alloc_traits.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/c++/15.1.1/bits/basic_string.h:
+
 /usr/include/bits/floatn.h:
 
 /usr/include/bits/pthreadtypes.h:
+
+/home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h:
 
 /usr/include/bits/libc-header-start.h:
 
@@ -342,15 +349,11 @@ src/dbus/CMakeFiles/dbus.dir/DBusManager.cpp.o: /home/suzie/Projects/HyprDriftDE
 
 /usr/include/bits/byteswap.h:
 
-/usr/include/c++/15.1.1/bits/exception_defines.h:
-
-/usr/include/bits/types.h:
-
 /usr/include/c++/15.1.1/bits/max_size_type.h:
 
-/usr/include/c++/15.1.1/bits/postypes.h:
-
 /usr/include/c++/15.1.1/bits/functexcept.h:
+
+/usr/include/c++/15.1.1/bits/postypes.h:
 
 /usr/include/c++/15.1.1/bits/basic_string.tcc:
 

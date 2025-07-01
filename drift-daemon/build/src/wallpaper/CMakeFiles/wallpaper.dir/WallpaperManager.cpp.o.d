@@ -196,4 +196,5 @@ src/wallpaper/CMakeFiles/wallpaper.dir/WallpaperManager.cpp.o: \
  /usr/include/c++/15.1.1/bits/fs_dir.h \
  /usr/include/c++/15.1.1/bits/fs_ops.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h \
- /home/suzie/Projects/HyprDriftDE/drift-daemon/src/wallpaper/WallpaperManager.h
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/wallpaper/WallpaperManager.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h

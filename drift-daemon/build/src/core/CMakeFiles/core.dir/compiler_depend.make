@@ -37,6 +37,7 @@ src/core/CMakeFiles/core.dir/DriftCore.cpp.o: /home/suzie/Projects/HyprDriftDE/d
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps/AppLauncher.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/core/DriftCore.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.h \
+  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/logging/Logger.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/process/ProcessManager.h \
   /home/suzie/Projects/HyprDriftDE/drift-daemon/src/session/SessionManager.h \
@@ -679,8 +680,6 @@ src/core/CMakeFiles/core.dir/DriftCore.cpp.o: /home/suzie/Projects/HyprDriftDE/d
 
 /usr/include/pwd.h:
 
-/usr/include/pthread.h:
-
 /usr/include/math.h:
 
 /usr/include/linux/types.h:
@@ -1039,6 +1038,12 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/detail/iterator.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/mark.h:
 
+/usr/include/qt6/QtCore/qiterator.h:
+
+/usr/include/c++/15.1.1/bits/streambuf.tcc:
+
+/usr/include/c++/15.1.1/bits/move_only_function.h:
+
 /usr/include/c++/15.1.1/bits/stl_bvector.h:
 
 /usr/include/c++/15.1.1/ext/string_conversions.h:
@@ -1092,10 +1097,6 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/detail/memory.h:
 _deps/yaml-cpp-src/include/yaml-cpp/node/detail/impl.h:
 
 /usr/include/bits/floatn.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/15.1.1/bits/locale_classes.h:
 
 _deps/yaml-cpp-src/include/yaml-cpp/parser.h:
 
@@ -1189,6 +1190,14 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/convert.h:
 
 /usr/include/asm/bitsperlong.h:
 
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h:
+
+_deps/yaml-cpp-src/include/yaml-cpp/node/node.h:
+
 /usr/include/bits/libm-simd-decl-stubs.h:
 
 /home/suzie/Projects/HyprDriftDE/drift-daemon/src/core/DriftCore.h:
@@ -1252,6 +1261,16 @@ _deps/yaml-cpp-src/include/yaml-cpp/exceptions.h:
 /usr/include/bits/timesize.h:
 
 /usr/include/c++/15.1.1/bits/std_function.h:
+
+/usr/include/pthread.h:
+
+/home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/time_members.h:
+
+/usr/include/c++/15.1.1/bits/ostream_insert.h:
+
+/usr/include/c++/15.1.1/bits/stl_relops.h:
 
 /usr/include/bits/types/timer_t.h:
 
@@ -1321,13 +1340,9 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/emit.h:
 
 /usr/include/asm/types.h:
 
-/usr/include/bits/stdint-intn.h:
+/usr/include/c++/15.1.1/bits/locale_classes.h:
 
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h:
-
-_deps/yaml-cpp-src/include/yaml-cpp/node/node.h:
+/usr/include/bits/types/struct_timeval.h:
 
 /usr/include/bits/types/struct_tm.h:
 
@@ -1479,12 +1494,6 @@ _deps/yaml-cpp-src/include/yaml-cpp/ostream_wrapper.h:
 
 /usr/include/c++/15.1.1/bits/locale_facets.h:
 
-/usr/include/qt6/QtCore/qiterator.h:
-
-/usr/include/c++/15.1.1/bits/move_only_function.h:
-
-/usr/include/c++/15.1.1/bits/streambuf.tcc:
-
 /usr/include/c++/15.1.1/bits/locale_facets_nonio.tcc:
 
 /usr/include/qt6/QtCore/qelapsedtimer.h:
@@ -1564,12 +1573,6 @@ _deps/yaml-cpp-src/include/yaml-cpp/node/detail/iterator_fwd.h:
 /usr/include/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/15.1.1/bits/stl_pair.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/time_members.h:
-
-/usr/include/c++/15.1.1/bits/ostream_insert.h:
-
-/usr/include/c++/15.1.1/bits/stl_relops.h:
 
 /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h:
 

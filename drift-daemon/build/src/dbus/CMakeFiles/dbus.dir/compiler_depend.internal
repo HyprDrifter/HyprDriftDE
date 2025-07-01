@@ -4,6 +4,7 @@
 src/dbus/CMakeFiles/dbus.dir/DBusManager.cpp.o
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.cpp
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.h
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h

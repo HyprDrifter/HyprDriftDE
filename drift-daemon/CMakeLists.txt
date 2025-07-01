@@ -18,6 +18,7 @@ FetchContent_MakeAvailable(yaml-cpp)
 
 # Add subdirectories
 add_subdirectory(src/core)
+add_subdirectory(src/driftModule)
 add_subdirectory(src/utils)
 add_subdirectory(src/dbus)
 add_subdirectory(src/settings)
@@ -38,6 +39,7 @@ add_executable(drift-daemon
 target_link_libraries(drift-daemon
     PRIVATE
         core
+        driftModule
         util
         dbus
         settings

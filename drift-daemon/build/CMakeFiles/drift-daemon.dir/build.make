@@ -97,6 +97,7 @@ drift-daemon: CMakeFiles/drift-daemon.dir/src/main.cpp.o
 drift-daemon: CMakeFiles/drift-daemon.dir/build.make
 drift-daemon: CMakeFiles/drift-daemon.dir/compiler_depend.ts
 drift-daemon: src/core/libcore.a
+drift-daemon: src/driftModule/libdriftModule.a
 drift-daemon: src/dbus/libdbus.a
 drift-daemon: src/settings/libsettings.a
 drift-daemon: src/logging/liblogging.a
@@ -107,6 +108,7 @@ drift-daemon: src/apps/libapps.a
 drift-daemon: src/wallpaper/libwallpaper.a
 drift-daemon: /usr/lib/libQt6Core.so.6.9.1
 drift-daemon: _deps/yaml-cpp-build/libyaml-cpp.a
+drift-daemon: src/driftModule/libdriftModule.a
 drift-daemon: src/utils/libutils.a
 drift-daemon: CMakeFiles/drift-daemon.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable drift-daemon"

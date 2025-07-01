@@ -3,6 +3,7 @@
 
 src/theme/CMakeFiles/theme.dir/ThemeManager.cpp.o
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/theme/ThemeManager.cpp
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/theme/ThemeManager.h
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h
  /usr/include/alloca.h

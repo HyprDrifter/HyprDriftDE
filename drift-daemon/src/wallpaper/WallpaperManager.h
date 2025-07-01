@@ -1,15 +1,18 @@
 #pragma once
 
 #include <string>
-//#include "utilities.h"
 
-class WallpaperManager
+#include "utilities.h"
+#include "DriftModule.h"
+
+class WallpaperManager : public DriftModule
 {
 private:
     /* data */
 public:
     WallpaperManager(/* args */);
-    ~WallpaperManager();
-    void start();
+    ~WallpaperManager() override;
+    void start() override;
+    void stop() override;
 };
 

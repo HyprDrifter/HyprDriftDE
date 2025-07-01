@@ -2,6 +2,7 @@
 
 #include <string>
 #include <memory>
+#include <list>
 
 #include "utilities.h"
 #include "Logger.h"
@@ -12,19 +13,23 @@
 #include "ProcessManager.h"
 #include "ThemeManager.h"
 #include "WallpaperManager.h"
+#include "DriftModule.h"
 
-class DriftCore
+class DriftCore : public DriftModule
 {
 public:
     DriftCore();
-    ~DriftCore();
+    ~DriftCore() override;
+
+    bool coreRunning;
     void start();
     void stop();
+    void restartModule(std::string moduleName);
+    
     
 
 private:
     
-    bool coreRunning;
     
     std::string user;
     std::string homeDir;
@@ -35,14 +40,19 @@ private:
     std::string waylandDisplay;
 
 
-    std::unique_ptr<SettingsManager> settingsManager;
-    std::unique_ptr<Logger> logger;
-    std::unique_ptr<SessionManager> sessionManager;
-    std::unique_ptr<DBusManager> dBusManager;
-    std::unique_ptr<ProcessManager> processManager;
-    std::unique_ptr<ThemeManager> themeManager;
-    std::unique_ptr<WallpaperManager> wallpaperManager;
+    // Raw pointers
+    SettingsManager* settingsManager;
+    Logger* logger;
+    SessionManager* sessionManager;
+    DBusManager* dBusManager;
+    ProcessManager* processManager;
+    ThemeManager* themeManager;
+    WallpaperManager* wallpaperManager;
+
+    std::vector<std::unique_ptr<DriftModule>> modules;
 
     void core();
     void getSystemInfo();
+
+    DriftModule& getModule(std::string name);
 };

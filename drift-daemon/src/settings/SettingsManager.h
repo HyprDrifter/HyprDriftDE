@@ -4,11 +4,14 @@
 #include <vector>
 #include <yaml-cpp/yaml.h>
 
-class SettingsManager
+#include "DriftModule.h"
+
+class SettingsManager : public DriftModule
 {
 public:
     SettingsManager();
-    ~SettingsManager();
+    ~SettingsManager() override;
+
     void start();
     void stop();
     

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DYAML_CPP_STATIC_DEFINE
 
-CXX_INCLUDES = -I/home/suzie/Projects/HyprDriftDE/drift-daemon/src/settings -I/home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils -I/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include
+CXX_INCLUDES = -I/home/suzie/Projects/HyprDriftDE/drift-daemon/src/settings -I/home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils -I/home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule -I/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include
 
 CXX_FLAGS = -std=gnu++23
 

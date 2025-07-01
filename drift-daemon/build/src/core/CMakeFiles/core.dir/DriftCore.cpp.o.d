@@ -363,6 +363,7 @@ src/core/CMakeFiles/core.dir/DriftCore.cpp.o: \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils/utilities.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/core/DriftCore.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/logging/Logger.h \
+ /home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule/DriftModule.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus/DBusManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/src/settings/SettingsManager.h \
  /home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-src/include/yaml-cpp/yaml.h \

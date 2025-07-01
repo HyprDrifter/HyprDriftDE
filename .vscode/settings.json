@@ -84,7 +84,8 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp",
-        "qcoreapplication": "cpp"
+        "qcoreapplication": "cpp",
+        "*.inc": "cpp"
     },
     "cmake.sourceDirectory": "/home/suzie/Projects/HyprDriftDE/drift-daemon"
 }

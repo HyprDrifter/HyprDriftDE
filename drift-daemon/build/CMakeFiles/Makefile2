@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/suzie/Projects/HyprDriftDE/drift-daemon/build
 all: CMakeFiles/drift-daemon.dir/all
 all: _deps/yaml-cpp-build/all
 all: src/core/all
+all: src/driftModule/all
 all: src/utils/all
 all: src/dbus/all
 all: src/settings/all
@@ -81,6 +82,7 @@ all: src/wallpaper/all
 codegen: CMakeFiles/drift-daemon.dir/codegen
 codegen: _deps/yaml-cpp-build/codegen
 codegen: src/core/codegen
+codegen: src/driftModule/codegen
 codegen: src/utils/codegen
 codegen: src/dbus/codegen
 codegen: src/settings/codegen
@@ -95,6 +97,7 @@ codegen: src/wallpaper/codegen
 # The main recursive "preinstall" target.
 preinstall: _deps/yaml-cpp-build/preinstall
 preinstall: src/core/preinstall
+preinstall: src/driftModule/preinstall
 preinstall: src/utils/preinstall
 preinstall: src/dbus/preinstall
 preinstall: src/settings/preinstall
@@ -110,6 +113,7 @@ preinstall: src/wallpaper/preinstall
 clean: CMakeFiles/drift-daemon.dir/clean
 clean: _deps/yaml-cpp-build/clean
 clean: src/core/clean
+clean: src/driftModule/clean
 clean: src/utils/clean
 clean: src/dbus/clean
 clean: src/settings/clean
@@ -254,6 +258,25 @@ src/dbus/clean: src/dbus/CMakeFiles/dbus.dir/clean
 .PHONY : src/dbus/clean
 
 #=============================================================================
+# Directory level rules for directory src/driftModule
+
+# Recursive "all" directory target.
+src/driftModule/all: src/driftModule/CMakeFiles/driftModule.dir/all
+.PHONY : src/driftModule/all
+
+# Recursive "codegen" directory target.
+src/driftModule/codegen: src/driftModule/CMakeFiles/driftModule.dir/codegen
+.PHONY : src/driftModule/codegen
+
+# Recursive "preinstall" directory target.
+src/driftModule/preinstall:
+.PHONY : src/driftModule/preinstall
+
+# Recursive "clean" directory target.
+src/driftModule/clean: src/driftModule/CMakeFiles/driftModule.dir/clean
+.PHONY : src/driftModule/clean
+
+#=============================================================================
 # Directory level rules for directory src/logging
 
 # Recursive "all" directory target.
@@ -392,6 +415,7 @@ src/wallpaper/clean: src/wallpaper/CMakeFiles/wallpaper.dir/clean
 # All Build rule for target.
 CMakeFiles/drift-daemon.dir/all: _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/all
 CMakeFiles/drift-daemon.dir/all: src/core/CMakeFiles/core.dir/all
+CMakeFiles/drift-daemon.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
 CMakeFiles/drift-daemon.dir/all: src/utils/CMakeFiles/utils.dir/all
 CMakeFiles/drift-daemon.dir/all: src/dbus/CMakeFiles/dbus.dir/all
 CMakeFiles/drift-daemon.dir/all: src/settings/CMakeFiles/settings.dir/all
@@ -408,7 +432,7 @@ CMakeFiles/drift-daemon.dir/all: src/wallpaper/CMakeFiles/wallpaper.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/drift-daemon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/drift-daemon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : CMakeFiles/drift-daemon.dir/rule
@@ -1331,7 +1355,7 @@ _deps/yaml-cpp-build/CMakeFiles/ContinuousSubmit.dir/clean:
 _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55 "Built target yaml-cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57 "Built target yaml-cpp"
 .PHONY : _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1348,7 +1372,7 @@ yaml-cpp: _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/rule
 # codegen rule for target.
 _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/build.make _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55 "Finished codegen for target yaml-cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57 "Finished codegen for target yaml-cpp"
 .PHONY : _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/codegen
 
 # clean rule for target.
@@ -1363,7 +1387,7 @@ _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/clean:
 _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/all: _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=60,61 "Built target yaml-cpp-sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=62,63 "Built target yaml-cpp-sandbox"
 .PHONY : _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1380,7 +1404,7 @@ yaml-cpp-sandbox: _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/rule
 # codegen rule for target.
 _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=60,61 "Finished codegen for target yaml-cpp-sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=62,63 "Finished codegen for target yaml-cpp-sandbox"
 .PHONY : _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/codegen
 
 # clean rule for target.
@@ -1395,7 +1419,7 @@ _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-sandbox.dir/clean:
 _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/all: _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=56,57 "Built target yaml-cpp-parse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=58,59 "Built target yaml-cpp-parse"
 .PHONY : _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1412,7 +1436,7 @@ yaml-cpp-parse: _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/rule
 # codegen rule for target.
 _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=56,57 "Finished codegen for target yaml-cpp-parse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=58,59 "Finished codegen for target yaml-cpp-parse"
 .PHONY : _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/codegen
 
 # clean rule for target.
@@ -1427,7 +1451,7 @@ _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/clean:
 _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/all: _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=58,59 "Built target yaml-cpp-read"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=60,61 "Built target yaml-cpp-read"
 .PHONY : _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1444,7 +1468,7 @@ yaml-cpp-read: _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/rule
 # codegen rule for target.
 _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/build.make _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=58,59 "Finished codegen for target yaml-cpp-read"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=60,61 "Finished codegen for target yaml-cpp-read"
 .PHONY : _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/codegen
 
 # clean rule for target.
@@ -1457,6 +1481,7 @@ _deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-read.dir/clean:
 
 # All Build rule for target.
 src/core/CMakeFiles/core.dir/all: _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/all
+src/core/CMakeFiles/core.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
 src/core/CMakeFiles/core.dir/all: src/utils/CMakeFiles/utils.dir/all
 src/core/CMakeFiles/core.dir/all: src/dbus/CMakeFiles/dbus.dir/all
 src/core/CMakeFiles/core.dir/all: src/settings/CMakeFiles/settings.dir/all
@@ -1472,7 +1497,7 @@ src/core/CMakeFiles/core.dir/all: src/wallpaper/CMakeFiles/wallpaper.dir/all
 
 # Build rule for subdir invocation for target.
 src/core/CMakeFiles/core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/core/CMakeFiles/core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : src/core/CMakeFiles/core.dir/rule
@@ -1493,13 +1518,45 @@ src/core/CMakeFiles/core.dir/clean:
 .PHONY : src/core/CMakeFiles/core.dir/clean
 
 #=============================================================================
+# Target rules for target src/driftModule/CMakeFiles/driftModule.dir
+
+# All Build rule for target.
+src/driftModule/CMakeFiles/driftModule.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/driftModule/CMakeFiles/driftModule.dir/build.make src/driftModule/CMakeFiles/driftModule.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/driftModule/CMakeFiles/driftModule.dir/build.make src/driftModule/CMakeFiles/driftModule.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=9,10 "Built target driftModule"
+.PHONY : src/driftModule/CMakeFiles/driftModule.dir/all
+
+# Build rule for subdir invocation for target.
+src/driftModule/CMakeFiles/driftModule.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/driftModule/CMakeFiles/driftModule.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
+.PHONY : src/driftModule/CMakeFiles/driftModule.dir/rule
+
+# Convenience name for target.
+driftModule: src/driftModule/CMakeFiles/driftModule.dir/rule
+.PHONY : driftModule
+
+# codegen rule for target.
+src/driftModule/CMakeFiles/driftModule.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/driftModule/CMakeFiles/driftModule.dir/build.make src/driftModule/CMakeFiles/driftModule.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=9,10 "Finished codegen for target driftModule"
+.PHONY : src/driftModule/CMakeFiles/driftModule.dir/codegen
+
+# clean rule for target.
+src/driftModule/CMakeFiles/driftModule.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/driftModule/CMakeFiles/driftModule.dir/build.make src/driftModule/CMakeFiles/driftModule.dir/clean
+.PHONY : src/driftModule/CMakeFiles/driftModule.dir/clean
+
+#=============================================================================
 # Target rules for target src/utils/CMakeFiles/utils.dir
 
 # All Build rule for target.
 src/utils/CMakeFiles/utils.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=19,20 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=21,22 "Built target utils"
 .PHONY : src/utils/CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1516,7 +1573,7 @@ utils: src/utils/CMakeFiles/utils.dir/rule
 # codegen rule for target.
 src/utils/CMakeFiles/utils.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/utils/CMakeFiles/utils.dir/build.make src/utils/CMakeFiles/utils.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=19,20 "Finished codegen for target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=21,22 "Finished codegen for target utils"
 .PHONY : src/utils/CMakeFiles/utils.dir/codegen
 
 # clean rule for target.
@@ -1528,6 +1585,7 @@ src/utils/CMakeFiles/utils.dir/clean:
 # Target rules for target src/dbus/CMakeFiles/dbus.dir
 
 # All Build rule for target.
+src/dbus/CMakeFiles/dbus.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
 src/dbus/CMakeFiles/dbus.dir/all: src/utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f src/dbus/CMakeFiles/dbus.dir/build.make src/dbus/CMakeFiles/dbus.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/dbus/CMakeFiles/dbus.dir/build.make src/dbus/CMakeFiles/dbus.dir/build
@@ -1536,7 +1594,7 @@ src/dbus/CMakeFiles/dbus.dir/all: src/utils/CMakeFiles/utils.dir/all
 
 # Build rule for subdir invocation for target.
 src/dbus/CMakeFiles/dbus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/dbus/CMakeFiles/dbus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : src/dbus/CMakeFiles/dbus.dir/rule
@@ -1561,15 +1619,16 @@ src/dbus/CMakeFiles/dbus.dir/clean:
 
 # All Build rule for target.
 src/settings/CMakeFiles/settings.dir/all: _deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/all
+src/settings/CMakeFiles/settings.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
 src/settings/CMakeFiles/settings.dir/all: src/utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f src/settings/CMakeFiles/settings.dir/build.make src/settings/CMakeFiles/settings.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/settings/CMakeFiles/settings.dir/build.make src/settings/CMakeFiles/settings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=15,16 "Built target settings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=17,18 "Built target settings"
 .PHONY : src/settings/CMakeFiles/settings.dir/all
 
 # Build rule for subdir invocation for target.
 src/settings/CMakeFiles/settings.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/settings/CMakeFiles/settings.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : src/settings/CMakeFiles/settings.dir/rule
@@ -1581,7 +1640,7 @@ settings: src/settings/CMakeFiles/settings.dir/rule
 # codegen rule for target.
 src/settings/CMakeFiles/settings.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/settings/CMakeFiles/settings.dir/build.make src/settings/CMakeFiles/settings.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=15,16 "Finished codegen for target settings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=17,18 "Finished codegen for target settings"
 .PHONY : src/settings/CMakeFiles/settings.dir/codegen
 
 # clean rule for target.
@@ -1593,15 +1652,16 @@ src/settings/CMakeFiles/settings.dir/clean:
 # Target rules for target src/logging/CMakeFiles/logging.dir
 
 # All Build rule for target.
+src/logging/CMakeFiles/logging.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
 src/logging/CMakeFiles/logging.dir/all: src/utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f src/logging/CMakeFiles/logging.dir/build.make src/logging/CMakeFiles/logging.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/logging/CMakeFiles/logging.dir/build.make src/logging/CMakeFiles/logging.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=9,10 "Built target logging"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=11,12 "Built target logging"
 .PHONY : src/logging/CMakeFiles/logging.dir/all
 
 # Build rule for subdir invocation for target.
 src/logging/CMakeFiles/logging.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/logging/CMakeFiles/logging.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : src/logging/CMakeFiles/logging.dir/rule
@@ -1613,7 +1673,7 @@ logging: src/logging/CMakeFiles/logging.dir/rule
 # codegen rule for target.
 src/logging/CMakeFiles/logging.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/logging/CMakeFiles/logging.dir/build.make src/logging/CMakeFiles/logging.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=9,10 "Finished codegen for target logging"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=11,12 "Finished codegen for target logging"
 .PHONY : src/logging/CMakeFiles/logging.dir/codegen
 
 # clean rule for target.
@@ -1625,15 +1685,16 @@ src/logging/CMakeFiles/logging.dir/clean:
 # Target rules for target src/theme/CMakeFiles/theme.dir
 
 # All Build rule for target.
+src/theme/CMakeFiles/theme.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
 src/theme/CMakeFiles/theme.dir/all: src/utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f src/theme/CMakeFiles/theme.dir/build.make src/theme/CMakeFiles/theme.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/theme/CMakeFiles/theme.dir/build.make src/theme/CMakeFiles/theme.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=17,18 "Built target theme"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=19,20 "Built target theme"
 .PHONY : src/theme/CMakeFiles/theme.dir/all
 
 # Build rule for subdir invocation for target.
 src/theme/CMakeFiles/theme.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/theme/CMakeFiles/theme.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : src/theme/CMakeFiles/theme.dir/rule
@@ -1645,7 +1706,7 @@ theme: src/theme/CMakeFiles/theme.dir/rule
 # codegen rule for target.
 src/theme/CMakeFiles/theme.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/theme/CMakeFiles/theme.dir/build.make src/theme/CMakeFiles/theme.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=17,18 "Finished codegen for target theme"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=19,20 "Finished codegen for target theme"
 .PHONY : src/theme/CMakeFiles/theme.dir/codegen
 
 # clean rule for target.
@@ -1657,15 +1718,16 @@ src/theme/CMakeFiles/theme.dir/clean:
 # Target rules for target src/process/CMakeFiles/process.dir
 
 # All Build rule for target.
+src/process/CMakeFiles/process.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
 src/process/CMakeFiles/process.dir/all: src/utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f src/process/CMakeFiles/process.dir/build.make src/process/CMakeFiles/process.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/process/CMakeFiles/process.dir/build.make src/process/CMakeFiles/process.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=11,12 "Built target process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=13,14 "Built target process"
 .PHONY : src/process/CMakeFiles/process.dir/all
 
 # Build rule for subdir invocation for target.
 src/process/CMakeFiles/process.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/process/CMakeFiles/process.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : src/process/CMakeFiles/process.dir/rule
@@ -1677,7 +1739,7 @@ process: src/process/CMakeFiles/process.dir/rule
 # codegen rule for target.
 src/process/CMakeFiles/process.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/process/CMakeFiles/process.dir/build.make src/process/CMakeFiles/process.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=11,12 "Finished codegen for target process"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=13,14 "Finished codegen for target process"
 .PHONY : src/process/CMakeFiles/process.dir/codegen
 
 # clean rule for target.
@@ -1689,15 +1751,16 @@ src/process/CMakeFiles/process.dir/clean:
 # Target rules for target src/session/CMakeFiles/session.dir
 
 # All Build rule for target.
+src/session/CMakeFiles/session.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
 src/session/CMakeFiles/session.dir/all: src/utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f src/session/CMakeFiles/session.dir/build.make src/session/CMakeFiles/session.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/session/CMakeFiles/session.dir/build.make src/session/CMakeFiles/session.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=13,14 "Built target session"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=15,16 "Built target session"
 .PHONY : src/session/CMakeFiles/session.dir/all
 
 # Build rule for subdir invocation for target.
 src/session/CMakeFiles/session.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/session/CMakeFiles/session.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : src/session/CMakeFiles/session.dir/rule
@@ -1709,7 +1772,7 @@ session: src/session/CMakeFiles/session.dir/rule
 # codegen rule for target.
 src/session/CMakeFiles/session.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/session/CMakeFiles/session.dir/build.make src/session/CMakeFiles/session.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=13,14 "Finished codegen for target session"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=15,16 "Finished codegen for target session"
 .PHONY : src/session/CMakeFiles/session.dir/codegen
 
 # clean rule for target.
@@ -1721,7 +1784,8 @@ src/session/CMakeFiles/session.dir/clean:
 # Target rules for target src/apps/CMakeFiles/apps.dir
 
 # All Build rule for target.
-src/apps/CMakeFiles/apps.dir/all:
+src/apps/CMakeFiles/apps.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
+src/apps/CMakeFiles/apps.dir/all: src/utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f src/apps/CMakeFiles/apps.dir/build.make src/apps/CMakeFiles/apps.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/apps/CMakeFiles/apps.dir/build.make src/apps/CMakeFiles/apps.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=1,2 "Built target apps"
@@ -1729,7 +1793,7 @@ src/apps/CMakeFiles/apps.dir/all:
 
 # Build rule for subdir invocation for target.
 src/apps/CMakeFiles/apps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/apps/CMakeFiles/apps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : src/apps/CMakeFiles/apps.dir/rule
@@ -1753,15 +1817,16 @@ src/apps/CMakeFiles/apps.dir/clean:
 # Target rules for target src/wallpaper/CMakeFiles/wallpaper.dir
 
 # All Build rule for target.
+src/wallpaper/CMakeFiles/wallpaper.dir/all: src/driftModule/CMakeFiles/driftModule.dir/all
 src/wallpaper/CMakeFiles/wallpaper.dir/all: src/utils/CMakeFiles/utils.dir/all
 	$(MAKE) $(MAKESILENT) -f src/wallpaper/CMakeFiles/wallpaper.dir/build.make src/wallpaper/CMakeFiles/wallpaper.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/wallpaper/CMakeFiles/wallpaper.dir/build.make src/wallpaper/CMakeFiles/wallpaper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=21,22 "Built target wallpaper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=23,24 "Built target wallpaper"
 .PHONY : src/wallpaper/CMakeFiles/wallpaper.dir/all
 
 # Build rule for subdir invocation for target.
 src/wallpaper/CMakeFiles/wallpaper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/wallpaper/CMakeFiles/wallpaper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles 0
 .PHONY : src/wallpaper/CMakeFiles/wallpaper.dir/rule
@@ -1773,7 +1838,7 @@ wallpaper: src/wallpaper/CMakeFiles/wallpaper.dir/rule
 # codegen rule for target.
 src/wallpaper/CMakeFiles/wallpaper.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/wallpaper/CMakeFiles/wallpaper.dir/build.make src/wallpaper/CMakeFiles/wallpaper.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=21,22 "Finished codegen for target wallpaper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/suzie/Projects/HyprDriftDE/drift-daemon/build/CMakeFiles --progress-num=23,24 "Finished codegen for target wallpaper"
 .PHONY : src/wallpaper/CMakeFiles/wallpaper.dir/codegen
 
 # clean rule for target.

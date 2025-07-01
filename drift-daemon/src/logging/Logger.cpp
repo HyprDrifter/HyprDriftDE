@@ -3,6 +3,7 @@
 
 #include "Logger.h"
 #include "utilities.h"
+#include "DriftModule.h"
 
 Logger::Logger()
 {
@@ -19,4 +20,9 @@ void Logger::start()
 {
     running = true;
     writeLine("Logger Started");
+}
+
+void Logger::stop()
+{
+    
 }
