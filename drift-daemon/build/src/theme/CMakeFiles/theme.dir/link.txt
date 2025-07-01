@@ -1,2 +1,0 @@
-/usr/bin/ar qc libtheme.a CMakeFiles/theme.dir/ThemeManager.cpp.o
-/usr/bin/ranlib libtheme.a

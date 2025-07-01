@@ -1,0 +1,44 @@
+# === Drift Daemon Build Files ===
+/drift-daemon/build/
+/drift-daemon/**/CMakeFiles/
+/drift-daemon/**/CMakeCache.txt
+/drift-daemon/**/cmake_install.cmake
+/drift-daemon/**/Makefile
+/drift-daemon/**/install_manifest.txt
+
+# === Object & Binary Files ===
+*.o
+*.obj
+*.so
+*.a
+*.out
+*.exe
+*.dll
+
+# === Qt / QML Build Artifacts ===
+*.moc
+*.rcc
+*.qmlc
+*.qrc
+*.qrc.depends
+
+# === IDE & Editor Junk ===
+*.swp
+*.swo
+*.bak
+*.tmp
+.vscode/
+.idea/
+.clangd/
+*.autosave
+*.user
+*.user.*
+
+# === System Junk ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Logs and Caches ===
+*.log
+/drift-daemon/.cache/

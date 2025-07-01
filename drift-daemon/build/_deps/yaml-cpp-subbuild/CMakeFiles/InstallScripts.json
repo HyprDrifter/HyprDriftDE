@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/suzie/Projects/HyprDriftDE/drift-daemon/build/_deps/yaml-cpp-subbuild/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
