@@ -13,5 +13,6 @@ public:
     ~ProcessManager();
     void start();
     void stop();
+    void restart();
 };
 

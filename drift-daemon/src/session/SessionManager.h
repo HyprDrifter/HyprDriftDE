@@ -13,5 +13,6 @@ public:
     ~SessionManager();
     void start();
     void stop();
+    void restart();
 };
 

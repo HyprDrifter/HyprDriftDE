@@ -7,6 +7,8 @@
 
 AppLauncher::AppLauncher(/* args */)
 {
+    moduleName = "App Launcher";
+    threaded = true;
 }
 
 AppLauncher::~AppLauncher()
@@ -16,10 +18,19 @@ AppLauncher::~AppLauncher()
 
 void AppLauncher::start()
 {
-    writeLine("App Launcher Started");
+    enabled = true;
+    
+    running = true;
+    emit started(QString::fromStdString(moduleName));
 }
 
 void AppLauncher::stop()
 {
-    writeLine("Theme Manager Started");
+    writeLine(moduleName + " Stopped");
+}
+
+void AppLauncher::restart()
+{
+    stop();
+    start();
 }

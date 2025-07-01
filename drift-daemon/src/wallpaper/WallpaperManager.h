@@ -12,7 +12,8 @@ private:
 public:
     WallpaperManager(/* args */);
     ~WallpaperManager() override;
-    void start() override;
-    void stop() override;
+    void start();
+    void stop();
+    void restart();
 };
 

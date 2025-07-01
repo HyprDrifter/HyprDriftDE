@@ -2,6 +2,7 @@
 
 #include <string>
 #include "DriftModule.h"
+#include <QObject>
 
 
 class AppLauncher : public DriftModule
@@ -12,8 +13,11 @@ public:
     AppLauncher(/* args */);
     ~AppLauncher();
 
+
+public slots:
     void start();
     void stop();
+    void restart();
 };
 
 

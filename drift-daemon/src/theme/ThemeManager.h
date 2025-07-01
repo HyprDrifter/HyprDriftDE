@@ -11,7 +11,8 @@ private:
 public:
     ThemeManager(/* args */);
     ~ThemeManager();
-    void start() override;
-    void stop() override;
+    void start();
+    void stop();
+    void restart();
 };
 

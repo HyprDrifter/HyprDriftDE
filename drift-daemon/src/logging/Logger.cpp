@@ -7,7 +7,8 @@
 
 Logger::Logger()
 {
-    
+    moduleName = "Logger";
+    threaded = true;
 }
 
 Logger::~Logger()
@@ -18,11 +19,19 @@ Logger::~Logger()
 
 void Logger::start()
 {
+    enabled = true;
+    
     running = true;
-    writeLine("Logger Started");
+    emit started(QString::fromStdString(moduleName));
 }
 
 void Logger::stop()
 {
-    
+    writeLine(moduleName + " Stopped");
+}
+
+void Logger::restart()
+{
+    stop();
+    start();
 }

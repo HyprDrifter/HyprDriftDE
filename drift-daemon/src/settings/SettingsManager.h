@@ -3,17 +3,22 @@
 #include <string>
 #include <vector>
 #include <yaml-cpp/yaml.h>
+#include <QObject>
 
 #include "DriftModule.h"
 
+
 class SettingsManager : public DriftModule
 {
+
+
 public:
     SettingsManager();
     ~SettingsManager() override;
 
     void start();
     void stop();
+    void restart();
     
 private:
     std::string user;

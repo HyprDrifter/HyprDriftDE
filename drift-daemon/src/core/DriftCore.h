@@ -17,6 +17,8 @@
 
 class DriftCore : public DriftModule
 {
+    Q_OBJECT
+
 public:
     DriftCore();
     ~DriftCore() override;
@@ -24,9 +26,10 @@ public:
     bool coreRunning;
     void start();
     void stop();
-    void restartModule(std::string moduleName);
-    
-    
+    void restartModule(const std::string& moduleName);
+
+public slots:
+    void moduleStarted(const QString& name);
 
 private:
     
@@ -39,6 +42,7 @@ private:
     std::string xdgCurrentDesktop;
     std::string waylandDisplay;
 
+    bool starting = true;
 
     // Raw pointers
     SettingsManager* settingsManager;
@@ -48,11 +52,19 @@ private:
     ProcessManager* processManager;
     ThemeManager* themeManager;
     WallpaperManager* wallpaperManager;
+    AppLauncher* appLauncher;
 
     std::vector<std::unique_ptr<DriftModule>> modules;
+    std::vector<DriftModule*> moduleStartupQueue;
+
+    template<typename T>
+    T* registerModule(std::vector<std::unique_ptr<DriftModule>>& vec);
 
     void core();
     void getSystemInfo();
 
-    DriftModule& getModule(std::string name);
+    DriftModule& getModule(const std::string& name);
+
+signals:
+    void startModules();
 };

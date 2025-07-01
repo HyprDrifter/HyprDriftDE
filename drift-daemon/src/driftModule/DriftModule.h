@@ -1,10 +1,25 @@
 #pragma once
 #include <string>
+#include <QObject>
+#include <QThread>
 
-class DriftModule {
+class DriftModule : public QObject
+{
+    Q_OBJECT
+
 public:
-    std::string moduleName;
-    virtual void start() = 0;
-    virtual void stop() = 0;
     virtual ~DriftModule() = default;
+
+    std::string moduleName;
+    bool enabled;
+    bool running;
+    bool threaded;
+
+public slots:
+    virtual void start();
+    virtual void stop();
+    virtual void restart();
+
+signals:
+    void started(const QString& name);
 };

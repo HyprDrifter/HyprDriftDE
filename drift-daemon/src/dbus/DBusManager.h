@@ -11,7 +11,10 @@ private:
 public:
     DBusManager(/* args */);
     ~DBusManager();
+
+public slots:
     void start();
     void stop();
+    void restart();
 };
 

@@ -6,6 +6,10 @@
 #include <pwd.h>
 #include <unistd.h>
 #include <list>
+#include <ranges>
+#include <QThread>
+#include <QObject>
+#include <QMetaObject>
 
 #include "utilities.h"
 #include "DriftCore.h"
@@ -21,81 +25,81 @@ DriftCore::DriftCore(/* args */)
 {
     coreRunning = false;
 
-    auto settingsManager_u = std::make_unique<SettingsManager>();
-    auto logger_u = std::make_unique<Logger>();
-    auto sessionManager_u = std::make_unique<SessionManager>();
-    auto dBusManager_u = std::make_unique<DBusManager>();
-    auto processManager_u = std::make_unique<ProcessManager>();
-    auto themeManager_u = std::make_unique<ThemeManager>();
-    auto wallpaperManager_u = std::make_unique<WallpaperManager>();
-
-    // Raw pointers for access
-    settingsManager = settingsManager_u.get();
-    logger = logger_u.get();
-    sessionManager = sessionManager_u.get();
-    dBusManager = dBusManager_u.get();
-    processManager = processManager_u.get();
-    themeManager = themeManager_u.get();
-    wallpaperManager = wallpaperManager_u.get();
-
-    // Store in polymorphic module list
-    modules.emplace_back(std::move(settingsManager_u));
-    modules.emplace_back(std::move(logger_u));
-    modules.emplace_back(std::move(sessionManager_u));
-    modules.emplace_back(std::move(dBusManager_u));
-    modules.emplace_back(std::move(processManager_u));
-    modules.emplace_back(std::move(themeManager_u));
-    modules.emplace_back(std::move(wallpaperManager_u));
+    settingsManager = registerModule<SettingsManager>(modules);
+    logger = registerModule<Logger>(modules);
+    sessionManager = registerModule<SessionManager>(modules);
+    dBusManager = registerModule<DBusManager>(modules);
+    processManager = registerModule<ProcessManager>(modules);
+    themeManager = registerModule<ThemeManager>(modules);
+    wallpaperManager = registerModule<WallpaperManager>(modules);
+    appLauncher = registerModule<AppLauncher>(modules);
 }
 
 DriftCore::~DriftCore()
 {
 }
 
+template<typename T>
+T* DriftCore::registerModule(std::vector<std::unique_ptr<DriftModule>>& vec) {
+    auto mod = std::make_unique<T>();
+    T* raw = mod.get();
+
+    if(raw->threaded)
+    {
+        QThread* t= new QThread(this);
+        raw->moveToThread(t);
+        connect(this, &DriftCore::startModules, raw, &DriftModule::start);
+        connect(raw, &DriftModule::started, this, &DriftCore::moduleStarted);
+        t->start();
+    }
+    else
+    {
+        connect(this, &DriftCore::startModules, raw, &DriftModule::start);
+        connect(raw, &DriftModule::started, this, &DriftCore::moduleStarted);
+    }
+    vec.emplace_back(std::move(mod));
+    return raw;
+}
+
 void DriftCore::start()
 {
     writeLine("Drift Core Is launching....");
+    writeLine("--------------------------------------");
     coreRunning = true;
     getSystemInfo();
+    writeLine("--------------------------------------");
     writeLine("Drift Core is online");
-    writeLine("-----------------------------");
-    writeLine("Launching " + modules[0]->moduleName + " ...");
-    settingsManager->start();
-    writeLine("-----------------------------");
-    writeLine("Launching Logger...");
-    logger->start();
-    writeLine("-----------------------------");
-    writeLine("Launching DBus Manager...");
-    dBusManager->start();
-    writeLine("-----------------------------");
-    writeLine("Launching Process Manager...");
-    processManager->start();
-    writeLine("-----------------------------");
-    writeLine("Launching Theme Manager...");
-    themeManager->start();
-    writeLine("-----------------------------");
-    writeLine("Launching Wallpaper Manager...");
-    wallpaperManager->start();
-    writeLine("-----------------------------");
+    writeLine("--------------------------------------");
+    writeLine("Starting all modules");
+    writeLine("--------------------------------------");
 
-    core();
+    for (const auto& mod : modules)
+    {
+        auto* m = mod.get();
+        moduleStartupQueue.emplace_back(m);
+    }
+    emit startModules();
 }
 
 void DriftCore::stop()
 {
-    coreRunning = false;
     writeLine("Core Shutting Down...");
-    writeLine("Theme Manager Shutting Down...");
-    writeLine("Process Manager Shutting Down...");
-    writeLine("DBus Manager Shutting Down...");
-    writeLine("Logger Shutting Down...");
+    for(auto& mod : std::ranges::reverse_view(modules))
+    {
+        writeLine("");
+        writeLine("--------------------------------------");
+        writeLine("");
+        writeLine("Shutting down module : " + mod->moduleName);
+        mod->stop();
+    }
     writeLine("Core Successfully Shut Down.");
+    coreRunning = false;
 }
 
 void DriftCore::core()
 {
+    writeLine("--------------------------------------");
     writeLine("Entering event loop...");
-    QCoreApplication::exec(); // blocks and processes events
 }
 
 void DriftCore::getSystemInfo()
@@ -127,12 +131,13 @@ void DriftCore::getSystemInfo()
     writeLine("Set HYPRDRIFT_SESSION=1");
 }
 
-void DriftCore::restartModule(std::string moduleName)
+void DriftCore::restartModule(const std::string& moduleName)
 {
-    getModule(moduleName);
+    DriftModule& module = getModule(moduleName);
+    module.restart();
 }
 
-DriftModule& DriftCore::getModule(const std::string name)
+DriftModule& DriftCore::getModule(const std::string& name)
 {
     for (const auto& mod : modules)
     {
@@ -142,5 +147,34 @@ DriftModule& DriftCore::getModule(const std::string name)
         }
     }
 
-    throw std::runtime_error("Module not found: " + name);
+    throw std::runtime_error("DriftCore::getModule(): Module not found: " + name);
+
+}
+
+
+// QT Slots
+
+void DriftCore::moduleStarted(const QString& name)
+{
+    if (starting)
+    {
+        writeLine("Module Started : " + name.toStdString());
+        auto it = std::find_if(moduleStartupQueue.begin(), moduleStartupQueue.end(), [&name](DriftModule* mod) {
+            return mod->moduleName == name.toStdString();
+        });
+
+        if(it != moduleStartupQueue.end())
+        {
+            moduleStartupQueue.erase(it);
+        }
+
+        if(moduleStartupQueue.size() == 0)
+        {
+            starting = false;
+            writeLine("--------------------------------------");
+            writeLine("All modules started.");
+
+            core();  // only start once all are ready
+        }
+    }
 }

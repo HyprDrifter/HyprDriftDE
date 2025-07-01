@@ -15,6 +15,8 @@
 SettingsManager::SettingsManager()
 {
     moduleName = "Settings Manager";
+    threaded = true;
+
     user = getuid();
     writeLine(user);
     struct passwd *pw = getpwuid(getuid());
@@ -49,12 +51,21 @@ SettingsManager::~SettingsManager()
 
 void SettingsManager::start()
 {
-    writeLine("Settings Manager Started");
+    enabled = true;
+    
+    running = true;
+    emit started(QString::fromStdString(moduleName));
 }
 
 void SettingsManager::stop()
 {
-    writeLine("Settings Manager Stopped");
+    writeLine(moduleName + " Stopped");
+}
+
+void SettingsManager::restart()
+{
+    stop();
+    start();
 }
 
 void SettingsManager::verifyUserDirectories(std::string dir)

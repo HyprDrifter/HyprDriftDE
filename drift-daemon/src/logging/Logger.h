@@ -12,6 +12,8 @@ public:
     Logger(/* args */);
     ~Logger();
 
+public slots:
     void start();
     void stop();
+    void restart();
 };

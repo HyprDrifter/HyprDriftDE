@@ -4,3 +4,4 @@
 
 void DriftModule::start() { /* start logic */ };
 void DriftModule::stop() { /* stop logic */ };
+void DriftModule::restart() {};
