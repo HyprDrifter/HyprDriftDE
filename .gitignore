@@ -1,5 +1,6 @@
 # === Drift Daemon Build Files ===
-/drift-daemon/build/
+/drift-daemon/build/*
+!/drift-daemon/build/.gitkeep
 /drift-daemon/**/CMakeFiles/
 /drift-daemon/**/CMakeCache.txt
 /drift-daemon/**/cmake_install.cmake
