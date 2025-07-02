@@ -78,7 +78,11 @@ void DriftCore::start()
         auto* m = mod.get();
         moduleStartupQueue.emplace_back(m);
     }
-    emit startModules();
+    
+    QMetaObject::invokeMethod(this, [this] {
+        emit startModules();
+    }, Qt::QueuedConnection);
+
 }
 
 void DriftCore::stop()
