@@ -45,14 +45,16 @@ PopupWindow {
             id: clipRectangle
             color: Settings.clipmanPopupBackground
             anchors.fill: parent
-
+            implicitHeight: 500
             radius: 16
             ColumnLayout {
                 id: columnLayout
                 spacing: 5
                 anchors {
+                    horizontalCenter: parent.horizontalCenter
                     fill: parent
                 }
+
                 ListView {
                     id: copyRepeater
                     model: ClipboardHistory.entries.data
@@ -61,9 +63,9 @@ PopupWindow {
                     Layout.preferredWidth: parent.width
                     topMargin: 20
                     
-                    // ScrollIndicator.vertical: ScrollIndicator {
-                    //     active: true
-                    // }
+                    ScrollIndicator.vertical: ScrollIndicator {
+                        active: true
+                    }
 
                     delegate: ClipboardEntry {
                         id: option

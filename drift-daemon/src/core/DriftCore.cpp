@@ -1,25 +1,28 @@
-#include <string>
-#include <iostream>
-#include <memory>
-#include <QCoreApplication>
-#include <cstdlib>
-#include <pwd.h>
-#include <unistd.h>
-#include <list>
-#include <ranges>
-#include <QThread>
-#include <QObject>
-#include <QMetaObject>
-
-#include "utilities.h"
 #include "DriftCore.h"
+
 #include "Logger.h"
 #include "DBusManager.h"
 #include "SettingsManager.h"
 #include "SessionManager.h"
 #include "AppLauncher.h"
 #include "WallpaperManager.h"
-#include "DriftModule.h"
+#include "ProcessManager.h"
+#include "ThemeManager.h"
+
+#include <QThread>
+#include <QObject>
+#include <QMetaObject>
+#include <QCoreApplication>
+
+#include <memory>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <stdexcept>
+#include <pwd.h>
+#include <unistd.h>
+#include <cstdlib>
+#include <ranges>
 
 DriftCore::DriftCore(/* args */)
 {
@@ -39,17 +42,20 @@ DriftCore::~DriftCore()
 {
 }
 
-template<typename T>
-T* DriftCore::registerModule(std::vector<std::unique_ptr<DriftModule>>& vec) {
+template <typename T>
+T *DriftCore::registerModule(std::vector<std::unique_ptr<DriftModule>> &vec)
+{
     auto mod = std::make_unique<T>();
-    T* raw = mod.get();
+    T *raw = mod.get();
 
-    if(raw->threaded)
+    if (raw->threaded)
     {
-        QThread* t= new QThread(this);
+        QThread *t = new QThread(this);
         raw->moveToThread(t);
         connect(this, &DriftCore::startModules, raw, &DriftModule::start);
         connect(raw, &DriftModule::started, this, &DriftCore::moduleStarted);
+
+        // connect(raw,&DriftModule::stopModules,)
         t->start();
     }
     else
@@ -73,22 +79,21 @@ void DriftCore::start()
     writeLine("Starting all modules");
     writeLine("--------------------------------------");
 
-    for (const auto& mod : modules)
+    for (const auto &mod : modules)
     {
-        auto* m = mod.get();
+        auto *m = mod.get();
         moduleStartupQueue.emplace_back(m);
     }
-    
-    QMetaObject::invokeMethod(this, [this] {
-        emit startModules();
-    }, Qt::QueuedConnection);
 
+    QMetaObject::invokeMethod(this, [this]
+        { emit startModules(); 
+    }, Qt::QueuedConnection);
 }
 
 void DriftCore::stop()
 {
     writeLine("Core Shutting Down...");
-    for(auto& mod : std::ranges::reverse_view(modules))
+    for (auto &mod : std::ranges::reverse_view(modules))
     {
         writeLine("");
         writeLine("--------------------------------------");
@@ -135,14 +140,15 @@ void DriftCore::getSystemInfo()
     writeLine("Set HYPRDRIFT_SESSION=1");
 }
 
-std::string DriftCore::getEnvVariable(const char* varName)
+std::string DriftCore::getEnvVariable(const char *varName)
 {
     std::string val;
     writeLine("Looking for environment variable : " + std::string(varName));
     while (true)
     {
-        const char* envVal = std::getenv(varName);
-        if (envVal && *envVal != '\0') {
+        const char *envVal = std::getenv(varName);
+        if (envVal && *envVal != '\0')
+        {
             val = envVal;
             break;
         }
@@ -151,18 +157,11 @@ std::string DriftCore::getEnvVariable(const char* varName)
     }
     writeLine("Found environment variable : " + std::string(varName));
     return val;
-    
 }
 
-void DriftCore::restartModule(const std::string& moduleName)
+DriftModule &DriftCore::getModule(const std::string &name)
 {
-    DriftModule& module = getModule(moduleName);
-    module.restart();
-}
-
-DriftModule& DriftCore::getModule(const std::string& name)
-{
-    for (const auto& mod : modules)
+    for (const auto &mod : modules)
     {
         if (mod->moduleName == name)
         {
@@ -171,33 +170,62 @@ DriftModule& DriftCore::getModule(const std::string& name)
     }
 
     throw std::runtime_error("DriftCore::getModule(): Module not found: " + name);
-
 }
 
+DriftModule *DriftCore::getModulePointer(const std::string &name)
+{
+    for (const auto &mod : modules)
+    {
+        if (mod->moduleName == name)
+        {
+            return mod.get(); // Dereference unique_ptr to return a reference
+        }
+    }
+
+    throw std::runtime_error("DriftCore::getModule(): Module not found: " + name);
+}
+
+void DriftCore::startModule(const std::string &moduleName)
+{
+    DriftModule *m = getModulePointer(moduleName);
+    QMetaObject::invokeMethod(m, &DriftModule::start, Qt::QueuedConnection);
+}
+
+void DriftCore::stopModule(const std::string &moduleName)
+{
+    DriftModule *m = getModulePointer(moduleName);
+    QMetaObject::invokeMethod(m, &DriftModule::stop, Qt::QueuedConnection);
+}
+
+void DriftCore::restartModule(const std::string &moduleName)
+{
+    DriftModule *m = getModulePointer(moduleName);
+    QMetaObject::invokeMethod(m, &DriftModule::restart, Qt::QueuedConnection);
+}
 
 // QT Slots
 
-void DriftCore::moduleStarted(const QString& name)
+void DriftCore::moduleStarted(const QString &name)
 {
     if (starting)
     {
         writeLine("Module Started : " + name.toStdString());
-        auto it = std::find_if(moduleStartupQueue.begin(), moduleStartupQueue.end(), [&name](DriftModule* mod) {
-            return mod->moduleName == name.toStdString();
+        auto it = std::find_if(moduleStartupQueue.begin(), moduleStartupQueue.end(), [&name](DriftModule *mod)
+            { return mod->moduleName == name.toStdString(); 
         });
 
-        if(it != moduleStartupQueue.end())
+        if (it != moduleStartupQueue.end())
         {
             moduleStartupQueue.erase(it);
         }
 
-        if(moduleStartupQueue.size() == 0)
+        if (moduleStartupQueue.size() == 0)
         {
             starting = false;
             writeLine("--------------------------------------");
             writeLine("All modules started.");
 
-            core();  // only start once all are ready
+            core(); // only start once all are ready
         }
     }
 }

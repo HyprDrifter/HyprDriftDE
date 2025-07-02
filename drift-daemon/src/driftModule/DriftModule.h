@@ -21,5 +21,5 @@ public slots:
     virtual void restart();
 
 signals:
-    void started(const QString& name);
+    virtual void started(const QString& name);
 };

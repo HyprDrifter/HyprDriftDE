@@ -1,19 +1,18 @@
 #pragma once
 
 #include <string>
-#include <memory>
-#include <list>
+#include <vector>
 
-#include "utilities.h"
-#include "Logger.h"
-#include "DBusManager.h"
-#include "SettingsManager.h"
-#include "SessionManager.h"
-#include "AppLauncher.h"
-#include "ProcessManager.h"
-#include "ThemeManager.h"
-#include "WallpaperManager.h"
 #include "DriftModule.h"
+
+class Logger;
+class DBusManager;
+class SettingsManager;
+class SessionManager;
+class AppLauncher;
+class WallpaperManager;
+class ProcessManager;
+class ThemeManager;
 
 class DriftCore : public DriftModule
 {
@@ -26,7 +25,6 @@ public:
     bool coreRunning;
     void start();
     void stop();
-    void restartModule(const std::string& moduleName);
 
 public slots:
     void moduleStarted(const QString& name);
@@ -65,7 +63,14 @@ private:
     std::string getEnvVariable(const char* varName);
 
     DriftModule& getModule(const std::string& name);
+    DriftModule* getModulePointer(const std::string& name);
+
+    void startModule(const std::string& moduleName);
+    void stopModule(const std::string& moduleName);
+    void restartModule(const std::string& moduleName);
 
 signals:
     void startModules();
+    void stopModules();
+    void restartModules();
 };
