@@ -11,9 +11,12 @@ export SDL_VIDEODRIVER=wayland
 export CLUTTER_BACKEND=wayland
 
 # Start background services
+while [ -z "$XDG_RUNTIME_DIR" ]; do
+    sleep 0.1
+done
+
 /usr/bin/drift-daemon &
 systemctl --user start quickdrift.service
 
 # Start Hyprland in foreground
 exec Hyprland
-

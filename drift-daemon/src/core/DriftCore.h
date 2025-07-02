@@ -62,6 +62,7 @@ private:
 
     void core();
     void getSystemInfo();
+    std::string getEnvVariable(const char* varName);
 
     DriftModule& getModule(const std::string& name);
 

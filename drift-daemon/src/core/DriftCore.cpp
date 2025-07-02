@@ -118,17 +118,36 @@ void DriftCore::getSystemInfo()
     }();
     writeLine("Home directory : " + homeDir);
 
-    xdgRuntimeDir = std::getenv("XDG_RUNTIME_DIR");
+    xdgRuntimeDir = getEnvVariable("XDG_RUNTIME_DIR");
     writeLine("XDG Runtime Dir : " + xdgRuntimeDir);
 
-    xdgCurrentDesktop = std::getenv("XDG_CURRENT_DESKTOP");
+    xdgCurrentDesktop = getEnvVariable("XDG_CURRENT_DESKTOP");
     writeLine("Current Desktop : " + xdgCurrentDesktop);
 
-    waylandDisplay = std::getenv("WAYLAND_DISPLAY");
+    waylandDisplay = getEnvVariable("WAYLAND_DISPLAY");
     writeLine("Wayland Display : " + waylandDisplay);
 
     setenv("HYPRDRIFT_SESSION", "1", 1);
     writeLine("Set HYPRDRIFT_SESSION=1");
+}
+
+std::string DriftCore::getEnvVariable(const char* varName)
+{
+    std::string val;
+    writeLine("Looking for environment variable : " + std::string(varName));
+    while (true)
+    {
+        const char* envVal = std::getenv(varName);
+        if (envVal && *envVal != '\0') {
+            val = envVal;
+            break;
+        }
+        writeLine("Waiting for env var: " + std::string(varName));
+        QThread::msleep(100);
+    }
+    writeLine("Found environment variable : " + std::string(varName));
+    return val;
+    
 }
 
 void DriftCore::restartModule(const std::string& moduleName)

@@ -56,7 +56,7 @@ Scope {
                         RowLayout {
                             id: leftRowLayout
                             spacing: 15
-
+                            Layout.maximumWidth: panel.width / 3
                             WrapperRectangle {
                                 id: containerRect
                                 color: "transparent"
@@ -91,6 +91,7 @@ Scope {
                         Layout.alignment: Qt.AlignHCenter
                         Layout.fillHeight: true
                         Layout.fillWidth: true
+                        Layout.maximumWidth: panel.width / 3
                         anchors.horizontalCenter: panel
                         Spacer {}
                         Rectangle {
@@ -115,6 +116,7 @@ Scope {
                         implicitHeight: rightRowInnerLayout.implicitHeight
                         //anchors.verticalCenter: parent.verticalCenter
                         Layout.preferredHeight: parent.implicitHeight
+                        anchors.right: parent.right
 
                         WrapperRectangle {
                             id: rightRowLayoutRectangle

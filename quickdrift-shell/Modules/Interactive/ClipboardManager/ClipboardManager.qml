@@ -13,7 +13,7 @@ PopupWindow {
     property bool animateNext: true
     visible: false
     implicitHeight: 1
-    implicitWidth: 1
+    implicitWidth: 500
     anchor.item: moveToItem
     anchor.rect.x: (-implicitWidth / 2) + moveToItem.width / 2
     anchor.rect.y: moveToItem.height - 1
@@ -28,12 +28,12 @@ PopupWindow {
 
         states: State {
             name: "opened"; when: clipPopup.visible
-            PropertyChanges {target:clipPopup; implicitHeight: 500; implicitWidth:400}
+            PropertyChanges {target:clipPopup; implicitHeight: 500;}
         }
 
         transitions: Transition {
             NumberAnimation { 
-                properties:"implicitWidth,implicitHeight"
+                properties:"implicitHeight"
                 duration: 400
                 //easing.overshoot: 1
                 easing.type: Easing.OutBack
