@@ -49,7 +49,7 @@ if ! command -v yay >/dev/null 2>&1; then
 fi
 
 # Full runtime + build deps
-sudo -u "$SUDO_USER" yay -S --needed \
+sudo -u "$SUDO_USER" yay -S --needed --noconfirm \
     cmake g++ qt6-base qt6-declarative qt6-tools \
     quickshell hyprland hyprpaper hyprlock cliphist \
     tinted-theming pavucontrol sddm \
