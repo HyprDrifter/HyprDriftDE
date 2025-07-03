@@ -22,6 +22,7 @@ install -d /usr/bin
 install -d /usr/share/wayland-sessions
 install -d /etc/hyprdrift/quickdrift/
 install -d /etc/hyprdrift/driftdaemon/
+install -d /etc/hyprdrift/hypr/
 install -d /etc/hyprdrift/config/
 install -d /etc/hyprdrift/config/quickdrift/
 install -d /etc/hyprdrift/config/driftdaemon/
@@ -80,6 +81,7 @@ install -Dm755 drift-daemon/build/drift-daemon /usr/bin/drift-daemon
 echo "-------------------------------"
 echo "[+] Installing configs"
 cp -rf config/drift-config.yaml /etc/hyprdrift/config/quickdrift/drift-config.yaml
+cp -rf .config /etc/hyprdrift/hypr/
 
 echo "-------------------------------"
 echo "[+] Installing quickdrift.service"

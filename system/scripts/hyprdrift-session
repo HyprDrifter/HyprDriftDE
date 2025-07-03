@@ -15,6 +15,13 @@ while [ -z "$XDG_RUNTIME_DIR" ]; do
     sleep 0.1
 done
 
+# If ~/.config/hypr/conf doesn't exist, copy default config
+if [ ! -d "$HOME/.config/hypr/conf" ]; then
+    echo "[+] No user Hypr config found. Copying defaults from /etc/hyprdrift/hypr/"
+    mkdir -p "$HOME/.config"
+    cp -r /etc/hyprdrift/hypr "$HOME/.config/"
+fi
+
 /usr/bin/drift-daemon &
 systemctl --user start quickdrift.service
 
