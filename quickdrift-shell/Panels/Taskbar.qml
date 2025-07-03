@@ -23,7 +23,23 @@ Scope {
             screen: modelData
             property var modelData
             color: "transparent"
+            
+            onVisibleChanged: {
+                if(visible){
+                    panelScaleAnimator.from = .1
+                    panelScaleAnimator.to = 1
+                    panelScaleAnimator.running = true;
+                }
+            }
 
+            ScaleAnimator {
+                id: panelScaleAnimator
+                target: leftPanel
+                from: .1
+                to: 1
+                duration: 500
+                easing.type: Easing.OutBack
+            }
 
             anchors {
                 top: true
