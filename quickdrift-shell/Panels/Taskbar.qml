@@ -23,7 +23,23 @@ Scope {
             screen: modelData
             property var modelData
             color: "transparent"
+            
+            onVisibleChanged: {
+                if(visible){
+                    panelScaleAnimator.from = .1
+                    panelScaleAnimator.to = 1
+                    panelScaleAnimator.running = true;
+                }
+            }
 
+            ScaleAnimator {
+                id: panelScaleAnimator
+                target: leftPanel
+                from: .1
+                to: 1
+                duration: 500
+                easing.type: Easing.OutBack
+            }
 
             anchors {
                 top: true
@@ -56,7 +72,7 @@ Scope {
                         RowLayout {
                             id: leftRowLayout
                             spacing: 15
-
+                            Layout.maximumWidth: panel.width / 3
                             WrapperRectangle {
                                 id: containerRect
                                 color: "transparent"
@@ -91,6 +107,7 @@ Scope {
                         Layout.alignment: Qt.AlignHCenter
                         Layout.fillHeight: true
                         Layout.fillWidth: true
+                        Layout.maximumWidth: panel.width / 3
                         anchors.horizontalCenter: panel
                         Spacer {}
                         Rectangle {
@@ -115,6 +132,7 @@ Scope {
                         implicitHeight: rightRowInnerLayout.implicitHeight
                         //anchors.verticalCenter: parent.verticalCenter
                         Layout.preferredHeight: parent.implicitHeight
+                        anchors.right: parent.right
 
                         WrapperRectangle {
                             id: rightRowLayoutRectangle

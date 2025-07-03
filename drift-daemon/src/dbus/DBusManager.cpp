@@ -2,9 +2,12 @@
 
 #include "utilities.h"
 #include "DBusManager.h"
+#include "DriftModule.h"
 
 DBusManager::DBusManager(/* args */)
 {
+    moduleName = "DBus Manager";
+    threaded = false;
 }
 
 DBusManager::~DBusManager()
@@ -14,5 +17,19 @@ DBusManager::~DBusManager()
 
 void DBusManager::start()
 {
-    writeLine("DBus Manager Started");
+    enabled = true;
+    
+    running = true;
+    emit started(QString::fromStdString(moduleName));
+}
+
+void DBusManager::stop()
+{
+    writeLine(moduleName + " Stopped");
+}
+
+void DBusManager::restart()
+{
+    stop();
+    start();
 }

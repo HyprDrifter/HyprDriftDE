@@ -12,47 +12,50 @@ PopupWindow {
     required property var moveToItem
     property bool animateNext: true
     visible: false
-    implicitHeight: 1
-    implicitWidth: 1
+    height: 10
+    width: 10
     anchor.item: moveToItem
-    anchor.rect.x: (-implicitWidth / 2) + moveToItem.width / 2
-    anchor.rect.y: moveToItem.height - 1
-    color: "transparent"
+    anchor.rect.x: implicitWidth / 2 + moveToItem.width
+    anchor.rect.y: moveToItem.height
     anchor.edges: Edges.Bottom | Edges.Right
+    anchor.gravity: Edges.Bottom | Edges.Left;
+    
+    color: "transparent"
 
+    onVisibleChanged: {
+        if(visible)
+        {
+            height = 500
+            width = 400
+        }
+        else{
+            height = 10
+            width = 10
+        }
+    }
+
+    Behavior on height { SmoothedAnimation { duration: 200; velocity: 200 } }
+    Behavior on width { SmoothedAnimation { duration: 200; velocity: 200 } }
 
     Item{
         id: recRec
         anchors.fill: parent
-    
 
-        states: State {
-            name: "opened"; when: clipPopup.visible
-            PropertyChanges {target:clipPopup; implicitHeight: 500; implicitWidth:400}
-        }
-
-        transitions: Transition {
-            NumberAnimation { 
-                properties:"implicitWidth,implicitHeight"
-                duration: 400
-                //easing.overshoot: 1
-                easing.type: Easing.OutBack
-
-            }
-        }
-        
         Rectangle {
             id: clipRectangle
             color: Settings.clipmanPopupBackground
             anchors.fill: parent
-
+            implicitHeight: 500
             radius: 16
+
             ColumnLayout {
                 id: columnLayout
                 spacing: 5
                 anchors {
+                    horizontalCenter: parent.horizontalCenter
                     fill: parent
                 }
+
                 ListView {
                     id: copyRepeater
                     model: ClipboardHistory.entries.data
@@ -61,9 +64,9 @@ PopupWindow {
                     Layout.preferredWidth: parent.width
                     topMargin: 20
                     
-                    // ScrollIndicator.vertical: ScrollIndicator {
-                    //     active: true
-                    // }
+                    ScrollIndicator.vertical: ScrollIndicator {
+                        active: true
+                    }
 
                     delegate: ClipboardEntry {
                         id: option

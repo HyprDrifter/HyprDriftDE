@@ -5,6 +5,7 @@ add_library(core
 target_include_directories(core 
     PUBLIC 
     ${CMAKE_CURRENT_SOURCE_DIR}
+    ${PROJECT_SOURCE_DIR}/src/driftModule
     ${PROJECT_SOURCE_DIR}/src/logging
     ${PROJECT_SOURCE_DIR}/src/settings
     ${PROJECT_SOURCE_DIR}/src/dbus
@@ -17,6 +18,7 @@ target_include_directories(core
 )
 target_link_libraries(core 
     PUBLIC 
+        driftModule
         utils
         dbus
         logging
