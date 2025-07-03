@@ -19,7 +19,7 @@ done
 if [ ! -d "$HOME/.config/hypr/conf" ]; then
     echo "[+] No user Hypr config found. Copying defaults from /etc/hyprdrift/hypr/"
     mkdir -p "$HOME/.config"
-    cp -r /etc/hyprdrift/hypr "$HOME/.config/"
+    cp -rf /etc/hyprdrift/hypr/.config "$HOME/.config/"
 fi
 
 /usr/bin/drift-daemon &
