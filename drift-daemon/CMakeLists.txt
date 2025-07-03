@@ -4,8 +4,13 @@ project(drift-daemon VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
 # Qt
 find_package(Qt6 REQUIRED COMPONENTS Core)
+
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
 # YAML-CPP
 include(FetchContent)
@@ -18,6 +23,7 @@ FetchContent_MakeAvailable(yaml-cpp)
 
 # Add subdirectories
 add_subdirectory(src/core)
+add_subdirectory(src/driftModule)
 add_subdirectory(src/utils)
 add_subdirectory(src/dbus)
 add_subdirectory(src/settings)
@@ -38,6 +44,7 @@ add_executable(drift-daemon
 target_link_libraries(drift-daemon
     PRIVATE
         core
+        driftModule
         util
         dbus
         settings

@@ -24,7 +24,10 @@ Item {
     StyledTextLarge{ 
 
         id: windowText
+        implicitWidth: Math.min(activeWindowDisplay.parent.width, bar.width / 3)
         text: activeWindow?.activated ? activeWindow.title : qsTr("Desktop")
+        txt.clip: true
+        txt.wrapMode: Text.NoWrap
     }
 
 }

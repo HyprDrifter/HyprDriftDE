@@ -1,30 +1,36 @@
 #pragma once
 
 #include <string>
-#include <memory>
+#include <vector>
 
-#include "utilities.h"
-#include "Logger.h"
-#include "DBusManager.h"
-#include "SettingsManager.h"
-#include "SessionManager.h"
-#include "AppLauncher.h"
-#include "ProcessManager.h"
-#include "ThemeManager.h"
-#include "WallpaperManager.h"
+#include "DriftModule.h"
 
-class DriftCore
+class Logger;
+class DBusManager;
+class SettingsManager;
+class SessionManager;
+class AppLauncher;
+class WallpaperManager;
+class ProcessManager;
+class ThemeManager;
+
+class DriftCore : public DriftModule
 {
+    Q_OBJECT
+
 public:
     DriftCore();
-    ~DriftCore();
+    ~DriftCore() override;
+
+    bool coreRunning;
     void start();
     void stop();
-    
+
+public slots:
+    void moduleStarted(const QString& name);
 
 private:
     
-    bool coreRunning;
     
     std::string user;
     std::string homeDir;
@@ -34,15 +40,37 @@ private:
     std::string xdgCurrentDesktop;
     std::string waylandDisplay;
 
+    bool starting = true;
 
-    std::unique_ptr<SettingsManager> settingsManager;
-    std::unique_ptr<Logger> logger;
-    std::unique_ptr<SessionManager> sessionManager;
-    std::unique_ptr<DBusManager> dBusManager;
-    std::unique_ptr<ProcessManager> processManager;
-    std::unique_ptr<ThemeManager> themeManager;
-    std::unique_ptr<WallpaperManager> wallpaperManager;
+    // Raw pointers
+    SettingsManager* settingsManager;
+    Logger* logger;
+    SessionManager* sessionManager;
+    DBusManager* dBusManager;
+    ProcessManager* processManager;
+    ThemeManager* themeManager;
+    WallpaperManager* wallpaperManager;
+    AppLauncher* appLauncher;
+
+    std::vector<std::unique_ptr<DriftModule>> modules;
+    std::vector<DriftModule*> moduleStartupQueue;
+
+    template<typename T>
+    T* registerModule(std::vector<std::unique_ptr<DriftModule>>& vec);
 
     void core();
     void getSystemInfo();
+    std::string getEnvVariable(const char* varName);
+
+    DriftModule& getModule(const std::string& name);
+    DriftModule* getModulePointer(const std::string& name);
+
+    void startModule(const std::string& moduleName);
+    void stopModule(const std::string& moduleName);
+    void restartModule(const std::string& moduleName);
+
+signals:
+    void startModules();
+    void stopModules();
+    void restartModules();
 };

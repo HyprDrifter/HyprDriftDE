@@ -2,7 +2,9 @@
 
 #include <string>
 
-class ProcessManager
+#include "DriftModule.h"
+
+class ProcessManager : public DriftModule
 {
 private:
     /* data */
@@ -10,5 +12,7 @@ public:
     ProcessManager(/* args */);
     ~ProcessManager();
     void start();
+    void stop();
+    void restart();
 };
 

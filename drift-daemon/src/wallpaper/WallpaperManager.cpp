@@ -6,9 +6,12 @@
 
 #include "utilities.h"
 #include "WallpaperManager.h"
+#include "DriftModule.h"
 
 WallpaperManager::WallpaperManager(/* args */)
 {
+    moduleName = "Wallpaper Manager";
+    threaded = true;
 }
 
 WallpaperManager::~WallpaperManager()
@@ -17,5 +20,20 @@ WallpaperManager::~WallpaperManager()
 
 void WallpaperManager::start()
 {
-    writeLine("Wallpaper Manager Started");
+    enabled = true;
+    
+    running = true;
+    emit started(QString::fromStdString(moduleName));
 }
+
+void WallpaperManager::stop()
+{
+    writeLine(moduleName + " Stoped");
+}
+
+void WallpaperManager::restart()
+{
+    stop();
+    start();
+}
+

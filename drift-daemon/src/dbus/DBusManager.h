@@ -2,13 +2,19 @@
 
 #include <string>
 
-class DBusManager
+#include "DriftModule.h"
+
+class DBusManager : public DriftModule
 {
 private:
     /* data */
 public:
     DBusManager(/* args */);
     ~DBusManager();
+
+public slots:
     void start();
+    void stop();
+    void restart();
 };
 
