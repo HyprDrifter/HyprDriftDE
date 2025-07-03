@@ -50,7 +50,7 @@ fi
 # Full runtime + build deps
 sudo -u "$SUDO_USER" yay -S --needed \
     cmake g++ qt6-base qt6-declarative qt6-tools \
-    quickshell-git hyprland hyprpaper hyprlock cliphist \
+    quickshell hyprland hyprpaper hyprlock cliphist \
     tinted-theming pavucontrol sddm nerd-fonts
 
 # Optional: Alert user to enable SDDM manually
