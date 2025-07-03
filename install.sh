@@ -51,10 +51,12 @@ fi
 sudo -u "$SUDO_USER" yay -S --needed \
     cmake g++ qt6-base qt6-declarative qt6-tools \
     quickshell hyprland hyprpaper hyprlock cliphist \
-    tinted-theming pavucontrol sddm nerd-fonts
+    tinted-theming pavucontrol sddm \
+    ttf-jetbrains-mono-nerd ttf-fira-code-nerd
 
 # Optional: Alert user to enable SDDM manually
 echo "[!] Make sure to enable SDDM: sudo systemctl enable sddm.service"
+systemctl enable sddm.service
 
 # Optional: Warn if no Nerd Font found
 if ! fc-list | grep -qi "nerd"; then
