@@ -2,6 +2,7 @@ source = ./conf/Animation.conf
 source = ./conf/Autostart.conf
 source = ./conf/KeyBinds.conf
 source = ./conf/Monitor.conf
+source = ./conf/Monitor2.conf
 source = ./conf/Ui.conf
 source = ./conf/WindowRules.conf
 source = ./conf/DefaultPrograms.conf

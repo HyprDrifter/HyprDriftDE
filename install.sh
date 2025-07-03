@@ -51,7 +51,7 @@ fi
 # Full runtime + build deps
 sudo -u "$SUDO_USER" yay -S --needed --noconfirm \
     cmake g++ qt6-base qt6-declarative qt6-tools \
-    qt qt5\
+    qt5-base qt5-declarative qt5-tools \
     quickshell hyprland hyprpaper hyprlock cliphist \
     tinted-theming pavucontrol sddm \
     ttf-jetbrains-mono-nerd ttf-fira-code-nerd
