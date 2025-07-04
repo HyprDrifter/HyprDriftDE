@@ -23,7 +23,7 @@ Rectangle {
     
     Process {
         id: ramGetData
-        command: ["bash", "-c", "bash $HOME/.config/quickshell/Desktop/Scripts/Get-RAM-Percent.sh"]
+        command: ["bash", "-c", "bash /etc/hyprdrift/quickdrift/Scripts/Get-RAM-Percent.sh"]
         running: true
         
         stdout: StdioCollector {
