@@ -55,7 +55,8 @@ sudo -u "$SUDO_USER" yay -S --needed --noconfirm \
     qt6-5compat quickshell hyprland hyprpaper hyprlock cliphist \
     hdrop snixembed hyprpolkitagent hyprlock wlogout \
     tinted-theming pavucontrol sddm go-yq \
-    ttf-jetbrains-mono-nerd ttf-fira-code-nerd
+    ttf-jetbrains-mono-nerd ttf-fira-code-nerd kitty \
+    top pipewire pulseaudio sound-theme-freedesktop
 
 # Optional: Alert user to enable SDDM manually
 echo "[!] Make sure to enable SDDM: sudo systemctl enable sddm.service"

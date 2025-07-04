@@ -22,7 +22,7 @@ Rectangle {
     
     Process {
         id: cpuGetData
-        command: ["bash", "-c", "bash $HOME/.config/quickshell/Desktop/Scripts/Get-CPU-Percent.sh"]
+        command: ["bash", "-c", "bash /etc/hyprdrift/quickdrift/Scripts/Get-CPU-Percent.sh"]
         running: true
 
         stdout: StdioCollector {
