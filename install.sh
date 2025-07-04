@@ -55,7 +55,7 @@ sudo -u "$SUDO_USER" yay -S --needed --noconfirm \
     qt6-5compat qt6-base qt6-declarative qt6-tools \
     hyprland quickshell sddm tinted-theming \
     cliphist hdrop hyprlock hyprpaper hyprpolkitagent snixembed wlogout \
-    pipewire pipewire-pulse pulseaudio pavucontrol \
+    pipewire pipewire-pulse pavucontrol \
     htop btop kitty \
     sound-theme-freedesktop \
     ttf-fira-code-nerd ttf-jetbrains-mono-nerd
