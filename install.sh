@@ -50,24 +50,13 @@ fi
 
 # Full runtime + build deps
 sudo -u "$SUDO_USER" yay -S --needed --noconfirm \
-    # Build dependencies
     cmake g++ go-yq \
     qt5-base qt5-declarative qt5-graphicaleffects qt5-tools \
     qt6-5compat qt6-base qt6-declarative qt6-tools \
-    
-    # Core desktop environment
     hyprland quickshell sddm tinted-theming \
-    
-    # Hyprland ecosystem tools
     cliphist hdrop hyprlock hyprpaper hyprpolkitagent snixembed wlogout \
-    
-    # System services
     pipewire pipewire-pulse pulseaudio pavucontrol \
-    
-    # Terminal and utilities
     htop btop kitty \
-    
-    # Fonts and themes
     sound-theme-freedesktop \
     ttf-fira-code-nerd ttf-jetbrains-mono-nerd
 
