@@ -50,17 +50,37 @@ fi
 
 # Full runtime + build deps
 sudo -u "$SUDO_USER" yay -S --needed --noconfirm \
-    cmake g++ qt6-base qt6-declarative qt6-tools \
-    qt5-base qt5-declarative qt5-tools qt5-graphicaleffects \
-    qt6-5compat quickshell hyprland hyprpaper hyprlock cliphist \
-    hdrop snixembed hyprpolkitagent hyprlock wlogout \
-    tinted-theming pavucontrol sddm go-yq \
-    ttf-jetbrains-mono-nerd ttf-fira-code-nerd kitty \
-    top pipewire pulseaudio sound-theme-freedesktop
+    # Build dependencies
+    cmake g++ go-yq \
+    qt5-base qt5-declarative qt5-graphicaleffects qt5-tools \
+    qt6-5compat qt6-base qt6-declarative qt6-tools \
+    
+    # Core desktop environment
+    hyprland quickshell sddm tinted-theming \
+    
+    # Hyprland ecosystem tools
+    cliphist hdrop hyprlock hyprpaper hyprpolkitagent snixembed wlogout \
+    
+    # System services
+    pipewire pipewire-pulse pulseaudio pavucontrol \
+    
+    # Terminal and utilities
+    htop btop kitty \
+    
+    # Fonts and themes
+    sound-theme-freedesktop \
+    ttf-fira-code-nerd ttf-jetbrains-mono-nerd
+
 
 # Optional: Alert user to enable SDDM manually
 echo "[!] Make sure to enable SDDM: sudo systemctl enable sddm.service"
 systemctl enable sddm.service
+
+# User services
+systemctl --user enable --now pipewire.service
+systemctl --user enable --now pipewire-pulse.service
+systemctl --user enable --now wireplumber.service
+systemctl --user enable --now quickdrift.service
 
 # Optional: Warn if no Nerd Font found
 if ! fc-list | grep -qi "nerd"; then
