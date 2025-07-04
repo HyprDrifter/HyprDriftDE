@@ -21,7 +21,7 @@ Rectangle {
     
     Process {
         id: gpuGetData
-        command: ["bash", "-c", "bash $HOME/.config/quickshell/Desktop/Scripts/Get-GPU-Percent.sh"]
+        command: ["bash", "-c", "bash /etc/hyprdrift/quickdrift/Scripts/Get-GPU-Percent.sh"]
         running: true
         
         stdout: StdioCollector {
