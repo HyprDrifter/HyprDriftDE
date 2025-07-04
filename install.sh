@@ -50,15 +50,14 @@ fi
 
 # Full runtime + build deps
 sudo -u "$SUDO_USER" yay -S --needed --noconfirm \
-    cmake g++ go-yq \
-    qt5-base qt5-declarative qt5-graphicaleffects qt5-tools \
-    qt6-5compat qt6-base qt6-declarative qt6-tools \
-    hyprland quickshell sddm tinted-theming \
-    cliphist hdrop hyprlock hyprpaper hyprpolkitagent snixembed wlogout \
-    pipewire pipewire-pulse pavucontrol \
-    htop btop kitty \
-    sound-theme-freedesktop \
-    ttf-fira-code-nerd ttf-jetbrains-mono-nerd
+    cmake g++ qt6-base qt6-declarative qt6-tools \
+    qt5-base qt5-declarative qt5-tools qt5-graphicaleffects \
+    qt6-5compat quickshell hyprland hyprpaper hyprlock cliphist \
+    hdrop snixembed hyprpolkitagent hyprlock wlogout \
+    tinted-theming pavucontrol sddm go-yq \
+    ttf-jetbrains-mono-nerd ttf-fira-code-nerd kitty \
+    htop pipewire pulseaudio sound-theme-freedesktop \
+    pipewire-pulse 
 
 
 # Optional: Alert user to enable SDDM manually
