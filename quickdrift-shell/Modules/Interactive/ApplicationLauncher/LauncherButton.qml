@@ -3,10 +3,10 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 import Quickshell.Hyprland
-import "root:/Internal"
-import "root:/Services"
-import "root:/Modules/Interactive"
-import "root:/Modules/Interactive/ApplicationLauncher"
+import qs.Internal
+import qs.Services
+import qs.Modules.Interactive
+import qs.Modules.Interactive.ApplicationLauncher
 
 Button {
     id: launcherBtn

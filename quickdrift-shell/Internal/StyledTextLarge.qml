@@ -3,7 +3,7 @@ import Quickshell.Widgets
 import QtQuick
 import QtQuick.Layouts
 import Qt5Compat.GraphicalEffects
-import "root:Internal/"
+import qs.Internal
 
 Item {
     id: root

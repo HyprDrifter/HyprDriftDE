@@ -1,11 +1,10 @@
 import Quickshell
 import Quickshell.Hyprland
 import QtQuick
-import "root:/Modules"
-import "root:/Modules/Interactive"
-import "root:/Modules/Interactive/ApplicationLauncher"
-import "root:/Services"
-import "root:/Panels/MinimizeManager"
+import qs.Modules.Interactive
+import qs.Modules.Interactive.ApplicationLauncher
+import qs.Services
+import qs.Panels.MinimizeManager
 
 
 

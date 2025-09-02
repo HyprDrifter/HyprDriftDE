@@ -3,8 +3,8 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 import QtQml.Models
-import "root:/Modules/Interactive/ClipboardManager"
-import "root:/Internal"
+import qs.Modules.Interactive.ClipboardManager
+import qs.Internal
 
 PopupWindow {
     id: clipPopup

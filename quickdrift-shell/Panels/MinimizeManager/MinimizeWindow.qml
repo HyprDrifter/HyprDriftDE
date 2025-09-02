@@ -6,11 +6,11 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import Quickshell.Io
 import Quickshell.Services.SystemTray
-import "root:/Internal"
-import "root:/Modules/Interactive"
-import "root:/Modules/Interactive/ApplicationLauncher"
-import "root:/Panels/MinimizeManager"
-import "root:/Services/"
+import qs.Internal
+import qs.Modules.Interactive
+import qs.Modules.Interactive.ApplicationLauncher
+import qs.Panels.MinimizeManager
+import qs.Services
 
 PanelWindow {
     id: root

@@ -1,6 +1,6 @@
 import QtQuick
 import QtQuick.Layouts
-import "root:Internal/"
+import qs.Internal
 
 Rectangle {
     id: root
