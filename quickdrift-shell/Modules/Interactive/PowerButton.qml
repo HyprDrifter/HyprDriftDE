@@ -4,7 +4,7 @@ import QtQuick.Layouts
 import Quickshell.Io
 import QtQuick.Controls
 import Qt5Compat.GraphicalEffects
-import "root:/Internal/"
+import qs.Internal
 
 
 Button{

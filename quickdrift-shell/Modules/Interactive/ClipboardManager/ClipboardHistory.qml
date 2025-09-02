@@ -4,7 +4,7 @@ import Quickshell.Io
 import Quickshell.Hyprland
 import QtQuick
 import QtQml.Models
-import "root:/Modules/Interactive/ClipboardManager"
+import qs.Modules.Interactive.ClipboardManager
 
 Singleton {
     id: root

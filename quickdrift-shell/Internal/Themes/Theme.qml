@@ -3,8 +3,8 @@ pragma Singleton
 import QtQuick
 import Quickshell
 import Quickshell.Io
-import "root:/Internal/Themes"
-import "root:/Internal"
+import qs.Internal.Themes
+import qs.Internal
 
 Singleton {
     id: root

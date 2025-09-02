@@ -1,15 +1,13 @@
 //@ pragma UseQApplication
 
-import "./Internal/"
-import "./Panels/"
-import "./Panels/MinimizeManager"
-import "./Scripts/"
-import "./Modules/"
-import "./Modules/Interactive/"
-import "./Modules/Interactive/ClipboardManager"
-import "./Modules/Interactive/ApplicationLauncher"
-import "./Services/"
-import "./Services/IconResolver"
+import qs.Internal
+import qs.Panels
+import qs.Panels.MinimizeManager
+import qs.Modules.Interactive
+import qs.Modules.Interactive.ClipboardManager
+import qs.Modules.Interactive.ApplicationLauncher
+import qs.Services
+import qs.Services.IconResolver
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts

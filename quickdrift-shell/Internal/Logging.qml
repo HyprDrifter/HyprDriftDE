@@ -1,5 +1,5 @@
-import "root:/Internal"
-import "root:/Services"
+import qs.Internal
+import qs.Services
 import QtQuick
 import Quickshell
 import Quickshell.Io

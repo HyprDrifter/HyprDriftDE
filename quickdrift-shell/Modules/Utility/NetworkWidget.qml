@@ -1,7 +1,7 @@
 import Quickshell
 import QtQuick
 import QtQuick.Layouts
-import "root:/Internal/"
+import qs.Internal
 
 
 Item {

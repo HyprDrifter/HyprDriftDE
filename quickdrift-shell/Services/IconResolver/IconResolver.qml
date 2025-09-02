@@ -5,10 +5,9 @@ import Quickshell.Io
 import Quickshell.Services.SystemTray
 import Quickshell.Widgets
 import QtQuick.Controls
-import "root:Services/"
-import "root:Services/IconResolver"
-import "root:Modules/"
-import "root:Modules/Interactive"
+import qs.Services
+import qs.Services.IconResolver
+import qs.Modules.Interactive
 
 Scope {
     id: root

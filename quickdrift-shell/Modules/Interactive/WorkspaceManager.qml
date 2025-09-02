@@ -5,7 +5,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import Quickshell.Io
-import "root:/Internal"
+import qs.Internal
 
 Item {
     id: root

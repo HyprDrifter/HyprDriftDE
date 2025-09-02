@@ -4,14 +4,13 @@ import QtQuick.Layouts
 import Quickshell.Hyprland
 import QtQuick.Controls
 import Quickshell.Widgets
-import "root:/Modules"
-import "root:/Internal"
-import "root:/Modules/Performance"
-import "root:/Modules/Interactive"
-import "root:/Modules/Interactive/ClipboardManager"
-import "root:/Modules/Interactive/ApplicationLauncher"
-import "root:/Modules/Interactive/VolumeController"
-import "root:/Modules/Utility"
+import qs.Internal
+import qs.Modules.Performance
+import qs.Modules.Interactive
+import qs.Modules.Interactive.ClipboardManager
+import qs.Modules.Interactive.ApplicationLauncher
+import qs.Modules.Interactive.VolumeController
+import qs.Modules.Utility
 
 
 Scope {
