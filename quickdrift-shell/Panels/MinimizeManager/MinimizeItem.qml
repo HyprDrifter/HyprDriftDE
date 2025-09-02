@@ -6,11 +6,11 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 import Quickshell.Io
-import "root:/Modules/Interactive"
-import "root:/Modules/Interactive/ApplicationLauncher"
-import "root:/Internal"
-import "root:/Services"
-import "root:/Panels/MinimizeManager"
+import qs.Modules.Interactive
+import qs.Modules.Interactive.ApplicationLauncher
+import qs.Internal
+import qs.Services
+import qs.Panels.MinimizeManager
 
 WrapperRectangle {
     id: root

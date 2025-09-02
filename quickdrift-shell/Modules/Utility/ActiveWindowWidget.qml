@@ -7,7 +7,7 @@ import QtQuick.Window
 import QtQuick.Controls
 import Quickshell.Io
 import Quickshell.Widgets
-import "root:Internal/"
+import qs.Internal
 
 Item {
     id: activeWindowDisplay

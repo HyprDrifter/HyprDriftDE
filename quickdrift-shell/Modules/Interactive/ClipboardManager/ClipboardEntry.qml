@@ -1,7 +1,7 @@
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
-import "root:/Internal"
+import qs.Internal
 
 Item {
     id: entryItem

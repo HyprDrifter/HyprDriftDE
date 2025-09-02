@@ -4,8 +4,8 @@ import Quickshell
 import QtQuick
 import Quickshell.Io
 import Quickshell.Hyprland
-import "root:/Modules/Interactive/ApplicationLauncher"
-import "root:/Internal/Themes"
+import qs.Modules.Interactive.ApplicationLauncher
+import qs.Internal.Themes
 
 Scope {
     id: root

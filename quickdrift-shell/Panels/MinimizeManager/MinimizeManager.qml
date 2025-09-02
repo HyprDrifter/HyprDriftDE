@@ -9,10 +9,10 @@ import Quickshell.Widgets
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
-import "root:/Modules/Interactive"
-import "root:/Modules/Interactive/ApplicationLauncher"
-import "root:/Internal"
-import "root:/Services"
+import "Modules/Interactive"
+import "Modules/Interactive/ApplicationLauncher"
+import "Internal"
+import "Services"
 
 Singleton {
     id: root

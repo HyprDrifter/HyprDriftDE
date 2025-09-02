@@ -4,9 +4,9 @@ import Quickshell.Io
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
-import "root:/Internal"
-import "root:/Services"
-import "root:/Modules/Interactive/VolumeController"
+import qs.Internal
+import qs.Services
+import qs.Modules.Interactive.VolumeController
 
 PopupWindow {
     id: root

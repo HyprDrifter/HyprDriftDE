@@ -2,10 +2,10 @@ import QtQuick
 import QtQuick.Layouts
 import Quickshell.Services.SystemTray
 import Quickshell.Widgets
-import "root:/Services/"
-import "root:/Services/IconResolver"
-import "root:/Internal/"
-import "root:/Modules/Interactive/ClipboardManager"
+import qs.Services
+import qs.Services.IconResolver
+import qs.Internal
+import qs.Modules.Interactive.ClipboardManager
 
 // TODO: More fancy animation
 Item {
