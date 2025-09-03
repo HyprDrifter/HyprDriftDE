@@ -14,6 +14,7 @@ import qs.Modules.Interactive.ApplicationLauncher
 import qs.Internal
 import qs.Services
 
+
 Singleton {
     id: root
 
