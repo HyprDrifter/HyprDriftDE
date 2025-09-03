@@ -9,10 +9,10 @@ import Quickshell.Widgets
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
-import "Modules/Interactive"
-import "Modules/Interactive/ApplicationLauncher"
-import "Internal"
-import "Services"
+import qs.Modules.Interactive
+import qs.Modules.Interactive.ApplicationLauncher
+import qs.Internal
+import qs.Services
 
 Singleton {
     id: root
@@ -96,6 +96,7 @@ Singleton {
                 console.log("Stream Finished")
                 console.log(this.text)
                 root.minimizedWindows.append(root.focusedWindow)
+                captureImage.running = false
             }
         }
     }
