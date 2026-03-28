@@ -1,3 +1,0 @@
-exec-once = ~/.config/quickshell/Desktop/LaunchDesktop.sh
-
-bind = SUPER, SPACE, global, quickshell:toggleLauncher

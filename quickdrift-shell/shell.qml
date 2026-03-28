@@ -12,6 +12,8 @@ import qs.Configs.Themeing
 import qs.Modules.Desktop
 import qs.Modules.Desktop.Panels
 import qs.Modules.Services
+import qs.Modules.Driftlets.MinimizeDriftlet
+import qs.Modules.Driftlets.ClipboardDriftlet
 
 import qs.Addons
 
@@ -79,6 +81,23 @@ ShellRoot {
         active: root.settingsLoaded
         sourceComponent: Taskbar {}
     }
- 
+
+    Loader {
+        id: minimizeWindowLoader
+        active: root.settingsLoaded
+        sourceComponent: MinimizeWindow {}
+    }
+
+    Loader {
+        id: globalShortcutsLoader
+        active: root.settingsLoaded
+        sourceComponent: GlobalShortcuts {}
+    }
+
+    // Singletons that need to be instantiated at shell root
+    AudioControl { }
+    MprisController { }
+    ClipboardHistory { }
+    MinimizeManager { }
     
 }

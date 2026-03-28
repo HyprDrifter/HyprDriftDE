@@ -202,6 +202,7 @@ Scope {
     property string minimizerPlayOnMinimizeSound : systemAudioBell
     property string minimizerTempDirectory : "/tmp/SlightlyBetterDesktop/Minimizer"
     property string minimizerWindowJson : minimizerTempDirectory + "/windows.json"
+    property string minimizerWindowPreviewDirectory: minimizerTempDirectory + "/Previews"
     property bool minimizerLivePreview : true
 
     // Workspace Manager

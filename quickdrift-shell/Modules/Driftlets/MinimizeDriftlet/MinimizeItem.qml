@@ -1,0 +1,73 @@
+import Quickshell
+import Quickshell.Hyprland
+import Quickshell.Wayland
+import Quickshell.Widgets
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import Quickshell.Io
+import qs.Configs
+import qs.Configs.Settings
+import qs.Modules.Controls
+import qs.Modules.Driftlets.MinimizeDriftlet
+
+WrapperRectangle {
+    id: root
+
+    required property string address
+    required property string title
+    required property var topLevel
+    property string holder
+    property var currentScreenSize: [{height: Hyprland.focusedMonitor.height, width: Hyprland.focusedMonitor.width}]
+
+    implicitHeight: layout.implicitHeight
+    implicitWidth: layout.implicitWidth
+
+    color: "transparent"
+
+    ColumnLayout {
+        id: layout
+        anchors.fill: parent
+        implicitHeight: displayTitle.implicitHeight
+        implicitWidth: displayTitle.implicitWidth
+
+        StyledText {
+            id: displayTitle
+            Layout.maximumWidth: windowPreview.implicitWidth - 20
+            Layout.maximumHeight: txt.implicitHeight
+            anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
+            implicitHeight: txt.height
+            implicitWidth: windowPreview.implicitWidth - 20
+            text: root.title
+            txt.width: displayTitle.width
+        }
+
+        Button {
+            id: windRestoreButton
+            implicitWidth: 300
+            implicitHeight: 300
+
+            background: ScreencopyView {
+                id: windowPreview
+                anchors.fill: parent
+                captureSource: root.topLevel
+                live: ThemeSettings.minimizerLivePreview
+                constraintSize.height: 300
+                constraintSize.width: 300
+            }
+
+            onClicked: {
+                console.log("Restoring window: " + root.title)
+                MinimizeManager.restoreSelectedFunction(root.address)
+                for (let i = 0; i < MinimizeManager.minimizedWindows.count; i++) {
+                    if (MinimizeManager.minimizedWindows.get(i).address === root.address) {
+                        MinimizeManager.minimizedWindows.remove(i, 1)
+                        break
+                    }
+                }
+                GlobalStates.minimizeManagerVisible = false
+            }
+        }
+    }
+}
