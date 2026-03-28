@@ -1,4 +1,3 @@
-pragma Singleton
 pragma ComponentBehavior: Bound
 
 // From https://git.outfoxxed.me/outfoxxed/nixnew
