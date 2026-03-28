@@ -1,0 +1,187 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-build",
+	"dir-cur-src" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src",
+	"dir-top-bld" : "/home/suzie/Projects/HyprDriftDE/build",
+	"dir-top-src" : "/home/suzie/Projects/HyprDriftDE/drift-daemon",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps/yaml-cpp-src/include",
+		"_deps/yaml-cpp-src/src",
+		"_deps/yaml-cpp-build/yaml-cpp_autogen/include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir",
+	"sources" : 
+	{
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/binary.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/contrib/graphbuilder.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/contrib/graphbuilderadapter.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/convert.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/depthguard.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/directives.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/emit.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/emitfromevents.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/emitter.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/emitterstate.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/emitterutils.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/exceptions.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/exp.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/fptostring.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/fptostring.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/memory.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/node.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/node.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/node_data.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/nodebuilder.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/nodeevents.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/null.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/null.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/ostream_wrapper.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/parse.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/parser.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/regex_yaml.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/scanner.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/scanscalar.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/scantag.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/scantoken.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/simplekey.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/singledocparser.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/stream.cpp"
+		},
+		"_deps/yaml-cpp-build/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/src/tag.cpp"
+		}
+	}
+}

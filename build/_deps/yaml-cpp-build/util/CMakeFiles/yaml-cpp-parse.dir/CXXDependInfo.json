@@ -1,0 +1,31 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-build/util",
+	"dir-cur-src" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/util",
+	"dir-top-bld" : "/home/suzie/Projects/HyprDriftDE/build",
+	"dir-top-src" : "/home/suzie/Projects/HyprDriftDE/drift-daemon",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"_deps/yaml-cpp-src/include",
+		"_deps/yaml-cpp-build/util/yaml-cpp-parse_autogen/include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir",
+	"sources" : 
+	{
+		"_deps/yaml-cpp-build/util/CMakeFiles/yaml-cpp-parse.dir/parse.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/util/parse.cpp"
+		}
+	}
+}

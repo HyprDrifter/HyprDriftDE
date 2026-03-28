@@ -1,0 +1,21 @@
+{
+    "settings": {
+        "logSettings": {
+            "logLevel": 1,
+            "logPath": "/.cache/hyprdrift/quickdrift"
+        },
+        "volumeSettings": {
+            "maxVolume": 100,
+            "maxVolumeIncrease": 50,
+            "raiseMaxVolume": true,
+            "volumeStep": 1
+        },
+        "volumeState": {
+            "inputDevices": [
+            ],
+            "outputDevices": [
+            ],
+            "systemVolume": 100
+        }
+    }
+}

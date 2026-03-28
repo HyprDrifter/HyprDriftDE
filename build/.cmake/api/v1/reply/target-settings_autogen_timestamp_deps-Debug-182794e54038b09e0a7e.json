@@ -1,0 +1,66 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"src/settings/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "yaml-cpp::@c1fb6b535d5396bcd0b2"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "driftModule::@0234a436745239ed913c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "utils::@f1b38b22aeb65474a6c5"
+		}
+	],
+	"id" : "settings_autogen_timestamp_deps::@4a89bb85a6902de6040e",
+	"isGeneratorProvided" : true,
+	"name" : "settings_autogen_timestamp_deps",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "yaml-cpp::@c1fb6b535d5396bcd0b2"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "driftModule::@0234a436745239ed913c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "utils::@f1b38b22aeb65474a6c5"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "src/settings",
+		"source" : "src/settings"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

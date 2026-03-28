@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "adolfo@librepixels.com",
+                "Name": "zayronxio"
+            }
+        ],
+        "Id": "Banff",
+        "License": "gpl3.0",
+        "Name": "Banff",
+        "Name[x-test]": "xxBanffxx"
+        }
+    }
+

@@ -1,0 +1,492 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "drift-daemon"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"src/settings/CMakeLists.txt",
+			"src/core/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 3
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 19,
+				"parent" : 5
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "core::@0618756b1ff51bca1a0e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "driftModule::@0234a436745239ed913c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dbus::@7679c349088050c077d2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "settings::@4a89bb85a6902de6040e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "logging::@48bfaf6ebac2073e8858"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "theme::@add303ba3dff68c07b92"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "process::@0c136a57587ef2cf0836"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "session::@0197f12f3853b903582f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "apps::@57fecd540e8aa42f9f2f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "wallpaper::@d0775913d89121ef2290"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Qt6::Core::@6890427a1f51a3e7e1df"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g -std=gnu++23"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-mno-direct-extern-access"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "YAML_CPP_STATIC_DEFINE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/home/suzie/Projects/HyprDriftDE/build/drift-daemon_autogen/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/core"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/driftModule"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/logging"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/settings"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/dbus"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/theme"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/session"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/process"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/utils"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/drift-daemon/src/wallpaper"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt6/QtCore"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt6"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/lib/qt6/mkspecs/linux-g++"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2,
+					2
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "yaml-cpp::@c1fb6b535d5396bcd0b2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "core::@0618756b1ff51bca1a0e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "driftModule::@0234a436745239ed913c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "utils::@f1b38b22aeb65474a6c5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dbus::@7679c349088050c077d2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "settings::@4a89bb85a6902de6040e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "logging::@48bfaf6ebac2073e8858"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "theme::@add303ba3dff68c07b92"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "process::@0c136a57587ef2cf0836"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "session::@0197f12f3853b903582f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "apps::@57fecd540e8aa42f9f2f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "wallpaper::@d0775913d89121ef2290"
+		},
+		{
+			"id" : "drift-daemon_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "drift-daemon_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "drift-daemon::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -g",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/core/libcore.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/driftModule/libdriftModule.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lutil",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/dbus/libdbus.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/settings/libsettings.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/logging/liblogging.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/theme/libtheme.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/process/libprocess.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/session/libsession.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/apps/libapps.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/wallpaper/libwallpaper.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "_deps/yaml-cpp-build/libyaml-cppd.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "src/driftModule/libdriftModule.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/lib/libQt6Core.so.6.11.0",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "src/utils/libutils.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "core::@0618756b1ff51bca1a0e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "driftModule::@0234a436745239ed913c"
+		},
+		{
+			"backtrace" : 2,
+			"fragment" : "util"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "dbus::@7679c349088050c077d2"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "settings::@4a89bb85a6902de6040e"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "logging::@48bfaf6ebac2073e8858"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "theme::@add303ba3dff68c07b92"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "process::@0c136a57587ef2cf0836"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "session::@0197f12f3853b903582f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "apps::@57fecd540e8aa42f9f2f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "wallpaper::@d0775913d89121ef2290"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "Qt6::Core::@6890427a1f51a3e7e1df"
+		}
+	],
+	"name" : "drift-daemon",
+	"nameOnDisk" : "drift-daemon",
+	"orderDependencies" : 
+	[
+		{
+			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "drift-daemon_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "drift-daemon_autogen::@6890427a1f51a3e7e1df"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/suzie/Projects/HyprDriftDE/build/drift-daemon_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/suzie/Projects/HyprDriftDE/build/drift-daemon_autogen/timestamp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/suzie/Projects/HyprDriftDE/build/drift-daemon_autogen/timestamp.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

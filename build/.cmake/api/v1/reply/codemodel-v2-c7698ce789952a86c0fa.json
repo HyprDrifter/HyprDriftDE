@@ -1,0 +1,1305 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Git::Git::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Git__Git-Debug-995f00728358b756cc83.json",
+					"name" : "Git::Git",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::Core::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__Core-Debug-b25f250e5d82e6065440.json",
+					"name" : "Qt6::Core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::GlobalConfig::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__GlobalConfig-Debug-58b4635944b23e0ae6a5.json",
+					"name" : "Qt6::GlobalConfig",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::GlobalConfigPrivate::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__GlobalConfigPrivate-Debug-cbf551246e567ab87d80.json",
+					"name" : "Qt6::GlobalConfigPrivate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::Platform::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__Platform-Debug-c3e483bbac547f783fa6.json",
+					"name" : "Qt6::Platform",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::PlatformAppInternal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__PlatformAppInternal-Debug-bbd7c765a3a499c4a371.json",
+					"name" : "Qt6::PlatformAppInternal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::PlatformCommonInternal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__PlatformCommonInternal-Debug-0387bbbef84c68c4d794.json",
+					"name" : "Qt6::PlatformCommonInternal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::PlatformExampleInternal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__PlatformExampleInternal-Debug-0d6cccdef5477c4d66d3.json",
+					"name" : "Qt6::PlatformExampleInternal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::PlatformModuleInternal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__PlatformModuleInternal-Debug-a1b34169ad3f6dda0826.json",
+					"name" : "Qt6::PlatformModuleInternal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::PlatformPluginInternal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__PlatformPluginInternal-Debug-45a5311c34548a6472f9.json",
+					"name" : "Qt6::PlatformPluginInternal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::PlatformToolInternal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__PlatformToolInternal-Debug-8b116abab4b2ca515aae.json",
+					"name" : "Qt6::PlatformToolInternal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::androiddeployqt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__androiddeployqt-Debug-da1a22b8b841505a9535.json",
+					"name" : "Qt6::androiddeployqt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::androidtestrunner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__androidtestrunner-Debug-4c4ea504c6124ab26cb9.json",
+					"name" : "Qt6::androidtestrunner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::cmake_automoc_parser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__cmake_automoc_parser-Debug-b987efa50e4c07c8172d.json",
+					"name" : "Qt6::cmake_automoc_parser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::moc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__moc-Debug-4084a27982b9f07c2123.json",
+					"name" : "Qt6::moc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::qlalr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__qlalr-Debug-5b659c2d8c79ee2f8676.json",
+					"name" : "Qt6::qlalr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::qmake::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__qmake-Debug-2ee204e4dbbb11120894.json",
+					"name" : "Qt6::qmake",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::qtpaths::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__qtpaths-Debug-71130623b5eb7febef75.json",
+					"name" : "Qt6::qtpaths",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::rcc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__rcc-Debug-f59b121926d8030da870.json",
+					"name" : "Qt6::rcc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::syncqt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__syncqt-Debug-0410493c1e65dd10a95e.json",
+					"name" : "Qt6::syncqt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::tracegen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__tracegen-Debug-46ff765f031d6179b23c.json",
+					"name" : "Qt6::tracegen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::tracepointgen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__tracepointgen-Debug-df0ec8226743b17f0453.json",
+					"name" : "Qt6::tracepointgen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::wasmdeployqt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__wasmdeployqt-Debug-722af6c09d2778a6cb4b.json",
+					"name" : "Qt6::wasmdeployqt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::androiddeployqt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__androiddeployqt-Debug-ee96fa4eff0f92b89583.json",
+					"name" : "Qt::androiddeployqt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::androidtestrunner::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__androidtestrunner-Debug-d2b57a73aa3be091b55f.json",
+					"name" : "Qt::androidtestrunner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::cmake_automoc_parser::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__cmake_automoc_parser-Debug-db9ea6f999f28fa50065.json",
+					"name" : "Qt::cmake_automoc_parser",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::moc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__moc-Debug-190f55b12500bc210ae9.json",
+					"name" : "Qt::moc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::qlalr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__qlalr-Debug-9f02d2ed489f2793810c.json",
+					"name" : "Qt::qlalr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::qmake::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__qmake-Debug-64eaf338611df8f336a8.json",
+					"name" : "Qt::qmake",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::qtpaths::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__qtpaths-Debug-d71911b81c442777026d.json",
+					"name" : "Qt::qtpaths",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::rcc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__rcc-Debug-04fa8af1b6b7df84b0fb.json",
+					"name" : "Qt::rcc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::syncqt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__syncqt-Debug-efaa534cf3bf09138f7d.json",
+					"name" : "Qt::syncqt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::tracegen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__tracegen-Debug-a8eb8d712c3f629f77e2.json",
+					"name" : "Qt::tracegen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::tracepointgen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__tracepointgen-Debug-8487024f48a9d25e217c.json",
+					"name" : "Qt::tracepointgen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt::wasmdeployqt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt__wasmdeployqt-Debug-3c559a5c975c9ade350d.json",
+					"name" : "Qt::wasmdeployqt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Threads::Threads::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Threads__Threads-Debug-22fb79ab0e2090b78dcf.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "WrapAtomic::WrapAtomic::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-WrapAtomic__WrapAtomic-Debug-51f3b87db607e7caa4d3.json",
+					"name" : "WrapAtomic::WrapAtomic",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36
+					],
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"jsonFile" : "directory-.-Debug-fd6451d79dc282e2f566.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						37,
+						38,
+						39
+					]
+				},
+				{
+					"build" : "_deps/yaml-cpp-build",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-_deps.yaml-cpp-build-Debug-34d0078c4d29670fd041.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						64,
+						74,
+						75
+					]
+				},
+				{
+					"build" : "_deps/yaml-cpp-build/util",
+					"jsonFile" : "directory-_deps.yaml-cpp-build.util-Debug-e68394d7dcc16e2dfcb3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/util",
+					"targetIndexes" : 
+					[
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73
+					]
+				},
+				{
+					"build" : "src/core",
+					"jsonFile" : "directory-src.core-Debug-db28c61f881a4c52c53f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/core",
+					"targetIndexes" : 
+					[
+						31,
+						32,
+						33
+					]
+				},
+				{
+					"build" : "src/driftModule",
+					"jsonFile" : "directory-src.driftModule-Debug-ac745c158d5c8d0bf2dc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/driftModule",
+					"targetIndexes" : 
+					[
+						40,
+						41,
+						42
+					]
+				},
+				{
+					"build" : "src/utils",
+					"jsonFile" : "directory-src.utils-Debug-8fa3653db0a4f137de48.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/utils",
+					"targetIndexes" : 
+					[
+						58,
+						59,
+						60
+					]
+				},
+				{
+					"build" : "src/dbus",
+					"jsonFile" : "directory-src.dbus-Debug-181c906416390ec60a60.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/dbus",
+					"targetIndexes" : 
+					[
+						34,
+						35,
+						36
+					]
+				},
+				{
+					"build" : "src/settings",
+					"jsonFile" : "directory-src.settings-Debug-d1f27122afe7c9caf92d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/settings",
+					"targetIndexes" : 
+					[
+						52,
+						53,
+						54
+					]
+				},
+				{
+					"build" : "src/logging",
+					"jsonFile" : "directory-src.logging-Debug-beaab3b5b2af8ca7f68c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/logging",
+					"targetIndexes" : 
+					[
+						43,
+						44,
+						45
+					]
+				},
+				{
+					"build" : "src/theme",
+					"jsonFile" : "directory-src.theme-Debug-5ff4d00b61dc46643ccc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/theme",
+					"targetIndexes" : 
+					[
+						55,
+						56,
+						57
+					]
+				},
+				{
+					"build" : "src/process",
+					"jsonFile" : "directory-src.process-Debug-a31248ddff91a9044c4e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/process",
+					"targetIndexes" : 
+					[
+						46,
+						47,
+						48
+					]
+				},
+				{
+					"build" : "src/session",
+					"jsonFile" : "directory-src.session-Debug-ecd49a2ee0ad04e2c07c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/session",
+					"targetIndexes" : 
+					[
+						49,
+						50,
+						51
+					]
+				},
+				{
+					"build" : "src/apps",
+					"jsonFile" : "directory-src.apps-Debug-95fa005568ca965da64e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/apps",
+					"targetIndexes" : 
+					[
+						28,
+						29,
+						30
+					]
+				},
+				{
+					"build" : "src/wallpaper",
+					"jsonFile" : "directory-src.wallpaper-Debug-dc39a67878b7499f00e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/wallpaper",
+					"targetIndexes" : 
+					[
+						61,
+						62,
+						63
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36
+					],
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					],
+					"name" : "drift-daemon",
+					"targetIndexes" : 
+					[
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35,
+						36,
+						37,
+						38,
+						39,
+						40,
+						41,
+						42,
+						43,
+						44,
+						45,
+						46,
+						47,
+						48,
+						49,
+						50,
+						51,
+						52,
+						53,
+						54,
+						55,
+						56,
+						57,
+						58,
+						59,
+						60,
+						61,
+						62,
+						63
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "YAML_CPP",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27,
+						64,
+						65,
+						66,
+						67,
+						68,
+						69,
+						70,
+						71,
+						72,
+						73,
+						74,
+						75
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Continuous::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-Continuous-Debug-c9269f6155d1299c02c0.json",
+					"name" : "Continuous",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousBuild::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ContinuousBuild-Debug-48a22382f36b2fae6065.json",
+					"name" : "ContinuousBuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousConfigure::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ContinuousConfigure-Debug-02a8547e1b7b38b8980c.json",
+					"name" : "ContinuousConfigure",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousCoverage::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ContinuousCoverage-Debug-a791083025f1985618e4.json",
+					"name" : "ContinuousCoverage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousMemCheck::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ContinuousMemCheck-Debug-f8f212b3a8c1f0ba6de9.json",
+					"name" : "ContinuousMemCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousStart::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ContinuousStart-Debug-b439089dd5584f35a36e.json",
+					"name" : "ContinuousStart",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousSubmit::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ContinuousSubmit-Debug-17ae48ef7f1514c5fc82.json",
+					"name" : "ContinuousSubmit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousTest::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ContinuousTest-Debug-e8b2ecf813883037b9e2.json",
+					"name" : "ContinuousTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ContinuousUpdate::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ContinuousUpdate-Debug-003feb521860bbf00a8e.json",
+					"name" : "ContinuousUpdate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Experimental::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-Experimental-Debug-c17e2a261f1485d09db7.json",
+					"name" : "Experimental",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalBuild::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ExperimentalBuild-Debug-1d32a8096ae36160ef17.json",
+					"name" : "ExperimentalBuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalConfigure::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ExperimentalConfigure-Debug-e6e32ab0344c161a8800.json",
+					"name" : "ExperimentalConfigure",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalCoverage::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ExperimentalCoverage-Debug-016a3d92baaa133ca623.json",
+					"name" : "ExperimentalCoverage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalMemCheck::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ExperimentalMemCheck-Debug-450019c81391de8db218.json",
+					"name" : "ExperimentalMemCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalStart::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ExperimentalStart-Debug-b875d51f5eaf6e94a1e8.json",
+					"name" : "ExperimentalStart",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalSubmit::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ExperimentalSubmit-Debug-85f9767a19d37e433e87.json",
+					"name" : "ExperimentalSubmit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalTest::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ExperimentalTest-Debug-bc40f06491b50c4eb065.json",
+					"name" : "ExperimentalTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ExperimentalUpdate::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-ExperimentalUpdate-Debug-e1f8aba21d562098b2b4.json",
+					"name" : "ExperimentalUpdate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Nightly::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-Nightly-Debug-a35ae093449c383c4a4f.json",
+					"name" : "Nightly",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyBuild::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-NightlyBuild-Debug-17cff3e7bae58f3ee779.json",
+					"name" : "NightlyBuild",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyConfigure::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-NightlyConfigure-Debug-1a5adb69b3417d0033da.json",
+					"name" : "NightlyConfigure",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyCoverage::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-NightlyCoverage-Debug-a89ef410f71b8337a781.json",
+					"name" : "NightlyCoverage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyMemCheck::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-NightlyMemCheck-Debug-fffcfad0f8de8cd71404.json",
+					"name" : "NightlyMemCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyMemoryCheck::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-NightlyMemoryCheck-Debug-d2bf9ea626f10d5077c4.json",
+					"name" : "NightlyMemoryCheck",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyStart::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-NightlyStart-Debug-1e071bc9e6f79c556bfc.json",
+					"name" : "NightlyStart",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlySubmit::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-NightlySubmit-Debug-87fd165d0011f8b378f5.json",
+					"name" : "NightlySubmit",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyTest::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-NightlyTest-Debug-d713070456d0b0ede9be.json",
+					"name" : "NightlyTest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "NightlyUpdate::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-NightlyUpdate-Debug-91ed5f097c06e9e0147a.json",
+					"name" : "NightlyUpdate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "apps::@57fecd540e8aa42f9f2f",
+					"jsonFile" : "target-apps-Debug-b78e448e00eee84b9c85.json",
+					"name" : "apps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "apps_autogen::@57fecd540e8aa42f9f2f",
+					"jsonFile" : "target-apps_autogen-Debug-150d91850292b099b759.json",
+					"name" : "apps_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "apps_autogen_timestamp_deps::@57fecd540e8aa42f9f2f",
+					"jsonFile" : "target-apps_autogen_timestamp_deps-Debug-73f8a9f7baf028bdbe7c.json",
+					"name" : "apps_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "core::@0618756b1ff51bca1a0e",
+					"jsonFile" : "target-core-Debug-f614b3a3777674f88a86.json",
+					"name" : "core",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "core_autogen::@0618756b1ff51bca1a0e",
+					"jsonFile" : "target-core_autogen-Debug-7e554d56e54c244211eb.json",
+					"name" : "core_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "core_autogen_timestamp_deps::@0618756b1ff51bca1a0e",
+					"jsonFile" : "target-core_autogen_timestamp_deps-Debug-bc6813b6838dcad577fc.json",
+					"name" : "core_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "dbus::@7679c349088050c077d2",
+					"jsonFile" : "target-dbus-Debug-544fef1a15226e0fe037.json",
+					"name" : "dbus",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "dbus_autogen::@7679c349088050c077d2",
+					"jsonFile" : "target-dbus_autogen-Debug-f1011b107afa5bb7e12c.json",
+					"name" : "dbus_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "dbus_autogen_timestamp_deps::@7679c349088050c077d2",
+					"jsonFile" : "target-dbus_autogen_timestamp_deps-Debug-d740fa99ed8e36125e25.json",
+					"name" : "dbus_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drift-daemon::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drift-daemon-Debug-34bdddcb5af4ddf2bad0.json",
+					"name" : "drift-daemon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drift-daemon_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drift-daemon_autogen-Debug-5a4b28ce75dcc5448ab6.json",
+					"name" : "drift-daemon_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drift-daemon_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drift-daemon_autogen_timestamp_deps-Debug-50a18d35e65552567bd3.json",
+					"name" : "drift-daemon_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "driftModule::@0234a436745239ed913c",
+					"jsonFile" : "target-driftModule-Debug-e9f29bc969bca4865955.json",
+					"name" : "driftModule",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "driftModule_autogen::@0234a436745239ed913c",
+					"jsonFile" : "target-driftModule_autogen-Debug-4e237e2e1ed541e3e46b.json",
+					"name" : "driftModule_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "driftModule_autogen_timestamp_deps::@0234a436745239ed913c",
+					"jsonFile" : "target-driftModule_autogen_timestamp_deps-Debug-e7837bb233b1ae73f620.json",
+					"name" : "driftModule_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "logging::@48bfaf6ebac2073e8858",
+					"jsonFile" : "target-logging-Debug-b7feec9356e5dc2ed235.json",
+					"name" : "logging",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "logging_autogen::@48bfaf6ebac2073e8858",
+					"jsonFile" : "target-logging_autogen-Debug-7daa429e66f0746d55c4.json",
+					"name" : "logging_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "logging_autogen_timestamp_deps::@48bfaf6ebac2073e8858",
+					"jsonFile" : "target-logging_autogen_timestamp_deps-Debug-419d62863a97c68d5108.json",
+					"name" : "logging_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "process::@0c136a57587ef2cf0836",
+					"jsonFile" : "target-process-Debug-82c0fc89909f395c7014.json",
+					"name" : "process",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "process_autogen::@0c136a57587ef2cf0836",
+					"jsonFile" : "target-process_autogen-Debug-331c661026679dbb3326.json",
+					"name" : "process_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "process_autogen_timestamp_deps::@0c136a57587ef2cf0836",
+					"jsonFile" : "target-process_autogen_timestamp_deps-Debug-504bece7840bee382f08.json",
+					"name" : "process_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "session::@0197f12f3853b903582f",
+					"jsonFile" : "target-session-Debug-b4f6feadc3e1142a57b0.json",
+					"name" : "session",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "session_autogen::@0197f12f3853b903582f",
+					"jsonFile" : "target-session_autogen-Debug-f35cc7d8e54b202c15de.json",
+					"name" : "session_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "session_autogen_timestamp_deps::@0197f12f3853b903582f",
+					"jsonFile" : "target-session_autogen_timestamp_deps-Debug-49d06374e2dbdfa50fba.json",
+					"name" : "session_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "settings::@4a89bb85a6902de6040e",
+					"jsonFile" : "target-settings-Debug-10a489e2cdd51e0f2c97.json",
+					"name" : "settings",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "settings_autogen::@4a89bb85a6902de6040e",
+					"jsonFile" : "target-settings_autogen-Debug-4c8378289479e65b4e6a.json",
+					"name" : "settings_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "settings_autogen_timestamp_deps::@4a89bb85a6902de6040e",
+					"jsonFile" : "target-settings_autogen_timestamp_deps-Debug-182794e54038b09e0a7e.json",
+					"name" : "settings_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "theme::@add303ba3dff68c07b92",
+					"jsonFile" : "target-theme-Debug-c0d53a6093c729ab0b0a.json",
+					"name" : "theme",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "theme_autogen::@add303ba3dff68c07b92",
+					"jsonFile" : "target-theme_autogen-Debug-99be619ad3a6616d6ef5.json",
+					"name" : "theme_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "theme_autogen_timestamp_deps::@add303ba3dff68c07b92",
+					"jsonFile" : "target-theme_autogen_timestamp_deps-Debug-17298d08ae85aab0f3c3.json",
+					"name" : "theme_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "utils::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-utils-Debug-7b9358dfb45cc5e8667d.json",
+					"name" : "utils",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "utils_autogen::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-utils_autogen-Debug-82b248202e1f9756aed1.json",
+					"name" : "utils_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "utils_autogen_timestamp_deps::@f1b38b22aeb65474a6c5",
+					"jsonFile" : "target-utils_autogen_timestamp_deps-Debug-46281770b8dde45056e2.json",
+					"name" : "utils_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "wallpaper::@d0775913d89121ef2290",
+					"jsonFile" : "target-wallpaper-Debug-788cdb8cc10dd630e750.json",
+					"name" : "wallpaper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "wallpaper_autogen::@d0775913d89121ef2290",
+					"jsonFile" : "target-wallpaper_autogen-Debug-7dad3a887798c679dbfd.json",
+					"name" : "wallpaper_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "wallpaper_autogen_timestamp_deps::@d0775913d89121ef2290",
+					"jsonFile" : "target-wallpaper_autogen_timestamp_deps-Debug-697295437653dce9dcc0.json",
+					"name" : "wallpaper_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "yaml-cpp::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-yaml-cpp-Debug-2ddd1d3562383acfb240.json",
+					"name" : "yaml-cpp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-parse::@fc0e65436a078e37eaec",
+					"jsonFile" : "target-yaml-cpp-parse-Debug-f4c969caf6ca5da7ee80.json",
+					"name" : "yaml-cpp-parse",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-parse_autogen::@fc0e65436a078e37eaec",
+					"jsonFile" : "target-yaml-cpp-parse_autogen-Debug-ead76e56cc95e15ec417.json",
+					"name" : "yaml-cpp-parse_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-parse_autogen_timestamp_deps::@fc0e65436a078e37eaec",
+					"jsonFile" : "target-yaml-cpp-parse_autogen_timestamp_deps-Debug-a153573d83b0a148af09.json",
+					"name" : "yaml-cpp-parse_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-read::@fc0e65436a078e37eaec",
+					"jsonFile" : "target-yaml-cpp-read-Debug-595a7e963c492af67b37.json",
+					"name" : "yaml-cpp-read",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-read_autogen::@fc0e65436a078e37eaec",
+					"jsonFile" : "target-yaml-cpp-read_autogen-Debug-f874805cafbae0c0b8d1.json",
+					"name" : "yaml-cpp-read_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-read_autogen_timestamp_deps::@fc0e65436a078e37eaec",
+					"jsonFile" : "target-yaml-cpp-read_autogen_timestamp_deps-Debug-62e53965786c94e89804.json",
+					"name" : "yaml-cpp-read_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-sandbox::@fc0e65436a078e37eaec",
+					"jsonFile" : "target-yaml-cpp-sandbox-Debug-395e09c7f67983f5ce1f.json",
+					"name" : "yaml-cpp-sandbox",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-sandbox_autogen::@fc0e65436a078e37eaec",
+					"jsonFile" : "target-yaml-cpp-sandbox_autogen-Debug-ee114e98232b47d0f006.json",
+					"name" : "yaml-cpp-sandbox_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "yaml-cpp-sandbox_autogen_timestamp_deps::@fc0e65436a078e37eaec",
+					"jsonFile" : "target-yaml-cpp-sandbox_autogen_timestamp_deps-Debug-e9176d5de5aa6d375ca2.json",
+					"name" : "yaml-cpp-sandbox_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "yaml-cpp_autogen::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-yaml-cpp_autogen-Debug-30731035c83429e4e43d.json",
+					"name" : "yaml-cpp_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "yaml-cpp_autogen_timestamp_deps::@c1fb6b535d5396bcd0b2",
+					"jsonFile" : "target-yaml-cpp_autogen_timestamp_deps-Debug-adae35fbf3883ffc8ad4.json",
+					"name" : "yaml-cpp_autogen_timestamp_deps",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/suzie/Projects/HyprDriftDE/build",
+		"source" : "/home/suzie/Projects/HyprDriftDE/drift-daemon"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

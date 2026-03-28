@@ -1,0 +1,14 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "phobian@tutanota.com",
+                "Name": "Phobian347"
+            }
+        ],
+        "Id": "Suave",
+        "License": "CC-BY-SA-4.0",
+        "Name": "Suave"
+    },
+    "X-KDE-PlasmaImageWallpaper-AccentColor": "#b4b6c7"
+}

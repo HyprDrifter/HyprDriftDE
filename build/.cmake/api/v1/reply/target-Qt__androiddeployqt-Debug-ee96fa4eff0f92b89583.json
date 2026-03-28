@@ -1,0 +1,114 @@
+{
+	"abstract" : true,
+	"artifacts" : 
+	[
+		{
+			"path" : "/usr/lib/qt6/bin/androiddeployqt"
+		}
+	],
+	"backtrace" : 12,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include",
+			"find_package",
+			"_qt_internal_find_tool_dependencies"
+		],
+		"files" : 
+		[
+			"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake",
+			"/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake",
+			"/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/usr/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
+			"/usr/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"/usr/lib/cmake/Qt6/Qt6Config.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"file" : 5,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 256,
+				"parent" : 2
+			},
+			{
+				"file" : 4,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 52,
+				"parent" : 4
+			},
+			{
+				"file" : 3,
+				"parent" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 43,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 100,
+				"parent" : 7
+			},
+			{
+				"file" : 1,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 69,
+				"parent" : 9
+			},
+			{
+				"file" : 0,
+				"parent" : 10
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 11
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "Qt::androiddeployqt::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"name" : "Qt::androiddeployqt",
+	"nameOnDisk" : "androiddeployqt",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "EXECUTABLE"
+}

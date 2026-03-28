@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "gicalucejo@gmail.com",
+                "Name": "jomada"
+            }
+        ],
+        "Id": "Spirited Away",
+        "License": "CC-BY-SA-4.0",
+        "Version": "1.0",
+        "Name": "Spirited Away",
+         "Name[x-test]": "xxSpirited Awayxx"
+    }
+}

@@ -1,0 +1,50 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/util/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "yaml-cpp::@c1fb6b535d5396bcd0b2"
+		}
+	],
+	"id" : "yaml-cpp-read_autogen_timestamp_deps::@fc0e65436a078e37eaec",
+	"isGeneratorProvided" : true,
+	"name" : "yaml-cpp-read_autogen_timestamp_deps",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "yaml-cpp::@c1fb6b535d5396bcd0b2"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/yaml-cpp-build/util",
+		"source" : "/home/suzie/Projects/HyprDriftDE/build/_deps/yaml-cpp-src/util"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

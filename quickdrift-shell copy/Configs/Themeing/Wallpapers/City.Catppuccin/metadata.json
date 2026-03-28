@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "zayronxio.gm@gmail.com",
+                "Name": "zayronxio"
+            }
+        ],
+        "Id": "City.Catppuccin",
+        "License": "gpl3.0",
+        "Name": "City.Catppuccin",
+        "Name[x-test]": "xxCity.Catppuccinxx"
+        }
+    }
+

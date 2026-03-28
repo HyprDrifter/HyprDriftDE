@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "gicalucejo@gmail.com",
+                "Name": "jomada"
+            }
+        ],
+        "Id": "Scratchy-V2",
+        "License": "CC-BY-SA-4.0",
+        "Version": "2.1",
+        "Name": "Scratchy V2",
+         "Name[x-test]": "xxScratchy V2xx"
+    }
+}

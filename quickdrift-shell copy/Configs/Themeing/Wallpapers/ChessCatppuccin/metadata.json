@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "adolfo@librepixels.com",
+                "Name": "zayronxio"
+            }
+        ],
+        "Id": "ChessCatppuccin",
+        "License": "gpl3.0",
+        "Name": "ChessCatppuccin",
+        "Name[x-test]": "xxChessCatppuccinxx"
+        }
+    }
+

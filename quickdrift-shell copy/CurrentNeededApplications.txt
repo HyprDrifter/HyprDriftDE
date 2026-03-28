@@ -1,0 +1,4 @@
+
+tinted-themeing https://github.com/tinted-theming/schemes
+pavucontrol
+go-yq

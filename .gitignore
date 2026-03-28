@@ -7,6 +7,11 @@
 /drift-daemon/**/Makefile
 /drift-daemon/**/install_manifest.txt
 
+# === Quick Drift QuickShell Files ===
+/quickdrift-shell/CurrentHotkeys.txt
+/quickdrift-shell/CurrentNeededApplications.txt
+/quickdrift-shell/.qmlls.ini
+
 # === Object & Binary Files ===
 *.o
 *.obj

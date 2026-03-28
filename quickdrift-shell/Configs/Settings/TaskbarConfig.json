@@ -1,0 +1,57 @@
+{
+    "settings": {
+        "anchors": {
+            "above": true,
+            "anchorBottom": true,
+            "anchorCenter": true,
+            "anchorLeft": false,
+            "anchorLongWays": true,
+            "anchorRight": false,
+            "anchorTop": false,
+            "floating": true,
+            "vertical": false
+        },
+        "geometry": {
+            "height": 35,
+            "radius": 8,
+            "width": 1800
+        },
+        "margins": {
+            "bottom": 5,
+            "left": 15,
+            "padFloat": 5,
+            "padLong": 15,
+            "right": 15,
+            "top": 0,
+            "popupGap": 5
+        },
+        "taskbarMembersCenter": [
+        ],
+        "taskbarMembersLeft": [
+            {
+                "driftlet": "StartButton",
+                "enabled": true
+            }
+        ],
+        "taskbarMembersRight": [
+            {
+                "driftlet": "VolumeButton",
+                "enabled": true
+            },
+            {
+                "driftlet": "SystemTrayObject",
+                "enabled": true
+            },
+            {
+                "driftlet": "DateTimeDriftlet",
+                "enabled": true
+            },
+            {
+                "driftlet": "ControlPanelButton",
+                "enabled": true
+            }
+        ],
+        "taskbarSingle": false,
+        "taskbarsSynced": true
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "adolfo@librepixels.com",
+                "Name": "zayronxio"
+            }
+        ],
+        "Id": "GreenRiver",
+        "License": "gpl3.0",
+        "Name": "GreenRiver",
+        "Name[x-test]": "xxGreenRiverxx"
+        }
+    }
+
