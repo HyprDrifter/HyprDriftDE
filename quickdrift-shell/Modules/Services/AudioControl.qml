@@ -1,4 +1,3 @@
-pragma Singleton
 pragma ComponentBehavior: Bound
 import qs.Configs.Settings
 import qs.Modules.Services
