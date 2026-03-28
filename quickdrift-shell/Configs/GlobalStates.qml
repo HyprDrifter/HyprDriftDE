@@ -16,7 +16,9 @@ Scope {
     id: root
 
     property list<PanelWindow> taskbarList: []
-    
+
+    property bool launcherOpen: false
+    property bool minimizeManagerVisible: false
     property bool controlPanelVisible : false
 
     property ShellScreen activeScreen: ToplevelManager.activeToplevel?.screens[0] ?? null

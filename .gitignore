@@ -12,6 +12,13 @@
 /quickdrift-shell/CurrentNeededApplications.txt
 /quickdrift-shell/.qmlls.ini
 
+# === Stale Artifacts ===
+/quickdrift-shell copy/
+/quickdrift-shell.old/
+
+# === Build Directories ===
+/build/
+
 # === Object & Binary Files ===
 *.o
 *.obj
