@@ -26,6 +26,10 @@
             "popupGap": 5
         },
         "taskbarMembersCenter": [
+            {
+                "driftlet": "ActiveWindowDriftlet",
+                "enabled": true
+            }
         ],
         "taskbarMembersLeft": [
             {
@@ -35,11 +39,27 @@
         ],
         "taskbarMembersRight": [
             {
+                "driftlet": "CpuDriftlet",
+                "enabled": true
+            },
+            {
+                "driftlet": "BluetoothDriftlet",
+                "enabled": true
+            },
+            {
+                "driftlet": "NetworkDriftlet",
+                "enabled": true
+            },
+            {
                 "driftlet": "VolumeButton",
                 "enabled": true
             },
             {
                 "driftlet": "SystemTrayObject",
+                "enabled": true
+            },
+            {
+                "driftlet": "PowerDriftlet",
                 "enabled": true
             },
             {
