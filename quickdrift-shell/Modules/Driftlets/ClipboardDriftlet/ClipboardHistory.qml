@@ -2,6 +2,7 @@ import Quickshell
 import Quickshell.Io
 import Quickshell.Hyprland
 import QtQuick
+import qs.Configs.Settings
 
 Singleton {
     id: root
@@ -15,12 +16,14 @@ Singleton {
     property bool loaded: false
 
     function refresh() {
-        listProcess.running = true;
+        if (!listProcess.running) {
+            listProcess.running = true;
+        }
     }
 
     Process {
         id: listProcess
-        command: ["cliphist", "list"]
+        command: ["bash", "-c", "cliphist list"]
         running: true
 
         stdout: StdioCollector {
@@ -28,11 +31,11 @@ Singleton {
                 const lines = text.trim().split("\n");
                 clipModel.clear();
 
-                for (let i = 0; i < Math.min(lines.length, 100); i++) {
+                for (let i = 0; i < Math.min(lines.length, ThemeSettings.clipboardMaxEntries); i++) {
                     const parts = lines[i].split("\t");
                     if (!parts[0]) continue;
                     const clipId = parts[0];
-                    const summary = (parts[1] || "[[ empty ]]").slice(0, 80);
+                    const summary = (parts[1] || "[[ binary ]]").slice(0, 80);
                     clipModel.append({
                         clipId: clipId,
                         summary: summary
