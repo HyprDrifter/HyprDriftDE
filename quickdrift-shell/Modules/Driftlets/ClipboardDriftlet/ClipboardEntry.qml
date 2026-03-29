@@ -7,7 +7,7 @@ import qs.Modules.Driftlets.ClipboardDriftlet
 
 Item {
     id: entryItem
-    required property int id
+    required property string clipId
     required property string summary
     required property var clipManager
     anchors.horizontalCenter: parent.horizontalCenter
@@ -39,9 +39,8 @@ Item {
         }
 
         onClicked: {
-            console.log("Clipboard entry clicked, copying id: " + entryItem.id)
-            ClipboardHistory.copy(id)
-            clipManager.visible = false
+            ClipboardHistory.copy(entryItem.clipId)
+            clipManager.swapStates()
         }
     }
 }

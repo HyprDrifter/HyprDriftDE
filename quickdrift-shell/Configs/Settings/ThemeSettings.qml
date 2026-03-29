@@ -31,7 +31,7 @@ Scope {
     }
 
     // 🎨 Base16 Theme Palette
-    property string currentBase16ThemeName : "tokyo-city-dark"
+    property string currentBase16ThemeName : "catppuccin-mocha"
     property var themeColors               : ({})
 
     // Semantic Base16 Roles (Tinted Theming Compliant)
@@ -194,6 +194,7 @@ Scope {
     property color clipmanPopupBackground : background //+ "90"
     property color clipmanPopupButtonBackground : "transparent"
     property color clipmanPopupButtonBackgroundHover : surface0
+    property int clipboardMaxEntries : 100
 
     // 📂 Minimizer
     property bool minimizerPlayAudioOnRestore : false

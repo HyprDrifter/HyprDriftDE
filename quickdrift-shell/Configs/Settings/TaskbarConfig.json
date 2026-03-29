@@ -31,9 +31,33 @@
             {
                 "driftlet": "StartButton",
                 "enabled": true
+            },
+            {
+                "driftlet": "WorkspaceManager",
+                "enabled": true
+            },
+            {
+                "driftlet": "ActiveWindowDriftlet",
+                "enabled": true
             }
         ],
         "taskbarMembersRight": [
+            {
+                "driftlet": "CpuDriftlet",
+                "enabled": true
+            },
+            {
+                "driftlet": "RamDriftlet",
+                "enabled": true
+            },
+            {
+                "driftlet": "GpuDriftlet",
+                "enabled": true
+            },
+            {
+                "driftlet": "ClipboardButton",
+                "enabled": true
+            },
             {
                 "driftlet": "VolumeButton",
                 "enabled": true
@@ -44,6 +68,10 @@
             },
             {
                 "driftlet": "DateTimeDriftlet",
+                "enabled": true
+            },
+            {
+                "driftlet": "PowerDriftlet",
                 "enabled": true
             },
             {

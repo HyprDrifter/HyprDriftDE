@@ -20,7 +20,7 @@ Item {
 
     StyledTextLarge {
         id: windowText
-        implicitWidth: bar ? Math.min(activeWindowDisplay.parent.width, bar.width / 3) : activeWindowDisplay.parent?.width ?? 200
+        //implicitWidth: bar ? Math.min(activeWindowDisplay.parent.width, bar.width / 3) : activeWindowDisplay.parent?.width ?? 200
         text: activeWindow?.activated ? activeWindow.title : qsTr("Desktop")
         txt.clip: true
         txt.wrapMode: Text.NoWrap

@@ -2,15 +2,14 @@ import Quickshell
 import Quickshell.Io
 import Quickshell.Hyprland
 import QtQuick
-import QtQml.Models
-import qs.Modules.Driftlets.ClipboardDriftlet
 
 Singleton {
     id: root
 
-    property JsonAdapter entries: JsonAdapter {
-        id: clipdata
-        property var data: []
+    property ListModel clipboardData: clipModel
+
+    ListModel {
+        id: clipModel
     }
 
     property bool loaded: false
@@ -27,26 +26,26 @@ Singleton {
         stdout: StdioCollector {
             onStreamFinished: {
                 const lines = text.trim().split("\n");
-                const jsonList = [];
+                clipModel.clear();
 
-                lines.forEach((line, i) => {
-                    const id = (line.split("\t")[0] || "[[ empty ]]");
-                    const summary = (line.split("\t")[1] || "[[ empty ]]").slice(0, 80);
-                    jsonList.push({
-                        id: id,
+                for (let i = 0; i < Math.min(lines.length, 100); i++) {
+                    const parts = lines[i].split("\t");
+                    if (!parts[0]) continue;
+                    const clipId = parts[0];
+                    const summary = (parts[1] || "[[ empty ]]").slice(0, 80);
+                    clipModel.append({
+                        clipId: clipId,
                         summary: summary
                     });
-                });
+                }
 
-                clipdata.data = jsonList;
                 root.loaded = true;
             }
         }
     }
 
-    function copy(id) {
-        console.log(`Copying clipboard entry: ${id.toString()}`)
-        Hyprland.dispatch(`exec cliphist decode ${id.toString()} | wl-copy`)
+    function copy(clipId) {
+        Hyprland.dispatch(`exec cliphist decode ${clipId} | wl-copy`)
     }
 
     Timer {

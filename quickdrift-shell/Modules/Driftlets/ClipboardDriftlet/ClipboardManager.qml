@@ -1,77 +1,100 @@
 import Quickshell
+import Quickshell.Hyprland
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
-import QtQml.Models
+import qs.Configs
 import qs.Configs.Settings
 import qs.Modules.Driftlets.ClipboardDriftlet
 
 PopupWindow {
-    id: clipPopup
+    id: root
 
-    required property var moveToItem
-    property bool animateNext: true
-    visible: false
-    height: 10
-    width: 10
-    anchor.item: moveToItem
-    anchor.rect.x: implicitWidth / 2 + moveToItem.width
-    anchor.rect.y: moveToItem.height
-    anchor.edges: Edges.Bottom | Edges.Right
-    anchor.gravity: Edges.Bottom | Edges.Left
+    required property Item parent
+    property int taskbarGap: Settings.taskbar.margins.popupGap
+    property point anchorPoint: Qt.point(parent.x, parent.y)
 
     color: "transparent"
+    anchor.item: parent
+    anchor.rect.x: 0 - root.implicitWidth + parent.width
+    anchor.rect.y: (anchorPoint.y + root.implicitHeight + taskbarGap) * -1
+    visible: false
+    implicitWidth: 400
+    implicitHeight: 500
+    mask: Region { item: clipContent }
 
-    onVisibleChanged: {
-        if (visible) {
-            height = 500
-            width = 400
-        } else {
-            height = 10
-            width = 10
-        }
+    HyprlandFocusGrab {
+        id: grabber
+        windows: [root]
+        onCleared: root.swapStates()
     }
 
-    Behavior on height { SmoothedAnimation { duration: 200; velocity: 200 } }
-    Behavior on width { SmoothedAnimation { duration: 200; velocity: 200 } }
+    Rectangle {
+        id: clipContent
+        color: ThemeSettings.clipmanPopupBackground
+        radius: Settings.taskbar.geometry.radius
+        clip: true
+        state: "closed"
+        implicitWidth: 400
+        implicitHeight: 1
+        anchors.bottom: parent.bottom
 
-    Item {
-        id: recRec
-        anchors.fill: parent
-
-        Rectangle {
-            id: clipRectangle
-            color: ThemeSettings.clipmanPopupBackground
-            anchors.fill: parent
-            implicitHeight: 500
-            radius: 16
-
-            ColumnLayout {
-                id: columnLayout
-                spacing: 5
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    fill: parent
-                }
-
-                ListView {
-                    id: copyRepeater
-                    model: ClipboardHistory.entries.data
-                    spacing: 15
-                    Layout.preferredHeight: parent.height
-                    Layout.preferredWidth: parent.width
-                    topMargin: 20
-
-                    ScrollIndicator.vertical: ScrollIndicator {
-                        active: true
-                    }
-
-                    delegate: ClipboardEntry {
-                        id: option
-                        clipManager: clipPopup
+        Behavior on implicitHeight {
+            NumberAnimation {
+                duration: 333
+                easing.type: Easing.OutQuint
+                onRunningChanged: {
+                    if (!running && clipContent.state == "closed") {
+                        root.visible = false
                     }
                 }
             }
+        }
+
+        states: [
+            State {
+                name: "opened"
+                PropertyChanges {
+                    clipContent.implicitHeight: 500
+                    grabber.active: true
+                }
+            },
+            State {
+                name: "closed"
+                PropertyChanges {
+                    clipContent.implicitHeight: 1
+                    grabber.active: false
+                }
+            }
+        ]
+
+        ListView {
+            id: clipList
+            anchors {
+                fill: parent
+                margins: 8
+                topMargin: 12
+            }
+            model: ClipboardHistory.clipboardData
+            spacing: 8
+            clip: true
+
+            ScrollIndicator.vertical: ScrollIndicator {
+                active: true
+            }
+
+            delegate: ClipboardEntry {
+                clipManager: root
+            }
+        }
+    }
+
+    function swapStates() {
+        if (clipContent.state == "closed") {
+            root.visible = true
+            clipContent.state = "opened"
+        } else {
+            clipContent.state = "closed"
         }
     }
 }

@@ -15,7 +15,7 @@ Rectangle {
     anchors.fill: parent
     Image {
         z: -100
-        source: Qt.resolvedUrl("../../Configs/Themeing/Wallpapers/tokyo-city/tokyo-city-night.jpg")
+        source: Qt.resolvedUrl("../../Configs/Themeing/Wallpapers/Catppucino/astronaut.png")
         anchors.fill:parent
         //implicitWidth: parent.width
         //implicitHeight: parent.height

@@ -3,6 +3,7 @@ import QtQml
 import QtQml.Models
 
 import qs.Modules.Driftlets
+import qs.Modules.Driftlets.ClipboardDriftlet
 import qs.Modules.Driftlets.ControlPanel
 import qs.Modules.Driftlets.SettingsMenu
 import qs.Modules.Driftlets.SingleWidgets
@@ -10,6 +11,7 @@ import qs.Modules.Driftlets.StartMenu
 import qs.Modules.Driftlets.SystemTrayDriftlet
 import qs.Modules.Driftlets.WorkspaceDriftlet
 import qs.Modules.Utilities
+
 
 DelegateChooser {
     id: chooser
@@ -26,6 +28,7 @@ DelegateChooser {
     DelegateChoice { roleValue: "ActiveWindowDriftlet"; delegate: Component { ActiveWindowDriftlet { } } }
     DelegateChoice { roleValue: "NetworkDriftlet"; delegate: Component { NetworkDriftlet { } } }
     DelegateChoice { roleValue: "BluetoothDriftlet"; delegate: Component { BluetoothDriftlet { } } }
+    DelegateChoice { roleValue: "ClipboardButton"; delegate: Component { ClipboardButton { } } }
     DelegateChoice { roleValue: "PowerDriftlet"; delegate: Component { PowerDriftlet { } } }
     DelegateChoice { roleValue: "WorkspaceManager"; delegate: Component { WorkspaceManager { } } }
     DelegateChoice { roleValue: "Spacer"; delegate: Component { Spacer { } } }
