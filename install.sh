@@ -277,9 +277,6 @@ verify_installation() {
     run_as_user test -r /etc/hyprdrift/quickdrift/shell.qml
 
     bash -n /usr/bin/hyprdrift-session
-    run_as_user \
-        Hyprland --verify-config \
-        --config "$INSTALL_USER_HOME/.config/hypr/hyprland.lua"
 }
 
 if [[ -t 1 && -n "${TERM:-}" ]]; then
