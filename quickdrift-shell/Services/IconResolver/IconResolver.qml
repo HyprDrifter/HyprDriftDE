@@ -5,6 +5,7 @@ import Quickshell.Io
 import Quickshell.Services.SystemTray
 import Quickshell.Widgets
 import QtQuick.Controls
+import qs.Internal
 import qs.Services
 import qs.Services.IconResolver
 import qs.Modules.Interactive
@@ -12,14 +13,54 @@ import qs.Modules.Interactive
 Scope {
     id: root
     property var pendingFallbackItem: null
-    property string pendingFallbackPath: ""
-    property int pendingFallbackIndex: undefined
+    property int targetIconSize: Settings.taskbarTrayIconPreferedWidth
+
+    function setOverride(item, icon) {
+        if (!item || !item.id)
+            return
+
+        if (IconOverrideStore.overrides[item.id] !== icon) {
+            IconOverrideStore.overrides[item.id] = icon
+            IconOverrideStore.overrideChanged(item.id)
+        }
+    }
+
+    function closestIconPath(output) {
+        const paths = output.split("\0").filter(path => path !== "").sort()
+        let bestPath = ""
+        let bestDifference = Number.POSITIVE_INFINITY
+
+        for (const path of paths) {
+            const filename = path.slice(path.lastIndexOf("/") + 1)
+            if (!/\.(png|svg|ico)$/i.test(filename))
+                continue
+
+            const sizeMatch = filename.match(/([0-9]+)/)
+            if (!sizeMatch)
+                continue
+
+            const size = Number(sizeMatch[1])
+            if (!Number.isFinite(size))
+                continue
+
+            const difference = Math.abs(size - targetIconSize)
+            if (difference < bestDifference) {
+                bestDifference = difference
+                bestPath = path
+            }
+        }
+
+        return bestPath
+    }
 
     Timer {
         interval: 1000
         running: true
         repeat: true
         onTriggered: {
+            if (fallbackFixer.running || root.pendingFallbackItem)
+                return
+
             var itemList = SystemTray.items.values;
 
             ////console.lgo("~~~~~ : " + itemList.length)
@@ -47,34 +88,27 @@ Scope {
 
                     const match = currentIcon.match(/path=([^&]+)/);
                     if (!match || !match[1]) {
-                        currentIcon = "image://icon/fallback";
-                        continue;
+                        root.setOverride(currentItem, "image://icon/fallback")
+                        break
                     }
 
-                    const basePath = decodeURIComponent(match[1]);
-                    const filenameMatch = currentIcon.match(/icon\/([^?]+)/);
-                    const basename = filenameMatch ? filenameMatch[1] : "fallback";
-
-                    const fsCommand = `
-                        cd "${basePath}" && \
-                        ls | grep -E '\\.(png|svg|ico)$' | grep -E '[0-9]+' | awk '
-                        BEGIN { target = ${root.trayItemWidth || 24}; minDiff = 99999 }
-                        {
-                            match($0, /([0-9]+)/, m);
-                            diff = (m[1] - target >= 0) ? m[1] - target : target - m[1];
-                            if (diff < minDiff) {
-                                minDiff = diff;
-                                best = $0;
-                            }
-                        }
-                        END { print best }'
-                    `;
+                    let basePath = ""
+                    try {
+                        basePath = decodeURIComponent(match[1])
+                    } catch (error) {
+                        console.warn("Invalid tray icon path:", match[1])
+                        root.setOverride(currentItem, "image://icon/fallback")
+                        break
+                    }
 
                     pendingFallbackItem = currentItem;
-                    pendingFallbackPath = basePath;
-                    pendingFallbackIndex = i;
-                    //console.lgo(">>> [IconResolver] Executing fallback scan command:\n" + fsCommand);
-                    fallbackFixer.command = ["bash", "-c", fsCommand];
+                    fallbackFixer.command = [
+                        "find", "--", basePath,
+                        "-maxdepth", "1",
+                        "-type", "f",
+                        "(", "-iname", "*.png", "-o", "-iname", "*.svg", "-o", "-iname", "*.ico", ")",
+                        "-print0"
+                    ];
                     fallbackFixer.running = true;
 
                     break; // only one item per cycle
@@ -88,42 +122,17 @@ Scope {
         id: fallbackFixer
         stdout: StdioCollector {
             onStreamFinished: {
-                const filename = this.text.trim();
-                //console.lgo(">>> [IconResolver] Fallback resolution finished");
+                const item = root.pendingFallbackItem
+                root.pendingFallbackItem = null
 
-                if (!pendingFallbackItem) {
+                if (!item) {
                     console.warn(">>> [IconResolver] WARNING: pendingFallbackItem is null during fallback resolution!");
                     return;
                 }
 
-                const id = pendingFallbackItem.id;
-                const originalIcon = pendingFallbackItem.icon;
-                let resolvedPath = "";
-
-                if (filename !== "" && pendingFallbackItem) {
-                    const newPath = "file://" + pendingFallbackPath + "/" + filename;
-
-                    if (IconOverrideStore.overrides[pendingFallbackItem.id] !== newPath) {
-                        IconOverrideStore.overrides[pendingFallbackItem.id] = newPath;
-                        IconOverrideStore.overrideChanged(pendingFallbackItem.id);
-                    } else {
-                        //console.lgo(">>> [IconResolver] Skipping duplicate override assignment for:", pendingFallbackItem.id);
-                    }
-                } else if (pendingFallbackItem) {
-                    const fallback = "image://icon/fallback";
-
-                    if (IconOverrideStore.overrides[pendingFallbackItem.id] !== fallback) {
-                        IconOverrideStore.overrides[pendingFallbackItem.id] = fallback;
-                        IconOverrideStore.overrideChanged(pendingFallbackItem.id);
-                    } else {
-                        //console.lgo(">>> [IconResolver] Skipping duplicate fallback assignment for:", pendingFallbackItem.id);
-                    }
-                }
-
-                // Confirm the update was stored
-                //console.lgo(`>>> [IconResolver] Confirm override store: IconOverrideStore.overrides["${id}"] = ${IconOverrideStore.overrides[id]}`);
-                //console.lgo(">>> [IconResolver] Original system icon: " + originalIcon);
-
+                const path = root.closestIconPath(this.text)
+                const icon = path === "" ? "image://icon/fallback" : Qt.resolvedUrl(path).toString()
+                root.setOverride(item, icon)
             }
         }
     }

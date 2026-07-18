@@ -50,6 +50,7 @@ WrapperRectangle {
             id: windRestoreButton
             implicitWidth: 300
             implicitHeight: 300
+            enabled: !MinimizeManager.operationInProgress
 
             background: ScreencopyView
             {
@@ -65,14 +66,7 @@ WrapperRectangle {
 
             onClicked: {
                 console.log("CLICKED THE THING : " + root.title)
-                MinimizeManager.restoreSelectedFunction(root.address)
-                for (let i = 0; i < MinimizeManager.minimizedWindows.count; i++) {
-                    if (MinimizeManager.minimizedWindows.get(i).address === root.address) {
-                        MinimizeManager.minimizedWindows.remove(i, 1)
-                        break
-                    }
-                }
-                GlobalVariables.minimizeManagerVisible = false
+                MinimizeManager.restoreWindow(root.address)
             }
             
         }

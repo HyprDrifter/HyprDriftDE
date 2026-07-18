@@ -3,7 +3,6 @@ import Quickshell.Hyprland
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
-import Quickshell.Io
 import qs.Modules.Interactive
 import qs.Modules.Interactive.ApplicationLauncher
 import qs.Internal
@@ -15,6 +14,30 @@ PanelWindow {
     implicitWidth: Hyprland.focusedMonitor.width * Settings.applaunchWidthInScreenPercent
     implicitHeight: Hyprland.focusedMonitor.height * Settings.applaunchHeightInScreenPercent
     color: "transparent"
+
+    property string filterText: ""
+    readonly property var filteredApps: {
+        const query = filterText.trim().toLowerCase();
+        const applications = DesktopEntries.applications.values;
+
+        if (query === "")
+            return applications;
+
+        return applications.filter(entry => entry.name && entry.name.toLowerCase().includes(query));
+    }
+
+    function launchCurrentSelection() {
+        const input = searchField.text.trim();
+
+        if (filteredApps.length > 0) {
+            const selectedIndex = Math.max(0, Math.min(appList.currentIndex, filteredApps.length - 1));
+            filteredApps[selectedIndex].execute();
+        } else if (input !== "") {
+            Quickshell.execDetached(["bash", "-lc", input]);
+        }
+
+        GlobalVariables.launcherOpen = false;
+    }
 
     onVisibleChanged: {
         if (visible) {
@@ -42,70 +65,6 @@ PanelWindow {
         }
     }
 
-    FileView {
-        id: appFile
-        path: "/tmp/hyprdrift/apps.json"
-        watchChanges: true
-
-        onFileChanged: {
-            console.log("apps.json changed, reloading and refreshing");
-            reload();              // reload JsonAdapter
-            refreshAppList.running = true; // re-run Get-Apps.sh
-        }
-
-        onAdapterUpdated: writeAdapter()
-
-        JsonAdapter {
-            id: appData
-            property var apps: []
-        }
-    }
-
-    Process {
-        id: refreshAppList
-        // Convert file:// to absolute path
-        command: ["/bin/bash", Qt.resolvedUrl("../../../Scripts/Get-Apps.sh").toString().replace("file://", "")]
-        running: true
-
-        onStarted: console.log("!@!@!@!@!@!Refreshing apps from Get-Apps.sh")
-
-        onExited: (exitCode, exitStatus) => {
-            if (exitCode === 0) {
-                console.log("Get-Apps.sh ran successfully");
-            } else {
-                console.warn(`Get-Apps.sh failed with code ${exitCode} and status ${exitStatus}`);
-            }
-        }
-    }
-
-    Timer {
-        id: refreshTimer
-        interval: 10000 // 10 seconds
-        running: true
-        repeat: true
-        triggeredOnStart: true
-        //triggeredOnStart: true
-        onTriggered: {
-            appFile.reload();
-            refreshAppList.running = true;
-        }
-    }
-
-    property string filterText: ""
-    property var filteredApps: {
-        if (!appData.apps || appData.apps.length === 0)
-            return [];
-
-        if (!filterText || filterText.trim() === "") {
-            console.log("Returning full app list");
-            return appData.apps;
-        }
-
-        const result = appData.apps.filter(app => app.name && app.name.toLowerCase().includes(filterText.toLowerCase()));
-        console.log("Filtered result:", JSON.stringify(result));
-        return result;
-    }
-
     Rectangle {
         id: layoutHoldingRect
         anchors.fill: parent
@@ -119,14 +78,7 @@ PanelWindow {
                 event.accepted = true;
             }
             if (event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
-                var app = appList.currentItem;
-                if(appList.count > 0)
-                {
-                    Hyprland.dispatch(`exec ${app.appExec}`);
-                } else if (searchField.text.trim() !== "") {
-                    Hyprland.dispatch(`exec ${searchField.text}`);
-                }
-                GlobalVariables.launcherOpen = false;
+                root.launchCurrentSelection();
                 event.accepted = true;
             }
             if(event.key === Qt.Key_Up || event.key === Qt.Key_Down)
@@ -170,10 +122,6 @@ PanelWindow {
             implicitWidth: root.implicitWidth
             spacing: 10
 
-            Component.onCompleted: {
-                console.log("apps loaded:", JSON.stringify(appData.apps));
-            }
-
             TextField {
                 id: searchField
                 Layout.preferredWidth: iconColumn.implicitWidth * .90
@@ -184,7 +132,10 @@ PanelWindow {
                 placeholderText: "Search..."
                 //focus: true
                 selectByMouse: true
-                onTextChanged: filterText = text
+                onTextChanged: {
+                    filterText = text
+                    appList.currentIndex = 0
+                }
                 horizontalAlignment: Settings.applaunchTextInputAlignment === 1 ? TextInput.AlignLeft : Settings.applaunchTextInputAlignment === 2 ? TextInput.AlignHCenter : TextInput.AlignRight
 
                 background: Rectangle {
@@ -221,11 +172,11 @@ PanelWindow {
                         anchors.horizontalCenter: parent.horizontalCenter
                         implicitHeight: 36
                         implicitWidth: appList.implicitWidth * .75
+                        property var desktopEntry: modelData
                         property string appName: modelData.name
-                        property string appExec: modelData.exec
 
                         onClicked: {
-                            Hyprland.dispatch(`exec ${modelData.exec}`);
+                            desktopEntry.execute();
                             GlobalVariables.launcherOpen = false;
                         }
 

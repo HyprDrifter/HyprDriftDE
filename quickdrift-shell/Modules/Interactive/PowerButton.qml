@@ -1,7 +1,6 @@
 import Quickshell
 import QtQuick
 import QtQuick.Layouts
-import Quickshell.Io
 import QtQuick.Controls
 import Qt5Compat.GraphicalEffects
 import qs.Internal
@@ -35,9 +34,15 @@ Button{
         }
     }
 
-    onClicked: Qt.createQmlObject(
-        'import Quickshell.Io; Process { command: ["wlogout", "-b 6 -r 0 -c 0 -T 0 -B 0 -L 0 -R 0 -p layer-shell"]; running: true }',
-        shutdownButton,
-        "DynamicProcess"
-    );
+    onClicked: Quickshell.execDetached([
+        "wlogout",
+        "-b", "6",
+        "-r", "0",
+        "-c", "0",
+        "-T", "0",
+        "-B", "0",
+        "-L", "0",
+        "-R", "0",
+        "-p", "layer-shell"
+    ])
 }

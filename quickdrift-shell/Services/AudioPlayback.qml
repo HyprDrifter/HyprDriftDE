@@ -1,11 +1,9 @@
 pragma Singleton
 
 import Quickshell
-import QtQuick
-import Quickshell.Hyprland
 
 Singleton {
-    function play(fileLocation) {
-        Hyprland.dispatch(`exec paplay ${fileLocation}`)
+    function play(fileLocation: string): void {
+        Quickshell.execDetached(["paplay", fileLocation])
     }
 }

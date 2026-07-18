@@ -193,8 +193,8 @@ Scope {
                                 SysTray {
                                     bar: panel
                                 }
-                                PowerButton {}
                                 ClockWidget {}
+                                PowerButton {}
                             }
                         }
                     }
