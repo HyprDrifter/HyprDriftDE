@@ -107,7 +107,6 @@ Scope {
                         Layout.fillHeight: true
                         Layout.fillWidth: true
                         Layout.maximumWidth: panel.width / 3
-                        anchors.horizontalCenter: panel
                         Spacer {}
                         Rectangle {
                             Layout.alignment: Qt.AlignHCenter
@@ -129,9 +128,8 @@ Scope {
                         id: rightRowLayout
                         spacing: 0
                         implicitHeight: rightRowInnerLayout.implicitHeight
-                        //anchors.verticalCenter: parent.verticalCenter
+                        Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
                         Layout.preferredHeight: parent.implicitHeight
-                        anchors.right: parent.right
 
                         WrapperRectangle {
                             id: rightRowLayoutRectangle

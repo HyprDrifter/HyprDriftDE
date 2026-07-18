@@ -5,14 +5,13 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("kded5")
     hl.exec_cmd("kiod5")
 
-    -- Wine tray proxy, policy agent, and keyring.
-    hl.exec_cmd("/usr/bin/xembedsniproxy")
+    -- Policy agent and keyring.
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("/usr/bin/gnome-keyring-daemon --daemonize --components=secrets,pkcs11,ssh,gpg")
 
-    -- Removable media and status notifier support.
+    -- Removable media and status notifier fallback support.
     hl.exec_cmd("udiskie --automount --notify --no-tray --file-manager=nemo")
-    hl.exec_cmd("snixembed")
+    hl.exec_cmd("bash -lc '$HOME/.config/hypr/scripts/status-notifier-fallback.sh'")
 
     -- Wallpaper and notifications.
     hl.exec_cmd("hyprpaper")

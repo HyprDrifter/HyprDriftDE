@@ -13,12 +13,39 @@ Item {
 
     required property var bar
 
+    function logTrayItem(prefix, item, index) {
+        console.log(
+            "[SysTray] " + prefix,
+            "index=" + index,
+            "id=" + (item?.id ?? ""),
+            "title=" + (item?.title ?? ""),
+            "status=" + (item?.status ?? ""),
+            "icon=" + (item?.icon ?? "")
+        )
+    }
+
     implicitWidth: rowLayout.implicitWidth + 8 // padding
     implicitHeight: parent.height * .75
-    Layout.preferredWidth: implicitWidth 
+    Layout.preferredWidth: implicitWidth
     Layout.preferredHeight: implicitHeight
     Layout.fillHeight: true
     Layout.fillWidth: true
+
+    Component.onCompleted: {
+        const items = SystemTray.items.values
+        console.log("[SysTray] initialized count=" + items.length)
+
+        for (let index = 0; index < items.length; index++)
+            root.logTrayItem("existing item", items[index], index)
+    }
+
+    Connections {
+        target: SystemTray.items
+
+        function onObjectInsertedPost(object, index) {
+            root.logTrayItem("item added", object, index)
+        }
+    }
 
     
     //Layout.leftMargin: Appearance.rounding.screenRounding

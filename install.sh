@@ -124,9 +124,27 @@ user_systemctl() {
 install_user_hypr_defaults() {
     local installed_defaults=/etc/hyprdrift/hypr/.config
     local user_entrypoint="$INSTALL_USER_HOME/.config/hypr/hyprland.lua"
+    local user_autostart="$INSTALL_USER_HOME/.config/hypr/conf/Autostart.lua"
+    local user_tray_fallback="$INSTALL_USER_HOME/.config/hypr/scripts/status-notifier-fallback.sh"
 
     run_as_user mkdir -p "$INSTALL_USER_HOME/.config"
     run_as_user cp -a --no-clobber "$installed_defaults/." "$INSTALL_USER_HOME/.config/"
+    run_as_user install -Dm755 \
+        "$installed_defaults/hypr/scripts/status-notifier-fallback.sh" \
+        "$user_tray_fallback"
+
+    # Migrate only the obsolete tray bridge startup lines. Keep every other
+    # user autostart customization intact.
+    run_as_user sed -i \
+        -e '/^[[:space:]]*hl\.exec_cmd("\/usr\/bin\/xembedsniproxy")[[:space:]]*$/d' \
+        -e '/^[[:space:]]*hl\.exec_cmd("snixembed")[[:space:]]*$/d' \
+        "$user_autostart"
+
+    if ! run_as_user grep -Fq 'status-notifier-fallback.sh' "$user_autostart"; then
+        run_as_user sed -i \
+            "/^end)$/i\\    hl.exec_cmd(\"bash -lc '\\$HOME/.config/hypr/scripts/status-notifier-fallback.sh'\")" \
+            "$user_autostart"
+    fi
 
     if [[ ! -f "$user_entrypoint" ]]; then
         echo "[-] Failed to install the user's Hyprland Lua configuration: $user_entrypoint" >&2
@@ -145,6 +163,7 @@ validate_sources() {
         "system/services/quickdrift.service"
         "system/session/hyprdrift.desktop"
         ".config/hypr/hyprland.lua"
+        ".config/hypr/scripts/status-notifier-fallback.sh"
     )
 
     for source_path in "${required_sources[@]}"; do
@@ -157,26 +176,33 @@ validate_sources() {
     bash -n "$SCRIPT_DIR/install.sh"
     bash -n "$SCRIPT_DIR/system/scripts/hyprdrift-session"
     bash -n "$SCRIPT_DIR/system/scripts/quickshell-loop.sh"
+    bash -n "$SCRIPT_DIR/.config/hypr/scripts/status-notifier-fallback.sh"
 }
 
 copy_source_tree() {
     local source_relative=$1
     local destination=$2
     local source_path="$SCRIPT_DIR/$source_relative"
-    local tracked_file
+    local source_file
     local relative_path
     local copied_any=false
 
     if git -C "$SCRIPT_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-        while IFS= read -r -d '' tracked_file; do
-            relative_path=${tracked_file#"$source_relative"/}
+        while IFS= read -r -d '' source_file; do
+            relative_path=${source_file#"$source_relative"/}
             install -d -- "$(dirname -- "$destination/$relative_path")"
-            cp -a -- "$SCRIPT_DIR/$tracked_file" "$destination/$relative_path"
+            cp -a -- "$SCRIPT_DIR/$source_file" "$destination/$relative_path"
             copied_any=true
-        done < <(git -C "$SCRIPT_DIR" ls-files -z -- "$source_relative")
+        done < <(
+            git -C "$SCRIPT_DIR" ls-files -z \
+                --cached \
+                --others \
+                --exclude-standard \
+                -- "$source_relative"
+        )
 
         if [[ "$copied_any" != true ]]; then
-            echo "[-] No tracked files found under $source_relative." >&2
+            echo "[-] No source files found under $source_relative." >&2
             return 1
         fi
     else
