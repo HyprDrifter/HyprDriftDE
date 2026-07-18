@@ -108,12 +108,29 @@ Scope {
 
     // 💻 Widgets
     property bool nerdFontAvailable : true
-    property int cpuRefreshRate : 100
+    property int cpuRefreshRate : 250
     property string cpuIcon : nerdFontAvailable ? "" : "CPU"
-    property int ramRefreshRate : 100
+    property int ramRefreshRate : 250
     property string ramIcon : nerdFontAvailable ? "" : "RAM"
-    property int gpuRefreshRate : 100
+    property int gpuRefreshRate : 250
     property string gpuIcon : nerdFontAvailable ? "󰍹" : "GPU"
+    property string gpuBusyPath : ""
+    property string networkWiredIcon : nerdFontAvailable ? "󰈀" : "E"
+    property var networkWifiIcons : nerdFontAvailable
+        ? ["󰤟", "󰤢", "󰤥", "󰤨"]
+        : ["W", "W", "W", "W"]
+    property string networkConnectingIcon : nerdFontAvailable ? "󰤯" : "◌"
+    property string networkDisconnectedIcon : nerdFontAvailable ? "󰤮" : "○"
+    property string networkConnectedStatusIcon : nerdFontAvailable ? "󰄬" : "✓"
+    property string networkSavedIcon : nerdFontAvailable ? "󰆓" : "S"
+    property string networkRefreshIcon : nerdFontAvailable ? "󰑐" : "↻"
+    property string networkProgressIcon : nerdFontAvailable ? "" : "◔"
+    property string networkPowerIcon : nerdFontAvailable ? "" : "⏻"
+    property string bluetoothEnabledIcon : nerdFontAvailable ? "󰂯" : "B"
+    property string bluetoothConnectedIcon : nerdFontAvailable ? "󰂱" : "B+"
+    property string bluetoothScanningIcon : nerdFontAvailable ? "󰂰" : "B…"
+    property string bluetoothTransitioningIcon : nerdFontAvailable ? "󰂯" : "B↻"
+    property string bluetoothDisabledIcon : nerdFontAvailable ? "󰂲" : "B×"
 
     // 🚀 Launcher
     property string applaunchIconText : ""
@@ -121,7 +138,7 @@ Scope {
     property double applaunchWidthInScreenPercent : 0.35
     property double applaunchHeightInScreenPercent : 0.5
     property int applaunchTextInputAlignment : 2
-    property color applaunchLauncherColor : background 
+    property color applaunchLauncherColor : background
     property color applaunchSearchBarColor : mantle
     property color applaunchSearchBarTextColor : red
 
@@ -160,6 +177,7 @@ Scope {
     property bool minimizerPlayAudioOnMinimize : false
     property string minimizerPlayOnMinimizeSound : systemAudioBell
     property string minimizerTempDirectory : "/tmp/SlightlyBetterDesktop/Minimizer"
+    property string minimizerWindowPreviewDirectory : minimizerTempDirectory + "/Previews"
     property string minimizerWindowJson : minimizerTempDirectory + "/windows.json"
     property bool minimizerLivePreview : true
 

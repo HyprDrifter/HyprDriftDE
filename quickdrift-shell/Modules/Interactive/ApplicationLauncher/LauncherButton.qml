@@ -2,7 +2,6 @@ import Quickshell
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
-import Quickshell.Hyprland
 import qs.Internal
 import qs.Services
 import qs.Modules.Interactive
@@ -49,7 +48,6 @@ Button {
     }
 
     onClicked: {
-        //Hyprland.dispatch("exec wofi --show drun" )
         GlobalVariables.launcherOpen = !GlobalVariables.launcherOpen;
     }
 

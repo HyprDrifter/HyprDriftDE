@@ -1,6 +1,4 @@
 import Quickshell
-import Quickshell.Hyprland
-import Quickshell.Io
 import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
@@ -33,7 +31,6 @@ Item {
         cursorShape: Qt.PointingHandCursor
 
         onClicked: {
-            //Hyprland.dispatch("exec pavucontrol")
             vFlyout.visible = !vFlyout.visible
         }
 
