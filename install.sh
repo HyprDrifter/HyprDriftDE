@@ -200,6 +200,12 @@ replace_managed_directory() {
     TEMP_PATHS+=("$stage")
     copy_source_tree "$source_relative" "$stage"
 
+    # mktemp intentionally creates the staging root as 0700. The completed
+    # tree is system-managed but must remain readable by the installed user's
+    # Hyprland and Quickshell processes after it is moved into place.
+    chown -R root:root "$stage"
+    chmod 0755 "$stage"
+
     previous="$destination_parent/.${destination_name}.previous.$$"
     if [[ -e "$destination" ]]; then
         mv -- "$destination" "$previous"
@@ -266,6 +272,9 @@ verify_installation() {
     [[ -f /etc/hyprdrift/hypr/.config/hypr/hyprland.lua ]]
     [[ -f /etc/systemd/user/quickdrift.service ]]
     [[ -f "$INSTALL_USER_HOME/.config/hypr/hyprland.lua" ]]
+
+    run_as_user test -r /etc/hyprdrift/hypr/.config/hypr/hyprland.lua
+    run_as_user test -r /etc/hyprdrift/quickdrift/shell.qml
 
     bash -n /usr/bin/hyprdrift-session
     run_as_user \
