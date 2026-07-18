@@ -43,6 +43,46 @@ install -d /etc/hyprdrift/config/driftdaemon/
 echo "-------------------------------"
 echo "[+] Installing dependencies"
 
+# Install every dependency available from the official Arch repositories first.
+# base-devel and git are also required to build yay when it is not installed.
+repo_packages=(
+    base-devel
+    git
+    cmake
+    gcc
+    qt6-base
+    qt6-declarative
+    qt6-tools
+    qt6-5compat
+    qt5-base
+    qt5-declarative
+    qt5-tools
+    qt5-graphicaleffects
+    quickshell
+    hyprland
+    hyprpaper
+    hyprlock
+    cliphist
+    wl-clipboard
+    snixembed
+    hyprpolkitagent
+    pavucontrol
+    sddm
+    go-yq
+    ttf-jetbrains-mono-nerd
+    kitty
+    htop
+    pipewire
+    pipewire-pulse
+    wireplumber
+    sound-theme-freedesktop
+)
+
+if ! pacman -S --needed --noconfirm "${repo_packages[@]}"; then
+    echo "[-] Failed to install dependencies from the official Arch repositories."
+    exit 1
+fi
+
 if ! command -v yay >/dev/null 2>&1; then
     echo "[-] yay is not installed for user '$SUDO_USER'."
     read -rp "[?] Do you want to install yay now? [Y/n]: " confirm
@@ -61,24 +101,15 @@ if ! command -v yay >/dev/null 2>&1; then
     fi
 fi
 
-# Full runtime + build deps
-sudo -u "$SUDO_USER" yay -S --needed --noconfirm \
-    cmake gpp qt6-base qt6-declarative qt6-tools \
-    qt5-base qt5-declarative qt5-tools qt5-graphicaleffects \
-    qt6-5compat quickshell hyprland hyprpaper hyprlock cliphist \
-    hdrop snixembed hyprpolkitagent hyprlock wlogout \
-    pavucontrol sddm go-yq ttf-jetbrains-mono-nerd kitty \
-    htop pipewire sound-theme-freedesktop pipewire-pulse 
+# Install only packages that are not provided by the official repositories.
+aur_packages=(
+    wlogout
+)
 
-
-# Optional: Alert user to enable SDDM manually
-echo "[!] Make sure to enable SDDM: sudo systemctl enable sddm.service"
-systemctl enable sddm.service
-
-# User services
-user_systemctl enable --now pipewire.service
-user_systemctl enable --now pipewire-pulse.service
-user_systemctl enable --now wireplumber.service
+if ! sudo -u "$SUDO_USER" yay -S --needed --noconfirm "${aur_packages[@]}"; then
+    echo "[-] Failed to install AUR dependencies."
+    exit 1
+fi
 
 # Optional: Warn if no Nerd Font found
 if ! fc-list | grep -qi "nerd"; then
@@ -116,14 +147,20 @@ echo "[+] Installing quickdrift-shell QML config"
 cp -rf quickdrift-shell/* /etc/hyprdrift/quickdrift/
 
 echo "-------------------------------"
-echo "[+] Reloading and enabling quickdrift.service"
-user_systemctl daemon-reload
-user_systemctl enable quickdrift.service
-user_systemctl restart quickdrift.service
-
-echo "-------------------------------"
 echo "[+] Installing Quickshell dev loop"
 install -Dm755 system/scripts/quickshell-loop.sh /usr/bin/quickshell-loop
+
+echo "-------------------------------"
+echo "[+] Enabling services"
+user_systemctl daemon-reload
+user_systemctl enable quickdrift.service
+user_systemctl enable --now pipewire.service
+user_systemctl enable --now pipewire-pulse.service
+user_systemctl enable --now wireplumber.service
+
+echo "-------------------------------"
+echo "[+] Enabling and starting SDDM"
+systemctl enable --now sddm.service
 
 echo "-------------------------------"
 echo "[+] Installation complete!"
