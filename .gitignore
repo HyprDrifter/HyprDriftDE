@@ -1,4 +1,5 @@
 # === Drift Daemon Build Files ===
+/build/
 /drift-daemon/build/*
 !/drift-daemon/build/.gitkeep
 /drift-daemon/**/CMakeFiles/
