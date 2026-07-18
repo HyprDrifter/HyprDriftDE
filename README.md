@@ -100,6 +100,13 @@ sudo ./install.sh
 ```
 ---
 
+## 📝 Update Log
+
+See [UPDATELOG.md](UPDATELOG.md) for detailed compatibility notes, new
+features, behavior changes, and installer updates.
+
+---
+
 ## 🙏 Acknowledgements
 
 Special thanks to the developers of:

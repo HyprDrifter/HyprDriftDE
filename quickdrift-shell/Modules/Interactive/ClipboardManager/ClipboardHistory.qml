@@ -1,7 +1,6 @@
 pragma Singleton
 import Quickshell
 import Quickshell.Io
-import Quickshell.Hyprland
 import QtQuick
 import QtQml.Models
 import qs.Modules.Interactive.ClipboardManager
@@ -50,9 +49,29 @@ Singleton {
     }
 
     function copy(id) {
-        console.log(`Gonna do command  "cliphist", "decode", ${id.toString()}, "|", " wl-copy"`)
-        Hyprland.dispatch(`exec cliphist decode ${id.toString()} | wl-copy`)
-        //decodeProc.command = ["cliphist", "decode", id.toString(), " |"," wl-copy"];
+        const clipId = id.toString().trim();
+
+        if (!/^[0-9]+$/.test(clipId)) {
+            console.warn("Refusing to copy an invalid cliphist id:", clipId);
+            return;
+        }
+
+        decodeProcess.exec([
+            "bash",
+            "-c",
+            "set -o pipefail; cliphist decode \"$1\" | wl-copy",
+            "clipboard-copy",
+            clipId
+        ]);
+    }
+
+    Process {
+        id: decodeProcess
+
+        onExited: (exitCode, exitStatus) => {
+            if (exitCode !== 0)
+                console.warn(`Failed to copy clipboard entry (exit code ${exitCode}, status ${exitStatus})`);
+        }
     }
 
     Timer {

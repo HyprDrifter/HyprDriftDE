@@ -17,6 +17,19 @@ if [ -z "$SUDO_USER" ]; then
     exit 1
 fi
 
+user_systemctl() {
+    local user_id
+    local user_home
+    user_id=$(id -u "$SUDO_USER")
+    user_home=$(getent passwd "$SUDO_USER" | awk -F: '{ print $6 }')
+
+    sudo -u "$SUDO_USER" \
+        HOME="$user_home" \
+        XDG_RUNTIME_DIR="/run/user/$user_id" \
+        DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$user_id/bus" \
+        systemctl --user "$@"
+}
+
 echo "[+] Creating required directories"
 install -d /usr/bin
 install -d /usr/share/wayland-sessions
@@ -63,10 +76,9 @@ echo "[!] Make sure to enable SDDM: sudo systemctl enable sddm.service"
 systemctl enable sddm.service
 
 # User services
-systemctl --user enable --now pipewire.service
-systemctl --user enable --now pipewire-pulse.service
-systemctl --user enable --now wireplumber.service
-systemctl --user enable --now quickdrift.service
+user_systemctl enable --now pipewire.service
+user_systemctl enable --now pipewire-pulse.service
+user_systemctl enable --now wireplumber.service
 
 # Optional: Warn if no Nerd Font found
 if ! fc-list | grep -qi "nerd"; then
@@ -94,11 +106,20 @@ cp -rf .config /etc/hyprdrift/hypr/
 
 echo "-------------------------------"
 echo "[+] Installing quickdrift.service"
+# /etc/systemd/user has higher lookup priority than /etc/xdg/systemd/user.
+# Keep both copies synchronized so an older shadow unit cannot survive an update.
 install -Dm644 system/services/quickdrift.service /etc/xdg/systemd/user/quickdrift.service
+install -Dm644 system/services/quickdrift.service /etc/systemd/user/quickdrift.service
 
 echo "-------------------------------"
 echo "[+] Installing quickdrift-shell QML config"
 cp -rf quickdrift-shell/* /etc/hyprdrift/quickdrift/
+
+echo "-------------------------------"
+echo "[+] Reloading and enabling quickdrift.service"
+user_systemctl daemon-reload
+user_systemctl enable quickdrift.service
+user_systemctl restart quickdrift.service
 
 echo "-------------------------------"
 echo "[+] Installing Quickshell dev loop"
