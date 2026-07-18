@@ -121,6 +121,19 @@ user_systemctl() {
         systemctl --user "$@"
 }
 
+install_user_hypr_defaults() {
+    local installed_defaults=/etc/hyprdrift/hypr/.config
+    local user_entrypoint="$INSTALL_USER_HOME/.config/hypr/hyprland.lua"
+
+    run_as_user mkdir -p "$INSTALL_USER_HOME/.config"
+    run_as_user cp -a --no-clobber "$installed_defaults/." "$INSTALL_USER_HOME/.config/"
+
+    if [[ ! -f "$user_entrypoint" ]]; then
+        echo "[-] Failed to install the user's Hyprland Lua configuration: $user_entrypoint" >&2
+        return 1
+    fi
+}
+
 validate_sources() {
     local source_path
     local required_sources=(
@@ -252,8 +265,12 @@ verify_installation() {
     [[ -f /etc/hyprdrift/quickdrift/shell.qml ]]
     [[ -f /etc/hyprdrift/hypr/.config/hypr/hyprland.lua ]]
     [[ -f /etc/systemd/user/quickdrift.service ]]
+    [[ -f "$INSTALL_USER_HOME/.config/hypr/hyprland.lua" ]]
 
     bash -n /usr/bin/hyprdrift-session
+    run_as_user \
+        Hyprland --verify-config \
+        --config "$INSTALL_USER_HOME/.config/hypr/hyprland.lua"
 }
 
 if [[ -t 1 && -n "${TERM:-}" ]]; then
@@ -410,6 +427,7 @@ echo "-------------------------------"
 echo "[+] Replacing managed configuration trees"
 replace_managed_directory ".config" "/etc/hyprdrift/hypr/.config"
 replace_managed_directory "quickdrift-shell" "/etc/hyprdrift/quickdrift"
+install_user_hypr_defaults
 
 echo "-------------------------------"
 echo "[+] Validating installed files"

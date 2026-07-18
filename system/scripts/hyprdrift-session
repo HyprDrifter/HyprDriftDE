@@ -1,29 +1,46 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
 export DESKTOP_SESSION=HyprDrift
-export HYPRLAND_INSTANCE_SIGNATURE=$(uuidgen)
-systemctl --user import-environment DESKTOP_SESSION
+export XDG_SESSION_DESKTOP=HyprDrift
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_SESSION_TYPE=wayland
 
-# Optionally help with Wayland compatibility
+# Help applications select their native Wayland backends.
 export QT_QPA_PLATFORM=wayland
 export GDK_BACKEND=wayland
 export SDL_VIDEODRIVER=wayland
 export CLUTTER_BACKEND=wayland
 
-# Start background services
-while [ -z "$XDG_RUNTIME_DIR" ]; do
-    sleep 0.1
-done
+if [[ -z "${XDG_RUNTIME_DIR:-}" ]]; then
+    export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+fi
 
-# If ~/.config/hypr/conf doesn't exist, copy default config
-if [ ! -d "$HOME/.config/hypr/conf" ]; then
-    echo "[+] No user Hypr config found. Copying defaults from /etc/hyprdrift/hypr/"
+# DESKTOP_SESSION is needed by quickdrift.service's session guard. The real
+# Hyprland-specific values are imported after the compositor starts.
+systemctl --user import-environment \
+    DESKTOP_SESSION \
+    XDG_SESSION_DESKTOP \
+    XDG_CURRENT_DESKTOP \
+    XDG_SESSION_TYPE || true
+
+# Fill in missing default files without overwriting user customizations.
+if [[ -d /etc/hyprdrift/hypr/.config ]]; then
     mkdir -p "$HOME/.config"
-    cp -rf /etc/hyprdrift/hypr/.config/* "$HOME/.config/"
+    cp -a --no-clobber /etc/hyprdrift/hypr/.config/. "$HOME/.config/"
+fi
+
+if [[ ! -f "$HOME/.config/hypr/hyprland.lua" ]]; then
+    echo "[-] HyprDrift could not prepare $HOME/.config/hypr/hyprland.lua" >&2
+    exit 1
 fi
 
 /usr/bin/drift-daemon &
-systemctl --user start quickdrift.service
 
-# Start Hyprland through its recommended watchdog launcher.
+# The service retries while the compositor is coming up, so Quickdrift can use
+# Hyprland's real runtime state without fabricating an instance signature.
+systemctl --user restart quickdrift.service || true
+
+# Keep Hyprland's recommended watchdog launcher in the foreground. Hyprland
+# loads the user's normal ~/.config/hypr/hyprland.lua entrypoint.
 exec /usr/bin/start-hyprland
