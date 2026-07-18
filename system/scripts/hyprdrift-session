@@ -25,5 +25,5 @@ fi
 /usr/bin/drift-daemon &
 systemctl --user start quickdrift.service
 
-# Start Hyprland in foreground
-exec Hyprland
+# Start Hyprland through its recommended watchdog launcher.
+exec /usr/bin/start-hyprland
