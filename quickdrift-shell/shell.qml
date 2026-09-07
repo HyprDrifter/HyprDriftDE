@@ -15,6 +15,11 @@ import QtQuick.Window
 import Quickshell
 
 ShellRoot {
+    readonly property bool applicationIndexReady: ApplicationIndex.ready
+    readonly property bool applicationBarReady: ApplicationBarStore.ready
+        && ApplicationWindowModel.ready
+    readonly property bool quickActionsReady: QuickActionsStore.ready
+
     Taskbar {}
     IconResolver {}
     LauncherWindow {}

@@ -125,13 +125,33 @@ install_user_hypr_defaults() {
     local installed_defaults=/etc/hyprdrift/hypr/.config
     local user_entrypoint="$INSTALL_USER_HOME/.config/hypr/hyprland.lua"
     local user_autostart="$INSTALL_USER_HOME/.config/hypr/conf/Autostart.lua"
+    local user_swaync_launcher="$INSTALL_USER_HOME/.config/hypr/scripts/start-swaync.sh"
+    local user_swaync_toggle="$INSTALL_USER_HOME/.config/hypr/scripts/toggle-swaync.sh"
+    local user_swaync_hover="$INSTALL_USER_HOME/.config/hypr/scripts/watch-swaync-hover.sh"
     local user_tray_fallback="$INSTALL_USER_HOME/.config/hypr/scripts/status-notifier-fallback.sh"
 
     run_as_user mkdir -p "$INSTALL_USER_HOME/.config"
-    run_as_user cp -a --no-clobber "$installed_defaults/." "$INSTALL_USER_HOME/.config/"
+    if ! run_as_user cp -a --no-clobber "$installed_defaults/." "$INSTALL_USER_HOME/.config/"; then
+        echo "[!] Some HyprDrift defaults conflict with existing user configuration; preserving the user paths and continuing." >&2
+    fi
+    run_as_user install -Dm755 \
+        "$installed_defaults/hypr/scripts/start-swaync.sh" \
+        "$user_swaync_launcher"
+    run_as_user install -Dm755 \
+        "$installed_defaults/hypr/scripts/toggle-swaync.sh" \
+        "$user_swaync_toggle"
+    run_as_user install -Dm755 \
+        "$installed_defaults/hypr/scripts/watch-swaync-hover.sh" \
+        "$user_swaync_hover"
     run_as_user install -Dm755 \
         "$installed_defaults/hypr/scripts/status-notifier-fallback.sh" \
         "$user_tray_fallback"
+
+    # Migrate only the unconfigured swaync startup so existing user
+    # Autostart.lua customizations continue to win.
+    run_as_user sed -i \
+        -e "s|^[[:space:]]*hl\\.exec_cmd(\"swaync\")[[:space:]]*$|    hl.exec_cmd(\"bash -lc '\$HOME/.config/hypr/scripts/start-swaync.sh'\")|" \
+        "$user_autostart"
 
     # Migrate only the obsolete tray bridge startup lines. Keep every other
     # user autostart customization intact.
@@ -163,7 +183,12 @@ validate_sources() {
         "system/services/quickdrift.service"
         "system/session/hyprdrift.desktop"
         ".config/hypr/hyprland.lua"
+        ".config/hypr/scripts/start-swaync.sh"
+        ".config/hypr/scripts/toggle-swaync.sh"
+        ".config/hypr/scripts/watch-swaync-hover.sh"
         ".config/hypr/scripts/status-notifier-fallback.sh"
+        ".config/swaync/config.json"
+        ".config/swaync/style.css.in"
     )
 
     for source_path in "${required_sources[@]}"; do
@@ -176,6 +201,9 @@ validate_sources() {
     bash -n "$SCRIPT_DIR/install.sh"
     bash -n "$SCRIPT_DIR/system/scripts/hyprdrift-session"
     bash -n "$SCRIPT_DIR/system/scripts/quickshell-loop.sh"
+    bash -n "$SCRIPT_DIR/.config/hypr/scripts/start-swaync.sh"
+    bash -n "$SCRIPT_DIR/.config/hypr/scripts/toggle-swaync.sh"
+    bash -n "$SCRIPT_DIR/.config/hypr/scripts/watch-swaync-hover.sh"
     bash -n "$SCRIPT_DIR/.config/hypr/scripts/status-notifier-fallback.sh"
 }
 
@@ -274,6 +302,8 @@ verify_installation() {
         satty
         slurp
         start-hyprland
+        swaync
+        swaync-client
         wl-copy
         wl-paste
     )
@@ -296,8 +326,13 @@ verify_installation() {
     [[ -f /usr/share/wayland-sessions/hyprdrift.desktop ]]
     [[ -f /etc/hyprdrift/quickdrift/shell.qml ]]
     [[ -f /etc/hyprdrift/hypr/.config/hypr/hyprland.lua ]]
+    [[ -f /etc/hyprdrift/hypr/.config/swaync/config.json ]]
+    [[ -f /etc/hyprdrift/hypr/.config/swaync/style.css.in ]]
     [[ -f /etc/systemd/user/quickdrift.service ]]
     [[ -f "$INSTALL_USER_HOME/.config/hypr/hyprland.lua" ]]
+    [[ -x "$INSTALL_USER_HOME/.config/hypr/scripts/start-swaync.sh" ]]
+    [[ -x "$INSTALL_USER_HOME/.config/hypr/scripts/toggle-swaync.sh" ]]
+    [[ -x "$INSTALL_USER_HOME/.config/hypr/scripts/watch-swaync-hover.sh" ]]
 
     run_as_user test -r /etc/hyprdrift/hypr/.config/hypr/hyprland.lua
     run_as_user test -r /etc/hyprdrift/quickdrift/shell.qml
@@ -365,6 +400,7 @@ repo_packages=(
     playerctl
     slurp
     satty
+    swaync
     jq
 )
 
@@ -424,7 +460,7 @@ if [[ "$INSTALL_AUR" == true ]]; then
     echo "[+] Installing AUR dependencies"
     run_as_user yay -S --needed --noconfirm wlogout
 else
-    echo "[!] Skipping AUR dependencies; the Power button requires wlogout."
+    echo "[!] Skipping the optional wlogout dependency used by the legacy keybind."
 fi
 
 echo "-------------------------------"

@@ -1,0 +1,180 @@
+:root {
+  --cc-bg: rgba(@BASE00_RGB@, 0.80);
+  --noti-border-color: rgba(@BASE03_RGB@, 0.80);
+  --noti-bg: @BASE01_RGB@;
+  --noti-bg-alpha: 0.80;
+  --noti-bg-darker: @BASE00@;
+  --noti-bg-hover: rgba(@BASE02_RGB@, 0.80);
+  --noti-bg-focus: rgba(@BASE03_RGB@, 0.80);
+  --noti-close-bg: rgba(@BASE02_RGB@, 0.80);
+  --noti-close-bg-hover: rgba(@BASE03_RGB@, 0.80);
+  --text-color: @BASE05@;
+  --text-color-disabled: @BASE04@;
+  --bg-selected: @BASE0D@;
+  --noti-urgent: @BASE08@;
+  --noti-accent: @BASE0D@;
+  --border: 1px solid var(--noti-border-color);
+  --border-radius: 12px;
+  --notification-icon-size: 48px;
+  --notification-app-icon-size: 16px;
+  --notification-group-icon-size: 24px;
+}
+
+@define-color cc-bg rgba(@BASE00_RGB@, 0.80);
+@define-color noti-border-color rgba(@BASE03_RGB@, 0.80);
+@define-color noti-bg rgba(@BASE01_RGB@, 0.80);
+@define-color noti-bg-opaque @BASE01@;
+@define-color noti-bg-darker @BASE00@;
+@define-color noti-bg-hover rgba(@BASE02_RGB@, 0.80);
+@define-color noti-bg-hover-opaque @BASE02@;
+@define-color noti-bg-focus rgba(@BASE03_RGB@, 0.80);
+@define-color noti-close-bg rgba(@BASE02_RGB@, 0.80);
+@define-color noti-close-bg-hover rgba(@BASE03_RGB@, 0.80);
+@define-color text-color @BASE05@;
+@define-color text-color-disabled @BASE04@;
+@define-color bg-selected @BASE0D@;
+
+.control-center {
+  background: rgba(@BASE00_RGB@, 0.80);
+  color: @BASE05@;
+  border: 1px solid rgba(@BASE03_RGB@, 0.80);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.control-center .control-center-list-placeholder {
+  color: @BASE06@;
+}
+
+.control-center .control-center-list {
+  margin: 0;
+  padding: 0;
+}
+
+.control-center .notification-row .notification-background {
+  padding: 2px 4px;
+}
+
+.control-center .notification-row .notification-background
+    .notification .notification-default-action {
+  padding: 2px 4px;
+}
+
+.control-center .notification-row .notification-background
+    .notification .notification-default-action
+    .notification-content .image {
+  margin: 2px;
+}
+
+.control-center .notification-group {
+  margin: 0;
+  padding: 0;
+}
+
+.control-center .notification-group .notification-group-buttons,
+.control-center .notification-group .notification-group-headers {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.control-center .notification-group
+    .notification-group-close-button .close-button {
+  margin: 4px 6px;
+}
+
+.notification-row .notification-background .notification {
+  background: rgba(@BASE01_RGB@, 0.80);
+  color: @BASE05@;
+  border: 1px solid rgba(@BASE03_RGB@, 0.80);
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.notification-row .notification-background .notification.critical {
+  border-color: @BASE08@;
+}
+
+.notification-row .notification-background .notification .notification-default-action:hover,
+.control-center .control-center-list .notification .notification-default-action:hover,
+.control-center .control-center-list .notification .notification-action:hover {
+  background: rgba(@BASE02_RGB@, 0.80);
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content .text-box .summary,
+.notification-row .notification-background .notification .notification-default-action .notification-content .text-box .time,
+.notification-row .notification-background .notification .notification-default-action .notification-content .text-box .body,
+.notification-group .notification-group-buttons,
+.notification-group .notification-group-headers,
+.notification-group .notification-group-headers .notification-group-icon,
+.notification-group .notification-group-headers .notification-group-header {
+  color: @BASE05@;
+  text-shadow: none;
+}
+
+.close-button {
+  background: rgba(@BASE02_RGB@, 0.80);
+  color: @BASE06@;
+}
+
+.close-button:hover {
+  background: rgba(@BASE03_RGB@, 0.80);
+  color: @BASE05@;
+}
+
+.widget {
+  color: @BASE05@;
+}
+
+.widget-title > label {
+  color: @BASE05@;
+}
+
+.widget-title > button {
+  background: rgba(@BASE02_RGB@, 0.80);
+  color: @BASE05@;
+  border: 1px solid rgba(@BASE03_RGB@, 0.80);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.widget-title > button:hover {
+  background: rgba(@BASE03_RGB@, 0.80);
+}
+
+.widget-dnd label {
+  color: @BASE05@;
+}
+
+.widget-dnd switch {
+  background: rgba(@BASE02_RGB@, 0.80);
+  border: 1px solid rgba(@BASE03_RGB@, 0.80);
+  box-shadow: none;
+}
+
+.widget-dnd switch:checked {
+  background: @BASE0D@;
+}
+
+.widget-dnd switch slider {
+  background: @BASE05@;
+  box-shadow: none;
+}
+
+progressbar trough {
+  background: rgba(@BASE02_RGB@, 0.80);
+}
+
+progressbar progress {
+  background: @BASE0D@;
+}
+
+scrollbar slider {
+  background: @BASE04@;
+  border-radius: 999px;
+  min-width: 5px;
+  min-height: 5px;
+}
+
+scrollbar slider:hover {
+  background: @BASE0D@;
+}

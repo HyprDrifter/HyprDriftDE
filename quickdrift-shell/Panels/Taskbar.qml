@@ -9,6 +9,7 @@ import qs.Modules.Performance
 import qs.Modules.Interactive
 import qs.Modules.Interactive.ClipboardManager
 import qs.Modules.Interactive.ApplicationLauncher
+import qs.Modules.Interactive.ApplicationBar
 import qs.Modules.Interactive.VolumeController
 import qs.Modules.Utility
 
@@ -90,10 +91,25 @@ Scope {
                                     //Spacer {}
                                     WorkspaceManager { bar: panel}
                                     //Spacer {}
+                                    ApplicationBarDriftlet {
+                                        hostWindow: panel
+                                        output: panel.screen
+                                        outputKey: {
+                                            const serial = String(
+                                                panel.screen
+                                                    ? panel.screen.serialNumber || ""
+                                                    : "")
+                                            return serial.length > 0
+                                                ? "serial:" + serial
+                                                : "name:" + String(
+                                                    panel.screen
+                                                        ? panel.screen.name || ""
+                                                        : "")
+                                        }
+                                    }
                                     ActiveWindowWidget {
                                         bar: panel
-                                        //anchors.centerIn: panel
-                                    } 
+                                    }
                                 }
                             }
                         }
@@ -118,6 +134,7 @@ Scope {
                                 anchors.fill: parent
                                 Layout.fillHeight: true
                                 Layout.fillWidth: true
+
                             }
                         }
                     }
@@ -161,7 +178,7 @@ Scope {
                                     Layout.preferredWidth: Layout.preferredHeight
                                     ClipboardManager {
                                         id: clipMenu
-                                        moveToItem: clipBtnArea
+                                        moveToItem: clipboardBtn
                                     }
                                     icon.name: "󰅌" // NerdFont clipboard   
                                     //text: "󰅌"
@@ -182,17 +199,19 @@ Scope {
                                     WrapperMouseArea {
                                         id: clipBtnArea
                                         anchors.fill: parent
-                                        onClicked: {
-                                            clipMenu.visible = !clipMenu.visible
-                                            //clipMenu.anchor.window = panel
-                                        }
+                                        hoverEnabled: true
+                                        onEntered: clipMenu.cancelPointerDismiss()
+                                        onExited: clipMenu.schedulePointerDismiss()
+                                        onClicked: clipMenu.toggle()
                                     }
                                 }
                                 SysTray {
                                     bar: panel
                                 }
+                                NotificationDriftlet { bar: panel }
+                                QuickActionsDriftlet { hostWindow: panel }
                                 ClockWidget {}
-                                PowerButton {}
+                                PowerButton { hostWindow: panel }
                             }
                         }
                     }

@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Layouts
 import qs.Internal
+import qs.Services
 
 Item {
     id: root
@@ -14,31 +15,26 @@ Item {
     activeFocusOnTab: true
 
     Accessible.role: Accessible.Button
-    Accessible.name: "Power menu"
-    Accessible.description: "Open the logout and power menu"
-
-    function openPowerMenu(): void {
-        powerMenu.toggle()
-    }
+    Accessible.name: "Quick actions"
+    Accessible.description: "Open custom quick actions"
 
     Rectangle {
         anchors.fill: parent
         radius: 6
-        color: pointer.containsMouse || root.activeFocus
+        color: pointer.containsMouse || root.activeFocus || menu.visible
             ? Settings.mantle
             : "transparent"
+
+        Behavior on color {
+            ColorAnimation { duration: 120 }
+        }
     }
 
     StyledText {
         anchors.centerIn: parent
+        text: Settings.quickActionsIcon
         pixelSize: 16
-        text: Settings.networkPowerIcon
-        dropShadowHoffset: pointer.containsMouse ? 0 : Settings.fontDropShadowHoffset
-        dropShadowVoffset: pointer.containsMouse ? 0 : Settings.fontDropShadowVoffset
-        dropShadowRadius: pointer.containsMouse
-            ? Settings.fontDropShadowRadius * 2
-            : Settings.fontDropShadowRadius
-        dropShadowColor: pointer.containsMouse ? Settings.red : Settings.fontDropShadowColor
+        fontColor: menu.visible ? Settings.yellow : Settings.fontColor
     }
 
     MouseArea {
@@ -46,22 +42,23 @@ Item {
         anchors.fill: parent
         hoverEnabled: true
         cursorShape: Qt.PointingHandCursor
-        onEntered: powerMenu.cancelPointerDismiss()
-        onExited: powerMenu.schedulePointerDismiss()
-        onClicked: root.openPowerMenu()
+
+        onEntered: menu.cancelPointerDismiss()
+        onExited: menu.schedulePointerDismiss()
+        onClicked: menu.toggle()
     }
 
     Keys.onPressed: event => {
         if (event.key === Qt.Key_Return
                 || event.key === Qt.Key_Enter
                 || event.key === Qt.Key_Space) {
-            root.openPowerMenu()
+            menu.toggle()
             event.accepted = true
         }
     }
 
-    PowerMenu {
-        id: powerMenu
+    QuickActionsMenu {
+        id: menu
         moveToItem: root
         anchorWindow: root.hostWindow
     }

@@ -131,6 +131,15 @@ Scope {
     property string bluetoothScanningIcon : nerdFontAvailable ? "󰂰" : "B…"
     property string bluetoothTransitioningIcon : nerdFontAvailable ? "󰂯" : "B↻"
     property string bluetoothDisabledIcon : nerdFontAvailable ? "󰂲" : "B×"
+    property string notificationIcon : nerdFontAvailable ? "" : "N"
+    property string notificationDisabledIcon : nerdFontAvailable ? "" : "N×"
+    property string quickActionsIcon : nerdFontAvailable ? "" : "Q"
+
+    // ⚡ Quick Actions
+    property int quickActionsPopupWidth : 360
+    property int quickActionsPopupMaxHeight : 520
+    property int quickActionsPopupGap : 15
+    property int quickActionsRowHeight : 52
 
     // 🚀 Launcher
     property string applaunchIconText : ""
@@ -141,6 +150,9 @@ Scope {
     property color applaunchLauncherColor : background
     property color applaunchSearchBarColor : mantle
     property color applaunchSearchBarTextColor : red
+    property int applaunchSearchDebounceMs : 30
+    property int applaunchRowHeight : 48
+    property int applaunchIconSize : 32
 
     // 🧱 Taskbar
     property int taskbarHeight : 28
@@ -155,13 +167,38 @@ Scope {
     property int taskbarTrayBorderWidth : 1
     property color taskbarTrayBorderColor : surface2
 
+    // 🗂 Application Bar
+    property int applicationBarSlotSize : 28
+    property int applicationBarIconSize : 18
+    property int applicationBarMaximumWidth : 360
+    property int applicationBarTitleMinimumWidth : 120
+    property int applicationBarItemSpacing : 3
+    property int applicationBarPopupGap : 15
+    property int applicationBarPreviewOpenDelay : 350
+    property int applicationBarPreviewDismissDelay : 180
+    property int applicationBarPreviewCardWidth : 220
+    property int applicationBarPreviewCardHeight : 176
+    property int applicationBarPreviewImageHeight : 140
+    property int applicationBarContextMenuWidth : 228
+    property int applicationBarContextMenuRowHeight : 34
+
     // 🔊 Audio
     property bool audioProtection : true
     property int audioMaxVolume : 150
     property int audioMaxIncrease : audioMaxVolume
+    property int audioVolumeStep : 5
+    property int audioStreamMinimumLifetimeMs : 1000
 
     // Volume Controller
     property color volumeControllerBackgroundColor: background
+    property int volumeMixerMinimumWidth: 0
+    property int volumeMixerPreferredWidth: 720
+    property int volumeMixerSliderHeight: 100
+    property int volumeMixerSliderWidth: 14
+    property int volumeMixerChannelWidth: volumeMixerSliderWidth * 5
+    property int volumeMixerSystemChannelWidth: volumeMixerChannelWidth
+    property int volumeMixerChannelSpacing: 4
+    property int volumeMixerSectionSpacing: 6
 
 
     // 📋 Clipboard

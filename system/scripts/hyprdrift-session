@@ -16,18 +16,57 @@ if [[ -z "${XDG_RUNTIME_DIR:-}" ]]; then
     export XDG_RUNTIME_DIR="/run/user/$(id -u)"
 fi
 
+# Make launcher discovery consistent across native packages, user installs,
+# Flatpak, and Snap. Preserve the current search path while adding only
+# existing export directories and removing duplicates.
+export XDG_DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
+hyprdrift_data_dirs=()
+
+hyprdrift_add_data_dir() {
+    local candidate="${1:-}"
+    local require_existing="${2:-true}"
+    local existing
+
+    [[ -n "$candidate" ]] || return 0
+    if [[ "$require_existing" == "true" && ! -d "$candidate" ]]; then
+        return 0
+    fi
+    for existing in "${hyprdrift_data_dirs[@]}"; do
+        [[ "$existing" == "$candidate" ]] && return 0
+    done
+    hyprdrift_data_dirs+=("$candidate")
+}
+
+hyprdrift_add_data_dir "$XDG_DATA_HOME/flatpak/exports/share"
+hyprdrift_add_data_dir "/var/lib/flatpak/exports/share"
+hyprdrift_add_data_dir "/var/lib/snapd/desktop"
+
+IFS=: read -r -a hyprdrift_existing_data_dirs \
+    <<< "${XDG_DATA_DIRS:-/usr/local/share:/usr/share}"
+for hyprdrift_data_dir in "${hyprdrift_existing_data_dirs[@]}"; do
+    hyprdrift_add_data_dir "$hyprdrift_data_dir" false
+done
+
+export XDG_DATA_DIRS="$(IFS=:; printf '%s' "${hyprdrift_data_dirs[*]}")"
+unset hyprdrift_data_dir hyprdrift_existing_data_dirs hyprdrift_data_dirs
+unset -f hyprdrift_add_data_dir
+
 # DESKTOP_SESSION is needed by quickdrift.service's session guard. The real
 # Hyprland-specific values are imported after the compositor starts.
 systemctl --user import-environment \
     DESKTOP_SESSION \
     XDG_SESSION_DESKTOP \
     XDG_CURRENT_DESKTOP \
-    XDG_SESSION_TYPE || true
+    XDG_SESSION_TYPE \
+    XDG_DATA_HOME \
+    XDG_DATA_DIRS || true
 
 # Fill in missing default files without overwriting user customizations.
 if [[ -d /etc/hyprdrift/hypr/.config ]]; then
     mkdir -p "$HOME/.config"
-    cp -a --no-clobber /etc/hyprdrift/hypr/.config/. "$HOME/.config/"
+    if ! cp -a --no-clobber /etc/hyprdrift/hypr/.config/. "$HOME/.config/"; then
+        echo "[!] Some HyprDrift defaults conflict with existing user configuration; preserving the user paths and continuing." >&2
+    fi
 fi
 
 if [[ ! -f "$HOME/.config/hypr/hyprland.lua" ]]; then

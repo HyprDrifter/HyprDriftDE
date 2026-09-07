@@ -6,6 +6,10 @@ ConditionEnvironment=DESKTOP_SESSION=HyprDrift
 [Service]
 Type=simple
 Environment=QT_QPA_PLATFORM=wayland
+# Quickshell uses Qt's platform theme for Freedesktop icon lookup. Selecting
+# the GTK integration keeps application icons aligned with the user's GTK
+# icon-theme setting and avoids inheriting an invalid host override.
+Environment=QT_QPA_PLATFORMTHEME=gtk3
 Environment=XDG_SESSION_TYPE=wayland
 ExecStartPre=/usr/bin/mkdir -p %h/.cache/hyprdrift/quickdrift
 ExecStart=/bin/bash -c 'exec /usr/bin/qs -p /etc/hyprdrift/quickdrift/shell.qml >> "%h/.cache/hyprdrift/quickdrift/$(date +%%Y-%%m-%%d_%%H-%%M-%%S).log" 2>&1'

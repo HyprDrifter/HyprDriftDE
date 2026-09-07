@@ -9,8 +9,8 @@ import qs.Modules.Interactive.VolumeController
 Item {
     id: root
     required property var bar
-    property int volumePercent: AudioControl.currentVolume
-    property var audioSink: AudioControl.sink.audio
+    readonly property int volumePercent: AudioControl.currentVolume
+    readonly property bool muted: AudioControl.muted
 
     width: 60
     height: 30
@@ -18,7 +18,7 @@ Item {
     StyledText {
         id: volumeText
         anchors.centerIn: parent
-        text: volumePercent <= 0 ?  "\uf6a9 " + volumePercent + "%" :
+        text: muted || volumePercent <= 0 ?  "\uf6a9 " + volumePercent + "%" :
               volumePercent < 33 ? "\uf026 " + volumePercent + "%" :
               volumePercent < 75 ? "\uf027 " + volumePercent + "%" :
                                    "\uf028 " + volumePercent + "%"
@@ -30,13 +30,15 @@ Item {
         hoverEnabled: true
         cursorShape: Qt.PointingHandCursor
 
-        onClicked: {
-            vFlyout.visible = !vFlyout.visible
-        }
+        onEntered: vFlyout.cancelPointerDismiss()
+        onExited: vFlyout.schedulePointerDismiss()
+        onClicked: vFlyout.toggle()
 
         onWheel: (wheel) => {
-            const delta = wheel.angleDelta.y > 0 ? 0.05 : -0.05;
-            audioSink.volume = Math.max(0, audioSink.volume + delta); // no upper clamp
+            const delta = wheel.angleDelta.y > 0
+                ? Settings.audioVolumeStep
+                : -Settings.audioVolumeStep
+            AudioControl.adjustMasterVolume(delta)
         }
 
     }
